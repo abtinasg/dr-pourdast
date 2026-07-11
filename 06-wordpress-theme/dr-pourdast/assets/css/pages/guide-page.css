@@ -1,0 +1,486 @@
+/* Individual patient guide pages */
+
+.guide-hero {
+  padding-block-start: var(--space-6);
+  padding-block-end: var(--section-spacing-mobile);
+  background-color: var(--color-background);
+}
+
+@media (min-width: 1024px) {
+  .guide-hero {
+    padding-block-end: var(--space-12);
+  }
+}
+
+.guide-hero__inner {
+  display: grid;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .guide-hero__inner {
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-10);
+  }
+}
+
+.guide-hero__content {
+  max-width: var(--content-max);
+}
+
+.guide-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.guide-hero__eyebrow::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1px;
+  background-color: var(--color-secondary);
+}
+
+.guide-hero__label {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-primary);
+  background-color: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.guide-hero__title {
+  font-size: var(--text-3xl);
+  line-height: var(--leading-tight);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .guide-hero__title {
+    font-size: var(--text-4xl);
+  }
+}
+
+.guide-hero__description {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+
+.guide-hero__note {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.guide-hero__actions {
+  margin-bottom: 0;
+}
+
+.guide-hero__visual-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: var(--space-8) var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  max-width: 16rem;
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .guide-hero__visual-panel {
+    margin-inline: 0;
+    margin-inline-start: auto;
+    max-width: none;
+  }
+}
+
+.guide-hero__visual-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-primary);
+  opacity: 0.5;
+}
+
+.guide-hero__visual-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Guide sections */
+.guide-section {
+  background-color: var(--color-background);
+}
+
+.guide-section--soft {
+  background-color: var(--color-surface-soft);
+}
+
+.guide-section__content {
+  max-width: var(--content-max);
+}
+
+.guide-section__content--wide {
+  max-width: var(--content-max-desktop);
+}
+
+.guide-prose {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.guide-prose p + p {
+  margin-top: var(--space-4);
+}
+
+.guide-prose--intro {
+  margin-bottom: var(--space-5);
+}
+
+.guide-note {
+  margin-top: var(--space-6);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+/* Checklist */
+.guide-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.guide-checklist__print-title {
+  display: none;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-4);
+}
+
+.guide-checklist__group {
+  padding: var(--space-5) var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.guide-checklist__group-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-4);
+}
+
+.guide-checklist__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-checklist__item {
+  position: relative;
+  padding-inline-start: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+}
+
+.guide-checklist__item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  background-color: var(--color-surface);
+}
+
+.guide-checklist__group-note {
+  margin-top: var(--space-4);
+  margin-bottom: 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+}
+
+.guide-checklist__note {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.guide-checklist__print-disclaimer {
+  display: none;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin-top: var(--space-4);
+}
+
+.guide-checklist__print {
+  margin-top: var(--space-6);
+}
+
+/* Structured list */
+.guide-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-list__item {
+  position: relative;
+  padding-inline-start: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+}
+
+.guide-list__item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+}
+
+/* Guide steps */
+.guide-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-steps__item {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.guide-steps__number {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.guide-steps__title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2);
+}
+
+.guide-steps__description {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+}
+
+/* Evaluation items */
+.guide-eval {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .guide-eval {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.guide-eval__item {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+/* Suggested questions */
+.guide-questions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-questions__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.guide-questions__number {
+  flex-shrink: 0;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Common mistakes */
+.guide-mistakes {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide-mistakes__item {
+  position: relative;
+  padding-inline-start: var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+}
+
+.guide-mistakes__item::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  background-color: var(--color-border);
+  border-radius: 50%;
+}
+
+@media (max-width: 374px) {
+  .guide-hero__actions .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .guide-hero__actions .btn {
+    width: 100%;
+  }
+}
+
+/* Print styles */
+@media print {
+  .skip-link,
+  .site-header,
+  .mobile-nav,
+  .site-footer,
+  .guide-hero,
+  .guides-section,
+  .guide-section:not(.guide-section--printable),
+  .service-section,
+  .service-final-cta,
+  .guide-checklist__print,
+  .breadcrumb {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .guide-section--printable {
+    padding: 0;
+    margin: 0;
+  }
+
+  .guide-section--printable .container,
+  .guide-section__content {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .guide-section--printable .section-header {
+    display: none;
+  }
+
+  .guide-checklist__print-title,
+  .guide-checklist__print-disclaimer {
+    display: block;
+  }
+
+  .guide-checklist__group {
+    break-inside: avoid;
+    border-color: #ccc;
+    background: #fff;
+  }
+
+  .guide-checklist__note {
+    border-color: #ccc;
+    background: #f5f5f5;
+  }
+}

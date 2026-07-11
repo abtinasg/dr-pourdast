@@ -1,0 +1,32 @@
+.appointment-link__icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.appointment-links-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.site-footer__appointment .appointment-links-group {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.site-footer__appointment .appointment-links-group .btn {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .site-footer__appointment .appointment-links-group .btn {
+    width: auto;
+  }
+}
+
+.btn--placeholder {
+  cursor: default;
+  opacity: 0.85;
+  pointer-events: none;
+}

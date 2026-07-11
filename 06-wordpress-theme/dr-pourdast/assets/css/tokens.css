@@ -1,0 +1,88 @@
+:root {
+  /* Colors */
+  --color-primary: #183F46;
+  --color-primary-dark: #102E34;
+  --color-secondary: #B88764;
+
+  --color-background: #F8F6F2;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #EEF3F2;
+
+  --color-text: #182326;
+  --color-text-muted: #637174;
+  --color-border: #DCE4E2;
+
+  --color-success: #3F7668;
+  --color-error: #A94A4A;
+
+  /* Typography */
+  --font-persian: "Estedad", "Vazirmatn", "Tahoma", sans-serif;
+  --font-english: "Inter", "Segoe UI", sans-serif;
+  --font-body: var(--font-persian);
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --leading-tight: 1.35;
+  --leading-normal: 1.75;
+  --leading-relaxed: 1.85;
+
+  /* Layout */
+  --container-max: 1200px;
+  --section-spacing-mobile: 4rem;
+  --section-spacing-desktop: 4rem;
+  --container-padding: 1.25rem;
+  --content-max: 40rem;
+  --content-max-desktop: 52rem;
+  --content-max-wide-desktop: 68rem;
+
+  /* Radii */
+  --radius-card: 16px;
+  --radius-button: 12px;
+  --radius-sm: 8px;
+
+  /* Shadows */
+  --shadow-subtle: 0 1px 3px rgba(24, 35, 38, 0.04), 0 4px 16px rgba(24, 35, 38, 0.06);
+  --shadow-card: 0 2px 8px rgba(24, 35, 38, 0.05), 0 8px 24px rgba(24, 35, 38, 0.07);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  /* Header */
+  --header-height: 4.5rem;
+  --header-height-mobile: 4rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(24, 63, 70, 0.25);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}
