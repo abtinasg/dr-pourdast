@@ -46,17 +46,16 @@
     "</div>" +
     '<div class="final-cta__actions">' +
     '<div class="final-cta__buttons">' +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: data.ctas.primary.source,
+      doctoretoText:
+        data.ctas.primary.text ||
+        uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
       showIcon: true,
       wrapInGroup: false,
-      texts: {
-        doctoreto: data.ctas.primary.text,
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
-    renderClinicContactLink(data.ctas.contact.source) +
     "</div>" +
+    renderAxonAltLink(data.ctas.primary.source) +
     '<p class="final-cta__note">' +
     data.supportNote +
     "</p>" +

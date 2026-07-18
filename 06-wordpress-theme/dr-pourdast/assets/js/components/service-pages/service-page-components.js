@@ -70,24 +70,132 @@ function renderServiceHero(hero) {
     "</p>" +
     '<div class="service-hero__actions">' +
     '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: hero.primaryCta.source,
+      doctoretoText: hero.primaryCta.text,
       showIcon: true,
       wrapInGroup: false,
-      texts: {
-        doctoreto: hero.primaryCta.text,
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
-    '<a href="' +
-    hero.secondaryCta.href +
-    '" class="btn btn--secondary">' +
-    hero.secondaryCta.text +
-    "</a>" +
-    "</div></div>" +
+    "</div>" +
+    renderAxonAltLink(hero.primaryCta.source) +
+    "</div>" +
+    "</div>" +
     '<ul class="service-hero__trust" role="list" aria-label="ویژگی‌های مراقبت">' +
     trustHtml +
     "</ul>" +
+    "</div></div></section>"
+  );
+}
+
+/**
+ * Quick in-page navigation under the hero.
+ * @param {Array<{label: string, href: string}>} [items]
+ * @returns {string}
+ */
+function renderServicePageNav(items) {
+  if (!items || items.length === 0) return "";
+
+  var linksHtml = items
+    .map(function (item, index) {
+      return (
+        (index > 0
+          ? '<span class="service-page-nav__sep" aria-hidden="true">|</span>'
+          : "") +
+        '<a href="' +
+        item.href +
+        '" class="service-page-nav__link">' +
+        item.label +
+        "</a>"
+      );
+    })
+    .join("");
+
+  return (
+    '<nav class="service-page-nav" aria-label="' +
+    uiString("pageSections", "بخش‌های صفحه") +
+    '">' +
+    '<div class="container">' +
+    '<div class="service-page-nav__inner">' +
+    linksHtml +
+    "</div></div></nav>"
+  );
+}
+
+/**
+ * Medical review attribution for service pages.
+ * @param {Object} [review]
+ * @param {string} review.text
+ * @param {string} [review.dateLabel]
+ * @returns {string}
+ */
+function renderMedicalReview(review) {
+  if (!review || !review.text) return "";
+
+  return (
+    '<p class="service-medical-review">' +
+    '<span class="service-medical-review__text">' +
+    review.text +
+    "</span>" +
+    (review.dateLabel
+      ? '<span class="service-medical-review__date">' +
+        review.dateLabel +
+        "</span>"
+      : "") +
+    "</p>"
+  );
+}
+
+/**
+ * Renders an optional video block for a service page.
+ * @param {Object} [video]
+ * @returns {string}
+ */
+function renderServiceVideo(video) {
+  if (!video || !video.src) return "";
+
+  var titleId = "service-video-title";
+  var eyebrow = video.eyebrow || "";
+  var title = video.title || "";
+  var label = video.label || title || "Service video";
+  var posterAttr = video.poster
+    ? ' poster="' + video.poster + '"'
+    : "";
+
+  var headerHtml =
+    eyebrow || title
+      ? '<header class="section-header section-header--compact">' +
+        (eyebrow
+          ? '<p class="section-header__eyebrow">' + eyebrow + "</p>"
+          : "") +
+        (title
+          ? '<h2 class="section-header__title" id="' +
+            titleId +
+            '">' +
+            title +
+            "</h2>"
+          : "") +
+        "</header>"
+      : "";
+
+  return (
+    '<section class="service-section section service-section--video" aria-labelledby="' +
+    titleId +
+    '">' +
+    '<div class="container">' +
+    '<div class="service-section__content service-section__content--wide">' +
+    headerHtml +
+    '<figure class="service-video">' +
+    '<video class="service-video__player" controls playsinline preload="metadata"' +
+    posterAttr +
+    ">" +
+    '<source src="' +
+    video.src +
+    '" type="video/mp4">' +
+    "</video>" +
+    '<figcaption class="sr-only">' +
+    label +
+    "</figcaption>" +
+    "</figure>" +
     "</div></div></section>"
   );
 }
@@ -169,7 +277,26 @@ function renderEditorialTwoColumn(section) {
 
   var panelHtml = "";
 
-  if (section.panel) {
+  if (section.video && section.video.src) {
+    var videoLabel = section.video.label || section.title || "Video";
+    var posterAttr = section.video.poster
+      ? ' poster="' + section.video.poster + '"'
+      : "";
+
+    panelHtml =
+      '<figure class="service-video service-video--panel" style="width:13rem;max-width:13rem;aspect-ratio:4/5;border-radius:1rem;overflow:hidden">' +
+      '<video class="service-video__player" controls playsinline preload="none"' +
+      posterAttr +
+      ' style="width:100%;height:100%;object-fit:cover;border-radius:1rem">' +
+      '<source src="' +
+      section.video.src +
+      '" type="video/mp4">' +
+      "</video>" +
+      '<figcaption class="sr-only">' +
+      videoLabel +
+      "</figcaption>" +
+      "</figure>";
+  } else if (section.panel) {
     var panelPointsHtml = "";
 
     if (section.panel.points) {
@@ -213,7 +340,9 @@ function renderEditorialTwoColumn(section) {
     section.title +
     "</h2>" +
     "</header>" +
-    '<div class="service-editorial-grid">' +
+    '<div class="service-editorial-grid' +
+    (section.video && section.video.src ? " service-editorial-grid--with-video" : "") +
+    '">' +
     '<div class="service-prose">' +
     paragraphsHtml +
     "</div>" +
@@ -529,7 +658,11 @@ function renderLinkedConditions(section) {
  * @returns {string}
  */
 function renderEditorialListSection(section, listClass) {
-  var titleId = "section-" + section.eyebrow.replace(/\s/g, "-");
+  var sectionId = section.id || "";
+  var titleId = sectionId
+    ? sectionId + "-title"
+    : "section-" + section.eyebrow.replace(/\s/g, "-");
+  var idAttr = sectionId ? ' id="' + sectionId + '"' : "";
 
   var itemsHtml = section.items
     .map(function (item) {
@@ -550,7 +683,9 @@ function renderEditorialListSection(section, listClass) {
     .join("");
 
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="service-section section"' +
+    idAttr +
+    ' aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
@@ -633,7 +768,8 @@ function renderServiceProcess(section) {
  * @returns {string}
  */
 function renderTreatmentOptions(section) {
-  var titleId = "treatment-title";
+  var sectionId = section.id || "treatment";
+  var titleId = sectionId + "-title";
 
   var optionsHtml = section.options
     .map(function (option) {
@@ -650,7 +786,9 @@ function renderTreatmentOptions(section) {
     .join("");
 
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="service-section section" id="' +
+    sectionId +
+    '" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
@@ -724,6 +862,16 @@ function renderEditorialPoints(section) {
  */
 function renderServiceDoctorSection(section) {
   var titleId = "service-doctor-title";
+  var imageSrc = section.imageSrc || "/assets/images/hero2.PNG";
+  var imageAlt =
+    section.imageAlt || "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان";
+  var isLandscape = section.imageFit === "center";
+  var imageClass =
+    "service-doctor__image" +
+    (isLandscape ? " service-doctor__image--center" : "");
+  var frameClass =
+    "service-doctor__image-frame" +
+    (isLandscape ? " service-doctor__image-frame--landscape" : "");
 
   var paragraphsHtml = section.paragraphs
     .map(function (p) {
@@ -732,19 +880,27 @@ function renderServiceDoctorSection(section) {
     .join("");
 
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="service-section section" id="doctor" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
-    '<div class="service-doctor">' +
+    '<div class="service-doctor' +
+    (isLandscape ? " service-doctor--media" : "") +
+    '">' +
     '<div class="service-doctor__visual">' +
-    '<figure class="service-doctor__image-frame" aria-label="تصویر دکتر طاهره پوردست">' +
-    '<div class="service-doctor__placeholder" aria-hidden="true">' +
-    '<svg viewBox="0 0 120 200" fill="currentColor" class="service-doctor__silhouette">' +
-    '<ellipse cx="60" cy="35" rx="22" ry="26"/>' +
-    '<path d="M30 75 Q60 65 90 75 L95 200 L25 200 Z"/>' +
-    "</svg></div>" +
-    '<figcaption class="sr-only">تصویر دکتر طاهره پوردست، متخصص زنان و زایمان</figcaption>' +
+    '<figure class="' +
+    frameClass +
+    '">' +
+    '<img class="' +
+    imageClass +
+    '" src="' +
+    imageSrc +
+    '" alt="' +
+    imageAlt +
+    '" width="640" height="800" loading="lazy" decoding="async">' +
+    '<figcaption class="sr-only">' +
+    imageAlt +
+    "</figcaption>" +
     "</figure></div>" +
     '<div class="service-doctor__content">' +
     (section.eyebrow
@@ -761,20 +917,21 @@ function renderServiceDoctorSection(section) {
     paragraphsHtml +
     "</div>" +
     '<div class="service-doctor__actions">' +
-    '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: section.appointmentSource,
+      doctoretoText: uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
       showIcon: true,
-      wrapInGroup: false,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
-    '<a href="' +
-    section.aboutLink +
-    '" class="btn btn--secondary">درباره دکتر</a>' +
-    "</div></div></div></div></div></section>"
+    renderAxonAltLink(section.appointmentSource) +
+    (section.aboutLink
+      ? '<p class="cta-alt-link service-doctor__about-link">' +
+        '<a href="' +
+        section.aboutLink +
+        '" class="cta-alt-link__anchor">' +
+        uiString("aboutDoctor", "درباره دکتر") +
+        "</a></p>"
+      : "") +
+    "</div></div></div></div></section>"
   );
 }
 
@@ -932,7 +1089,8 @@ function renderRelatedGuides(section) {
  * @returns {string}
  */
 function renderPreparationSection(section) {
-  var titleId = "preparation-title";
+  var sectionId = section.id || "preparation";
+  var titleId = sectionId + "-title";
 
   var checklistHtml = section.checklist
     .map(function (item) {
@@ -950,7 +1108,9 @@ function renderPreparationSection(section) {
     .join("");
 
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="service-section section" id="' +
+    sectionId +
+    '" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
@@ -1010,7 +1170,7 @@ function renderServiceFaq(faqConfig) {
     .join("");
 
   return (
-    '<section class="service-section section service-section--soft" aria-labelledby="' +
+    '<section class="service-section section service-section--soft" id="faq" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
@@ -1032,21 +1192,31 @@ function renderServiceFaq(faqConfig) {
 }
 
 /**
- * Renders related services links.
+ * Renders related services as compact cards.
  * @param {Object} section
  * @returns {string}
  */
 function renderRelatedServices(section) {
   var titleId = "related-services-title";
 
-  var linksHtml = section.items
+  var cardsHtml = section.items
     .map(function (item) {
       return (
-        '<li><a href="' +
+        '<li class="service-related__item">' +
+        '<a href="' +
         item.href +
-        '" class="service-related__link">' +
+        '" class="service-related__card">' +
+        '<span class="service-related__body">' +
+        '<span class="service-related__label">' +
         item.label +
-        '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
+        "</span>" +
+        (item.description
+          ? '<span class="service-related__description">' +
+            item.description +
+            "</span>"
+          : "") +
+        "</span>" +
+        '<svg class="service-related__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
         '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
         "</svg></a></li>"
       );
@@ -1054,18 +1224,18 @@ function renderRelatedServices(section) {
     .join("");
 
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="service-section section service-section--related" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
-    '<div class="service-section__content">' +
+    '<div class="service-section__content service-section__content--wide">' +
     '<h2 class="service-related__title" id="' +
     titleId +
     '">' +
     section.title +
     "</h2>" +
     '<ul class="service-related" role="list">' +
-    linksHtml +
+    cardsHtml +
     "</ul></div></div></section>"
   );
 }
@@ -1084,6 +1254,7 @@ function renderServiceAppointmentCta(section) {
     '">' +
     '<div class="container">' +
     '<div class="service-final-cta__card">' +
+    '<div class="service-final-cta__inner">' +
     '<h2 class="service-final-cta__title" id="' +
     titleId +
     '">' +
@@ -1092,15 +1263,22 @@ function renderServiceAppointmentCta(section) {
     '<p class="service-final-cta__description">' +
     section.description +
     "</p>" +
-    renderAppointmentLinksGroup({
+    '<div class="service-final-cta__actions">' +
+    '<div class="btn-group">' +
+    renderPrimaryCtaGroup({
       source: section.cta.source,
+      doctoretoText: section.cta.text,
       showIcon: true,
-      texts: {
-        doctoreto: section.cta.text,
-        axon: "دریافت نوبت از اکسون",
-      },
+      wrapInGroup: false,
     }) +
-    '<p class="service-final-cta__note">نوبت‌دهی اینترنتی از طریق سامانه‌های دکترتو و اکسون انجام می‌شود.</p>' +
-    "</div></div></section>"
+    "</div>" +
+    renderAxonAltLink(section.cta.source) +
+    '<p class="service-final-cta__note">' +
+    uiString(
+      "bookingNote",
+      "نوبت‌دهی اینترنتی از طریق سامانه‌های دکترتو و اکسون انجام می‌شود."
+    ) +
+    "</p>" +
+    "</div></div></div></div></section>"
   );
 }

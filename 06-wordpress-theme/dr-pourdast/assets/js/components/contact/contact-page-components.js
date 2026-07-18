@@ -65,21 +65,14 @@ function renderContactHero(hero) {
     "</p>" +
     '<div class="contact-hero__actions">' +
     '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: hero.appointmentSource,
       showIcon: true,
       wrapInGroup: false,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
-    '<a href="' +
-    hero.secondaryCta.href +
-    '" class="btn btn--secondary">' +
-    hero.secondaryCta.text +
-    "</a>" +
-    "</div></div>" +
+    "</div>" +
+    renderAxonAltLink(hero.appointmentSource) +
+    "</div>" +
     "</div>" +
     '<aside class="contact-hero__visual" aria-hidden="true">' +
     '<div class="contact-hero__visual-panel">' +
@@ -122,14 +115,11 @@ function renderAppointmentBookingBlock(section) {
     '<p class="contact-prose">' +
     section.content +
     "</p>" +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: section.appointmentSource,
       showIcon: true,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
+    renderAxonAltLink(section.appointmentSource) +
     '<p class="contact-note">' +
     section.note +
     "</p>" +
@@ -257,14 +247,11 @@ function renderClinicInformation(section) {
     '<p class="contact-clinic__summary-text">' +
     section.appointmentSummary +
     "</p>" +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: "contact-clinic-summary",
       showIcon: true,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
+    renderAxonAltLink("contact-clinic-summary") +
     "</aside>" +
     '<div class="contact-clinic__details">' +
     detailsHtml +
@@ -458,32 +445,14 @@ function renderPrivacyNote(section) {
  */
 function renderContactFinalCta(section) {
   var titleId = "contact-final-cta-title";
-  var phoneHtml = "";
+  var appointmentHtml =
+    renderPrimaryCtaGroup({
+      source: section.cta.source,
+      doctoretoText: section.cta.text,
+      showIcon: true,
+    }) + renderAxonAltLink(section.cta.source);
 
-  if (typeof SITE_CONFIG !== "undefined" && SITE_CONFIG.clinicPhone) {
-    phoneHtml =
-      '<a href="tel:' +
-      SITE_CONFIG.clinicPhone +
-      '" class="btn btn--secondary" data-event="clinic_phone_click" data-source="' +
-      section.phoneSource +
-      '">تماس با مطب</a>';
-  }
-
-  var appointmentHtml = renderAppointmentLinksGroup({
-    source: section.cta.source.replace(/-doctoreto$|-axon$/, ""),
-    showIcon: true,
-    texts: {
-      doctoreto: section.cta.text,
-      axon: "دریافت نوبت از اکسون",
-    },
-  });
-
-  var secondaryHtml = phoneHtml
-    ? '<div class="btn-group contact-final-cta__buttons">' +
-      appointmentHtml +
-      phoneHtml +
-      "</div>"
-    : appointmentHtml;
+  var secondaryHtml = appointmentHtml;
 
   return (
     '<section class="service-final-cta section contact-final-cta" aria-labelledby="' +

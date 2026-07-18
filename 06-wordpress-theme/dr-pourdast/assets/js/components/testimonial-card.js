@@ -21,7 +21,9 @@ function renderTestimonialCard(testimonial, featured, hidden) {
 
   var isLongQuote = testimonial.quote.length > EXPAND_THRESHOLD;
   var expandBtnHtml = isLongQuote
-    ? '<button type="button" class="testimonial-card__expand" aria-expanded="false">ادامه</button>'
+    ? '<button type="button" class="testimonial-card__expand" aria-expanded="false">' +
+      uiString("continue", "ادامه") +
+      "</button>"
     : "";
 
   var sourceBadgeHtml = testimonial.source

@@ -47,8 +47,7 @@ var PATIENT_GUIDES_PAGE = {
           "مدارک، تصویربرداری‌ها، آزمایش‌ها و اطلاعاتی که بهتر است هنگام اولین مراجعه همراه داشته باشید.",
         href: "/patient-guides/first-visit",
         featured: true,
-        icon:
-          '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 6H19V18H5V6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 10H15M9 13H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 6V4.5C8 4.2 8.2 4 8.5 4H15.5C15.8 4 16 4.2 16 4.5V6" stroke="currentColor" stroke-width="1.5"/></svg>',
+        icon: MEDICAL_ICONS.firstVisit,
       },
       {
         slug: "endometriosis",
@@ -57,8 +56,7 @@ var PATIENT_GUIDES_PAGE = {
         description:
           "آشنایی عمومی با علائم، روند بررسی، گزینه‌های درمان و اهمیت پیگیری اندومتریوز.",
         href: "/patient-guides/endometriosis",
-        icon:
-          '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4H17V20H7V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 8H14M10 11H14M10 14H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="17" r="1" fill="currentColor"/></svg>',
+        icon: MEDICAL_ICONS.guideEndometriosis,
       },
       {
         slug: "before-laparoscopy",
@@ -67,8 +65,7 @@ var PATIENT_GUIDES_PAGE = {
         description:
           "اطلاعات عمومی درباره مدارک، هماهنگی‌ها و آمادگی‌های پیش از جراحی لاپاراسکوپی.",
         href: "/patient-guides/before-laparoscopy",
-        icon:
-          '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M8 3V7M16 3V7M4 10H20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 14H11M8 17H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+        icon: MEDICAL_ICONS.beforeLaparoscopy,
       },
       {
         slug: "after-surgery",
@@ -77,8 +74,7 @@ var PATIENT_GUIDES_PAGE = {
         description:
           "آشنایی با اصول کلی پیگیری، فعالیت روزانه و مراقبت‌های عمومی بعد از جراحی.",
         href: "/patient-guides/after-surgery",
-        icon:
-          '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4L5 8V13C5 17 8.5 19.5 12 20C15.5 19.5 19 17 19 13V8L12 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+        icon: MEDICAL_ICONS.afterSurgery,
       },
       {
         slug: "uterine-bleeding",
@@ -87,8 +83,7 @@ var PATIENT_GUIDES_PAGE = {
         description:
           "اطلاعات عمومی درباره اهمیت بررسی خونریزی‌های غیرمعمول و زمان مراجعه برای ارزیابی.",
         href: "/patient-guides/uterine-bleeding",
-        icon:
-          '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 4H17V20H7V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 8H14M10 11H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M9 15H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>',
+        icon: MEDICAL_ICONS.uterineBleeding,
       },
     ],
   },

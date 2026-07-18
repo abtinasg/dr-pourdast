@@ -29,20 +29,18 @@ function renderPatientGuidesHero(hero) {
     hero.description +
     "</p>" +
     '<div class="guides-hero__actions">' +
-    '<div class="btn-group">' +
+    renderPrimaryCtaGroup({
+      source: hero.appointmentSource,
+      showIcon: true,
+    }) +
+    '<p class="cta-alt-link">' +
     '<a href="' +
     hero.primaryCta.href +
-    '" class="btn btn--primary">' +
+    '" class="cta-alt-link__anchor">' +
     hero.primaryCta.text +
-    "</a>" +
-    renderAppointmentLinksGroup({
-      source: hero.appointmentSource,
-      variant: "secondary",
-      secondaryVariant: "secondary",
-      showIcon: true,
-      wrapInGroup: false,
-    }) +
-    "</div></div>" +
+    "</a></p>" +
+    renderAxonAltLink(hero.appointmentSource) +
+    "</div>" +
     '<p class="guides-hero__note">' +
     hero.note +
     "</p>" +

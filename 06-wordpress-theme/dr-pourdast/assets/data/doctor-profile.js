@@ -26,6 +26,7 @@ var DOCTOR_PROFILE = {
     introduction:
       "تمرکز فعالیت حرفه‌ای دکتر طاهره پوردست بر بررسی و درمان بیماری‌های زنان، اندومتریوز، مشکلات رحم و تخمدان و جراحی‌های کم‌تهاجمی زنان است.",
     imageAlt: "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان",
+    imageSrc: "/assets/images/hero.jpg",
     appointmentSource: "about-hero",
     servicesLink: {
       text: "مشاهده خدمات تخصصی",

@@ -26,7 +26,7 @@ var LAPAROSCOPY_PAGE = {
     description:
       "لاپاراسکوپی یکی از روش‌های کم‌تهاجمی جراحی است که می‌تواند برای بررسی یا درمان برخی بیماری‌های زنان استفاده شود. تصمیم درباره انجام جراحی پس از بررسی علائم، تصویربرداری‌ها، سوابق درمانی و شرایط هر بیمار گرفته می‌شود.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "laparoscopy-hero",
     },
     secondaryCta: {
@@ -38,6 +38,17 @@ var LAPAROSCOPY_PAGE = {
       "ارزیابی متناسب با شرایط بیمار",
       "جراحی کم‌تهاجمی در موارد منتخب",
     ],
+  },
+  pageNav: [
+    { label: "کاربردها", href: "#applications" },
+    { label: "زمان بررسی", href: "#when-considered" },
+    { label: "روند ارزیابی", href: "#evaluation" },
+    { label: "مدارک لازم", href: "#preparation" },
+    { label: "سوالات متداول", href: "#faq" },
+  ],
+  medicalReview: {
+    text: "این محتوا با نظارت علمی دکتر طاهره پوردست تهیه یا بازبینی شده است.",
+    dateLabel: "آخرین بازبینی: تیر ۱۴۰۵",
   },
   whatIs: {
     eyebrow: "آشنایی با روش",
@@ -56,6 +67,7 @@ var LAPAROSCOPY_PAGE = {
     },
   },
   applications: {
+    id: "applications",
     eyebrow: "کاربردهای رایج",
     title: "لاپاراسکوپی زنان در چه مواردی ممکن است استفاده شود؟",
     items: [
@@ -70,6 +82,7 @@ var LAPAROSCOPY_PAGE = {
       "وجود یکی از این شرایط به‌تنهایی به معنای نیاز قطعی به لاپاراسکوپی نیست. روش درمان پس از بررسی شرایط بیمار انتخاب می‌شود.",
   },
   whenConsidered: {
+    id: "when-considered",
     eyebrow: "زمان بررسی جراحی",
     title: "چه زمانی ممکن است لاپاراسکوپی بررسی شود؟",
     items: [
@@ -84,7 +97,7 @@ var LAPAROSCOPY_PAGE = {
       "تصمیم نهایی درباره جراحی باید با توجه به علائم، یافته‌های تصویربرداری، شرایط باروری و سوابق درمانی بیمار گرفته شود.",
   },
   evaluation: {
-    id: "evaluation-and-surgery",
+    id: "evaluation",
     eyebrow: "روند مراجعه",
     title: "روند بررسی پیش از تصمیم به لاپاراسکوپی",
     steps: [
@@ -167,6 +180,9 @@ var LAPAROSCOPY_PAGE = {
     ],
   },
   doctor: {
+    imageSrc: "/assets/images/laparoscopy.png",
+    imageAlt: "تجهیزات و ابزار جراحی لاپاراسکوپی زنان",
+    imageFit: "center",
     eyebrow: "پزشک معالج",
     title: "ارزیابی و جراحی توسط دکتر طاهره پوردست",
     paragraphs: [
@@ -177,6 +193,7 @@ var LAPAROSCOPY_PAGE = {
     appointmentSource: "laparoscopy-doctor-section",
   },
   preparation: {
+    id: "preparation",
     eyebrow: "پیش از مراجعه",
     title: "برای ارزیابی اولیه چه مدارکی همراه داشته باشید؟",
     checklist: [
@@ -263,8 +280,6 @@ var LAPAROSCOPY_PAGE = {
         question: "چگونه نوبت دریافت کنم؟",
         answer:
           "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
-        hasAppointmentLink: true,
-        appointmentSource: "laparoscopy-faq",
       },
     ],
   },
@@ -280,9 +295,9 @@ var LAPAROSCOPY_PAGE = {
   relatedServices: {
     title: "خدمات مرتبط",
     items: [
-      { label: "اندومتریوز", href: "/services/endometriosis" },
-      { label: "هیستروسکوپی", href: "/services/hysteroscopy" },
-      { label: "کیست تخمدان", href: "/services/ovarian-cyst" },
+      { label: "اندومتریوز", href: "/services/endometriosis", description: "تشخیص و درمان تخصصی اندومتریوز" },
+      { label: "هیستروسکوپی", href: "/services/hysteroscopy", description: "بررسی و درمان مشکلات داخل رحم با روش کم‌تهاجمی" },
+      { label: "کیست تخمدان", href: "/services/ovarian-cyst", description: "ارزیابی انواع کیست و انتخاب مسیر درمان مناسب" },
     ],
   },
   finalCta: {
@@ -290,7 +305,7 @@ var LAPAROSCOPY_PAGE = {
     description:
       "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "laparoscopy-final-cta",
     },
   },

@@ -14,6 +14,7 @@
   mount.outerHTML =
     renderServiceBreadcrumb(data.breadcrumb) +
     renderServiceHero(data.hero) +
+    renderServicePageNav(data.pageNav) +
     renderEditorialTwoColumn(data.whatIs) +
     renderEditorialListSection(data.applications, "service-symptom-list") +
     renderEditorialListSection(data.whenConsidered, "service-eval-list") +
@@ -26,5 +27,8 @@
     renderServiceFaq(data.faqs) +
     renderResearchSection(data.research) +
     renderRelatedServices(data.relatedServices) +
+    '<div class="container service-review-wrap">' +
+    renderMedicalReview(data.medicalReview) +
+    "</div>" +
     renderServiceAppointmentCta(data.finalCta);
 })();

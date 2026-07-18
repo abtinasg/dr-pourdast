@@ -23,7 +23,10 @@
   function openMenu() {
     mobileNav.classList.add("is-open");
     toggle.setAttribute("aria-expanded", "true");
-    toggle.setAttribute("aria-label", "بستن منو");
+    toggle.setAttribute(
+      "aria-label",
+      uiString("closeMenu", "بستن منو")
+    );
     mobileNav.setAttribute("aria-hidden", "false");
     document.body.classList.add("is-menu-open");
 
@@ -36,7 +39,10 @@
   function closeMenu() {
     mobileNav.classList.remove("is-open");
     toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-label", "باز کردن منو");
+    toggle.setAttribute(
+      "aria-label",
+      uiString("openMenu", "باز کردن منو")
+    );
     mobileNav.setAttribute("aria-hidden", "true");
     document.body.classList.remove("is-menu-open");
     toggle.focus();

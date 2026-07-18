@@ -26,7 +26,7 @@ var HYSTEROSCOPY_PAGE = {
     description:
       "هیستروسکوپی روشی برای مشاهده فضای داخلی رحم است که می‌تواند در بررسی یا درمان برخی مشکلات رحمی استفاده شود. انتخاب این روش به علائم، نتایج تصویربرداری، سوابق پزشکی و شرایط هر بیمار بستگی دارد.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "hysteroscopy-hero",
     },
     secondaryCta: {
@@ -38,6 +38,17 @@ var HYSTEROSCOPY_PAGE = {
       "روش کم‌تهاجمی در موارد منتخب",
       "انتخاب درمان متناسب با شرایط بیمار",
     ],
+  },
+  pageNav: [
+    { label: "کاربردها", href: "#applications" },
+    { label: "علائم", href: "#symptoms" },
+    { label: "روند ارزیابی", href: "#evaluation" },
+    { label: "مدارک لازم", href: "#preparation" },
+    { label: "سوالات متداول", href: "#faq" },
+  ],
+  medicalReview: {
+    text: "این محتوا با نظارت علمی دکتر طاهره پوردست تهیه یا بازبینی شده است.",
+    dateLabel: "آخرین بازبینی: تیر ۱۴۰۵",
   },
   whatIs: {
     eyebrow: "آشنایی با روش",
@@ -90,6 +101,7 @@ var HYSTEROSCOPY_PAGE = {
     },
   },
   applications: {
+    id: "applications",
     eyebrow: "کاربردهای رایج",
     title: "هیستروسکوپی در چه مواردی ممکن است استفاده شود؟",
     items: [
@@ -104,6 +116,7 @@ var HYSTEROSCOPY_PAGE = {
       "وجود یکی از این شرایط به‌تنهایی به معنای نیاز قطعی به هیستروسکوپی نیست و تصمیم نهایی پس از ارزیابی پزشک گرفته می‌شود.",
   },
   symptoms: {
+    id: "symptoms",
     eyebrow: "زمان مراجعه",
     title: "چه شرایطی ممکن است نیاز به بررسی بیشتر داشته باشد؟",
     items: [
@@ -120,7 +133,7 @@ var HYSTEROSCOPY_PAGE = {
       "علت این علائم می‌تواند متفاوت باشد و تعیین روش بررسی نیازمند ارزیابی پزشک است.",
   },
   evaluation: {
-    id: "hysteroscopy-evaluation",
+    id: "evaluation",
     eyebrow: "روند بررسی",
     title: "روند ارزیابی پیش از هیستروسکوپی",
     steps: [
@@ -195,6 +208,8 @@ var HYSTEROSCOPY_PAGE = {
       "مزایا، محدودیت‌ها و خطرات احتمالی باید پیش از انجام روش با پزشک بررسی شوند.",
   },
   doctor: {
+    imageSrc: "/assets/images/hero2.PNG",
+    imageAlt: "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان",
     eyebrow: "پزشک معالج",
     title: "ارزیابی مشکلات رحمی توسط دکتر طاهره پوردست",
     paragraphs: [
@@ -205,6 +220,7 @@ var HYSTEROSCOPY_PAGE = {
     appointmentSource: "hysteroscopy-doctor-section",
   },
   preparation: {
+    id: "preparation",
     eyebrow: "پیش از مراجعه",
     title: "برای ارزیابی اولیه چه مدارکی همراه داشته باشید؟",
     checklist: [
@@ -291,17 +307,15 @@ var HYSTEROSCOPY_PAGE = {
         question: "چگونه نوبت دریافت کنم؟",
         answer:
           "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
-        hasAppointmentLink: true,
-        appointmentSource: "hysteroscopy-faq",
       },
     ],
   },
   relatedServices: {
     title: "خدمات مرتبط",
     items: [
-      { label: "فیبروم رحم", href: "/services/uterine-fibroid" },
-      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
-      { label: "چسبندگی‌های رحمی و لگنی", href: "/services/pelvic-adhesion" },
+      { label: "فیبروم رحم", href: "/services/uterine-fibroid", description: "ارزیابی فیبروم رحم و انتخاب مسیر درمان مناسب" },
+      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy", description: "جراحی کم‌تهاجمی برای بررسی و درمان بیماری‌های لگنی" },
+      { label: "چسبندگی‌های رحمی و لگنی", href: "/services/pelvic-adhesion", description: "بررسی درد لگن و چسبندگی‌های پس از التهاب یا جراحی" },
     ],
   },
   finalCta: {
@@ -309,7 +323,7 @@ var HYSTEROSCOPY_PAGE = {
     description:
       "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "hysteroscopy-final-cta",
     },
   },

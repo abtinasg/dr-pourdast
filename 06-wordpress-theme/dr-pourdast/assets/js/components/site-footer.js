@@ -7,10 +7,18 @@
   var mount = document.getElementById("site-footer-mount");
   if (!mount || typeof FOOTER_DATA === "undefined") return;
   if (typeof renderFooterNavColumn === "undefined") return;
-  if (typeof renderAppointmentLinksGroup === "undefined") return;
+  if (typeof renderAppointmentLink === "undefined") return;
 
   var data = FOOTER_DATA;
   var year = new Date().getFullYear();
+  var copyrightSuffix =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.copyrightSuffix
+      ? UI_STRINGS.copyrightSuffix
+      : "تمامی حقوق محفوظ است.";
+  var newTabSuffix =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.newTabSuffix
+      ? UI_STRINGS.newTabSuffix
+      : " (باز شدن در تب جدید)";
 
   var contactItems = [];
 
@@ -105,16 +113,16 @@
     data.contact.title +
     "</h3>" +
     '<div class="site-footer__appointment">' +
-    renderAppointmentLinksGroup({
+    renderAppointmentLink({
+      text: data.contact.appointmentText,
       source: data.contact.appointmentSource,
+      provider: "doctoreto",
+      variant: "primary",
       size: "sm",
       showIcon: true,
       className: "site-footer__appointment-btn",
-      texts: {
-        doctoreto: data.contact.appointmentText,
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
+    renderAxonAltLink(data.contact.appointmentSource) +
     "</div>" +
     addressWrapper +
     socialHtml +
@@ -132,8 +140,12 @@
     year +
     " " +
     data.identity.name +
-    ". تمامی حقوق محفوظ است.</p>" +
-    '<nav class="site-footer__legal" aria-label="لینک‌های حقوقی">' +
+    ". " +
+    copyrightSuffix +
+    "</p>" +
+    '<nav class="site-footer__legal" aria-label="' +
+    uiString("legalNavLabel", "لینک‌های حقوقی") +
+    '">' +
     '<ul class="site-footer__legal-list" role="list">' +
     '<li><a href="' +
     data.legal.privacy.href +
@@ -153,7 +165,9 @@
     data.credit.href +
     '" class="site-footer__credit-link" target="_blank" rel="noopener noreferrer">' +
     data.credit.label +
-    '<span class="sr-only"> (باز شدن در تب جدید)</span></a></p>' +
+    '<span class="sr-only">' +
+    newTabSuffix +
+    "</span></a></p>" +
     "</div>" +
     "</div>" +
     "</div>" +

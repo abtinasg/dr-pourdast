@@ -8,6 +8,12 @@ var LANGUAGE_FLAG_IRAN =
 var LANGUAGE_FLAG_UK =
   '<svg viewBox="0 0 18 12" aria-hidden="true"><rect width="18" height="12" fill="#012169"/><path d="M0 0L18 12M18 0L0 12" stroke="#fff" stroke-width="2.2"/><path d="M0 0L18 12M18 0L0 12" stroke="#C8102E" stroke-width="1.1"/><path d="M9 0V12M0 6H18" stroke="#fff" stroke-width="3.2"/><path d="M9 0V12M0 6H18" stroke="#C8102E" stroke-width="1.8"/></svg>';
 
+var LANGUAGE_OPTIONS = [
+  { code: "fa", label: "فارسی", flag: "iran" },
+  { code: "en", label: "English", flag: "uk" },
+  { code: "ar", label: "العربية", flag: "arabic" },
+];
+
 /**
  * @param {string} flag
  * @returns {string}
@@ -43,7 +49,31 @@ function getCurrentLanguageCode() {
 }
 
 /**
- * @returns {Array<{ code: string, label: string, href?: string|null, flag: string }>}
+ * @returns {string}
+ */
+function getPathWithoutLocale() {
+  var path = window.location.pathname.replace(/\/index\.html$/, "/");
+  path = path.replace(/^\/(en|ar)(?=\/|$)/, "") || "/";
+  if (path.length > 1 && path.endsWith("/")) {
+    path = path.slice(0, -1);
+  }
+  return path;
+}
+
+/**
+ * @param {string} code
+ * @returns {string}
+ */
+function getLanguageHref(code) {
+  var path = getPathWithoutLocale();
+  if (code === "fa") {
+    return path;
+  }
+  return "/" + code + (path === "/" ? "/" : path);
+}
+
+/**
+ * @returns {Array<{ code: string, label: string, href: string, flag: string }>}
  */
 function getLanguageOptions() {
   if (
@@ -51,14 +81,27 @@ function getLanguageOptions() {
     Array.isArray(SITE_CONFIG.languages) &&
     SITE_CONFIG.languages.length
   ) {
-    return SITE_CONFIG.languages;
+    return SITE_CONFIG.languages.map(function (language) {
+      return {
+        code: language.code,
+        label: language.label,
+        flag: language.flag,
+        href:
+          language.href === null || language.href === undefined
+            ? getLanguageHref(language.code)
+            : language.href,
+      };
+    });
   }
 
-  return [
-    { code: "fa", label: "فارسی", href: "/", flag: "iran" },
-    { code: "en", label: "English", href: null, flag: "uk" },
-    { code: "ar", label: "العربية", href: null, flag: "arabic" },
-  ];
+  return LANGUAGE_OPTIONS.map(function (language) {
+    return {
+      code: language.code,
+      label: language.label,
+      flag: language.flag,
+      href: getLanguageHref(language.code),
+    };
+  });
 }
 
 /**
@@ -66,6 +109,11 @@ function getLanguageOptions() {
  */
 function renderLanguageBar() {
   var currentCode = getCurrentLanguageCode();
+  var navLabel =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.languageNavLabel
+      ? UI_STRINGS.languageNavLabel
+      : "انتخاب زبان";
+
   var items = getLanguageOptions()
     .map(function (language) {
       var isCurrent = language.code === currentCode;
@@ -73,7 +121,7 @@ function renderLanguageBar() {
         '<span class="language-bar__label">' + language.label + "</span>";
       var flagHtml = renderLanguageFlag(language.flag);
 
-      if (isCurrent || !language.href) {
+      if (isCurrent) {
         return (
           '<li class="language-bar__item">' +
           '<span class="language-bar__item--current" aria-current="true">' +
@@ -100,7 +148,9 @@ function renderLanguageBar() {
     .join("");
 
   return (
-    '<div class="language-bar" role="navigation" aria-label="انتخاب زبان">' +
+    '<div class="language-bar" role="navigation" aria-label="' +
+    navLabel +
+    '">' +
     '<div class="container language-bar__inner">' +
     '<ul class="language-bar__list" role="list">' +
     items +

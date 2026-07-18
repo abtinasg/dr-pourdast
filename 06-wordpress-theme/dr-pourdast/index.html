@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
   <meta name="description" content="درمان تخصصی اندومتریوز و بیماری‌های زنان — دکتر طاهره پوردست، متخصص زنان و زایمان، فلوشیپ لاپاراسکوپی پیشرفته زنان، شیراز">
   <title>دکتر طاهره پوردست | متخصص زنان و زایمان — شیراز</title>
 
@@ -19,14 +20,7 @@
       <!-- Logo — right side in RTL -->
       <div class="site-header__logo">
         <a href="/" class="site-header__logo-link" aria-label="صفحه اصلی — دکتر طاهره پوردست">
-          <span class="site-header__logo-mark" aria-hidden="true">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 56" fill="none" aria-hidden="true">
-              <circle cx="24" cy="11.5" r="7.5" fill="#102E34"/>
-              <path d="M24.5 19.2C29.8 19.8 39.2 24.8 40.8 35.8C42 43.5 36.8 50.8 30.2 49.5C25.2 44.8 22.8 32.5 24.5 19.2Z" fill="#183F46"/>
-              <path d="M23.2 20C17.8 22.2 10.5 29.5 12.8 40.5C14.5 47.5 20.2 49.8 24.2 45.2C26.5 35.5 25.8 26.5 23.2 20Z" fill="#5F7F76"/>
-              <path d="M21.2 29.5C15.5 33.5 10.2 41.2 12.5 49.5C14.5 54.2 18.8 53.5 21 48.2C22.2 40.5 21.5 34.2 21.2 29.5Z" fill="#9BB3AB"/>
-            </svg>
-          </span>
+          <span class="site-header__logo-mark" aria-hidden="true"></span>
           <span class="site-header__logo-text">
             <span class="site-header__logo-name">دکتر طاهره پوردست</span>
             <span class="site-header__logo-title">متخصص زنان و زایمان</span>
@@ -38,7 +32,7 @@
       <nav class="site-header__nav" aria-label="منوی اصلی">
         <ul class="nav-list" role="list">
           <li><a href="/" class="nav-list__link" aria-current="page">خانه</a></li>
-          <li><a href="/about" class="nav-list__link">درباره دکتر</a></li>
+          <li><a href="/about" class="nav-list__link">درباره پزشک</a></li>
           <li>
             <a href="#services" class="nav-list__link nav-list__link--has-dropdown" aria-haspopup="true">
               خدمات تخصصی
@@ -49,13 +43,12 @@
           </li>
           <li><a href="/patient-guides" class="nav-list__link">راهنمای بیماران</a></li>
           <li><a href="/articles" class="nav-list__link">مقالات</a></li>
-          <li><a href="/contact" class="nav-list__link">تماس و نوبت</a></li>
         </ul>
       </nav>
 
       <!-- CTA — left side in RTL -->
       <div class="site-header__actions">
-        <a href="#" data-appointment-link data-source="header" class="btn btn--primary btn--sm">درخواست نوبت</a>
+        <a href="#" data-appointment-link data-source="header" class="btn btn--primary btn--sm">مشاهده نوبت‌های آزاد</a>
       </div>
 
       <!-- Mobile menu toggle -->
@@ -88,7 +81,7 @@
     >
       <ul class="mobile-nav__list" role="list">
         <li><a href="/" class="mobile-nav__link" aria-current="page">خانه</a></li>
-        <li><a href="/about" class="mobile-nav__link">درباره دکتر</a></li>
+        <li><a href="/about" class="mobile-nav__link">درباره پزشک</a></li>
         <li>
           <a href="#services" class="mobile-nav__link mobile-nav__link--has-dropdown" aria-haspopup="true">
             خدمات تخصصی
@@ -99,10 +92,9 @@
         </li>
         <li><a href="/patient-guides" class="mobile-nav__link">راهنمای بیماران</a></li>
         <li><a href="/articles" class="mobile-nav__link">مقالات</a></li>
-        <li><a href="/contact" class="mobile-nav__link">تماس و نوبت</a></li>
       </ul>
       <div class="mobile-nav__cta">
-        <a href="#" data-appointment-link data-source="mobile-nav" class="btn btn--primary">درخواست نوبت</a>
+        <a href="#" data-appointment-link data-source="mobile-nav" class="btn btn--primary">مشاهده نوبت‌های آزاد</a>
       </div>
     </nav>
   </div>
@@ -128,9 +120,8 @@
 
             <div class="hero__actions">
               <div class="btn-group">
-                <a href="#" data-appointment-link data-source="hero" class="btn btn--primary">درخواست نوبت</a>
-                <a href="#" data-appointment-link data-appointment-provider="axon" data-source="hero-axon" class="btn btn--secondary">دریافت نوبت از اکسون</a>
-                <a href="#services" class="btn btn--secondary">مشاهده خدمات تخصصی</a>
+                <a href="#" data-appointment-link data-source="hero" class="btn btn--primary">مشاهده نوبت‌های آزاد در دکترتو</a>
+                <a href="tel:09307916968" class="btn btn--secondary" data-event="clinic_phone_click" data-source="hero-contact">تماس با مطب</a>
               </div>
             </div>
 
@@ -159,34 +150,23 @@
             </ul>
           </div>
 
-          <!-- Doctor image placeholder — left column on desktop -->
+          <!-- Doctor portrait — left column on desktop -->
           <div class="hero__visual">
-            <figure class="hero__image-frame" aria-label="تصویر دکتر طاهره پوردست — به‌زودی">
+            <figure class="hero__image-frame">
               <div class="hero__image-decor" aria-hidden="true">
-                <svg class="hero__image-grid" viewBox="0 0 400 500" preserveAspectRatio="none">
-                  <line x1="0" y1="100" x2="400" y2="100"/>
-                  <line x1="0" y1="200" x2="400" y2="200"/>
-                  <line x1="0" y1="300" x2="400" y2="300"/>
-                  <line x1="0" y1="400" x2="400" y2="400"/>
-                  <line x1="100" y1="0" x2="100" y2="500"/>
-                  <line x1="200" y1="0" x2="200" y2="500"/>
-                  <line x1="300" y1="0" x2="300" y2="500"/>
-                </svg>
                 <span class="hero__image-corner hero__image-corner--tr"></span>
                 <span class="hero__image-corner hero__image-corner--bl"></span>
               </div>
 
-              <div class="hero__image-placeholder">
-                <div class="hero__image-placeholder-inner">
-                  <!-- Subtle silhouette placeholder for future transparent PNG -->
-                  <svg class="hero__image-silhouette" viewBox="0 0 120 200" fill="currentColor" aria-hidden="true">
-                    <ellipse cx="60" cy="35" rx="22" ry="26"/>
-                    <path d="M30 75 Q60 65 90 75 L95 200 L25 200 Z"/>
-                  </svg>
-                </div>
-              </div>
-
-              <figcaption class="sr-only">محل قرارگیری تصویر پرتره دکتر</figcaption>
+              <img
+                class="hero__image"
+                src="assets/images/hero2.PNG"
+                alt="دکتر طاهره پوردست، متخصص زنان و زایمان و فلوشیپ لاپاراسکوپی پیشرفته زنان"
+                width="1672"
+                height="941"
+                decoding="async"
+                fetchpriority="high"
+              />
             </figure>
 
             <aside class="hero__info-card" aria-label="عنوان تخصصی">
@@ -223,8 +203,10 @@
   <div id="site-footer-mount"></div>
 
   <script src="assets/data/site-config.js" defer></script>
+  <script src="assets/js/icons/medical-icons.js" defer></script>
+  <script src="assets/data/ui-strings.js" defer></script>
   <script src="assets/js/components/appointment-link.js" defer></script>
-  <script src="assets/data/services.js" defer></script>
+  <script src="assets/data/services.js?v=20260711b" defer></script>
   <script src="assets/js/components/service-card.js" defer></script>
   <script src="assets/js/components/services-section.js" defer></script>
   <script src="assets/data/doctor-introduction.js" defer></script>
@@ -244,11 +226,15 @@
   <script src="assets/data/footer-navigation.js" defer></script>
   <script src="assets/js/components/footer-navigation.js" defer></script>
   <script src="assets/js/components/social-links.js" defer></script>
+  <script src="assets/js/components/logo-mark.js" defer></script>
   <script src="assets/js/components/site-footer.js" defer></script>
   <script src="assets/js/init-appointment-links.js" defer></script>
   <script src="assets/js/mobile-nav.js" defer></script>
   <script src="assets/js/components/language-bar.js" defer></script>
+  <script src="assets/data/chatbot-knowledge.js" defer></script>
+  <script src="assets/js/components/chatbot.js" defer></script>
   <script src="assets/js/components/floating-actions.js" defer></script>
+  <script src="assets/js/nav-dropdown.js" defer></script>
   <script src="assets/js/global-ui.js" defer></script>
 </body>
 </html>

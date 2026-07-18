@@ -24,6 +24,25 @@
     grid-template-columns: 1.4fr 1fr;
     gap: var(--space-10);
   }
+
+  .guides-hero__inner:not(:has(.guides-hero__visual)) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .guides-hero__inner:not(:has(.guides-hero__visual)) .guides-hero__content {
+    max-width: var(--content-max);
+    margin-inline: auto;
+  }
+
+  .guides-hero__inner:not(:has(.guides-hero__visual)) .guides-hero__eyebrow {
+    justify-content: center;
+  }
+
+  .guides-hero__inner:not(:has(.guides-hero__visual)) .guides-hero__actions .btn-group {
+    justify-content: center;
+  }
 }
 
 .guides-hero__content {

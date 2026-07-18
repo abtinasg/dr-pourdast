@@ -26,7 +26,7 @@ var OVARIAN_CYST_PAGE = {
     description:
       "کیست تخمدان می‌تواند انواع و علت‌های متفاوتی داشته باشد. بعضی کیست‌ها بدون درمان خاص برطرف می‌شوند و برخی دیگر بسته به اندازه، ظاهر، علائم و شرایط بیمار نیازمند بررسی یا درمان بیشتری هستند.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "ovarian-cyst-hero",
     },
     secondaryCta: {
@@ -38,6 +38,17 @@ var OVARIAN_CYST_PAGE = {
       "بررسی نیاز یا عدم نیاز به جراحی",
       "جراحی کم‌تهاجمی در موارد منتخب",
     ],
+  },
+  pageNav: [
+    { label: "علائم", href: "#symptoms" },
+    { label: "زمان بررسی", href: "#when-to-seek" },
+    { label: "روند ارزیابی", href: "#evaluation" },
+    { label: "مدارک لازم", href: "#preparation" },
+    { label: "سوالات متداول", href: "#faq" },
+  ],
+  medicalReview: {
+    text: "این محتوا با نظارت علمی دکتر طاهره پوردست تهیه یا بازبینی شده است.",
+    dateLabel: "آخرین بازبینی: تیر ۱۴۰۵",
   },
   whatIs: {
     eyebrow: "آشنایی با بیماری",
@@ -88,6 +99,7 @@ var OVARIAN_CYST_PAGE = {
       "تشخیص نوع کیست صرفاً بر اساس علائم امکان‌پذیر نیست و نیازمند بررسی پزشک و تصویربرداری است.",
   },
   symptoms: {
+    id: "symptoms",
     eyebrow: "علائم احتمالی",
     title: "کیست تخمدان ممکن است با چه علائمی همراه باشد؟",
     items: [
@@ -102,6 +114,7 @@ var OVARIAN_CYST_PAGE = {
       "وجود این علائم به‌تنهایی به معنای وجود کیست تخمدان نیست و علت آن‌ها باید توسط پزشک بررسی شود.",
   },
   whenEvaluate: {
+    id: "when-to-seek",
     eyebrow: "زمان مراجعه",
     title: "چه زمانی بهتر است کیست تخمدان بررسی شود؟",
     items: [
@@ -118,7 +131,7 @@ var OVARIAN_CYST_PAGE = {
       "نوع بررسی و فاصله پیگیری باید با توجه به سن، علائم، ظاهر سونوگرافی و شرایط بیمار تعیین شود.",
   },
   evaluation: {
-    id: "ovarian-cyst-evaluation",
+    id: "evaluation",
     eyebrow: "روند بررسی",
     title: "کیست تخمدان چگونه ارزیابی می‌شود؟",
     steps: [
@@ -204,6 +217,9 @@ var OVARIAN_CYST_PAGE = {
     },
   },
   doctor: {
+    imageSrc: "/assets/images/ovarian-cyst.png",
+    imageAlt: "بررسی کیست تخمدان با سونوگرافی",
+    imageFit: "center",
     eyebrow: "پزشک معالج",
     title: "ارزیابی کیست تخمدان توسط دکتر طاهره پوردست",
     paragraphs: [
@@ -214,6 +230,7 @@ var OVARIAN_CYST_PAGE = {
     appointmentSource: "ovarian-cyst-doctor-section",
   },
   preparation: {
+    id: "preparation",
     eyebrow: "پیش از مراجعه",
     title: "برای بررسی کیست تخمدان چه مدارکی همراه داشته باشید؟",
     checklist: [
@@ -306,17 +323,15 @@ var OVARIAN_CYST_PAGE = {
         question: "چگونه نوبت دریافت کنم؟",
         answer:
           "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
-        hasAppointmentLink: true,
-        appointmentSource: "ovarian-cyst-faq",
       },
     ],
   },
   relatedServices: {
     title: "خدمات مرتبط",
     items: [
-      { label: "اندومتریوز", href: "/services/endometriosis" },
-      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
-      { label: "چسبندگی لگنی", href: "/services/pelvic-adhesion" },
+      { label: "اندومتریوز", href: "/services/endometriosis", description: "تشخیص و درمان تخصصی اندومتریوز" },
+      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy", description: "جراحی کم‌تهاجمی برای بررسی و درمان بیماری‌های لگنی" },
+      { label: "چسبندگی لگنی", href: "/services/pelvic-adhesion", description: "بررسی درد لگن و چسبندگی‌های پس از التهاب یا جراحی" },
     ],
   },
   finalCta: {
@@ -324,7 +339,7 @@ var OVARIAN_CYST_PAGE = {
     description:
       "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "ovarian-cyst-final-cta",
     },
   },

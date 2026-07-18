@@ -46,7 +46,7 @@ var FOOTER_DATA = {
   },
   contact: {
     title: "نوبت و تماس",
-    appointmentText: "دریافت نوبت از دکترتو",
+    appointmentText: "مشاهده نوبت‌های آزاد در دکترتو",
     appointmentSource: "footer",
   },
   legal: {
@@ -58,6 +58,6 @@ var FOOTER_DATA = {
   credit: {
     label: "آرایه",
     href: "https://araaye.com",
-    prefix: "طراحی و توسعه توسط",
+    prefix: "© ۱۴۰۵",
   },
 };

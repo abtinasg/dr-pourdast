@@ -10,16 +10,13 @@
 
   var data = DOCTOR_INTRODUCTION;
   var titleId = "doctor-intro-title";
+  var videoSrc = data.videoSrc || "/assets/videos/doctor-intro.mp4";
+  var videoLabel = data.videoLabel || data.imageAlt || data.title;
+  var videoPlayLabel = data.videoPlayLabel || "مشاهده ویدیو";
 
   var bioHtml = data.biography
     .map(function (paragraph) {
       return "<p>" + paragraph + "</p>";
-    })
-    .join("");
-
-  var credentialCardHtml = data.credentialCard
-    .map(function (line) {
-      return '<p class="doctor-intro__card-line">' + line + "</p>";
     })
     .join("");
 
@@ -38,23 +35,28 @@
     '<div class="container">' +
     '<div class="doctor-intro__grid">' +
     '<div class="doctor-intro__visual">' +
-    '<figure class="doctor-intro__image-frame">' +
-    '<img class="doctor-intro__image" src="" alt="' +
-    data.imageAlt +
-    '" width="400" height="500" hidden>' +
-    '<div class="doctor-intro__image-placeholder" aria-hidden="true">' +
-    '<svg class="doctor-intro__image-silhouette" viewBox="0 0 120 200" fill="currentColor">' +
-    '<ellipse cx="60" cy="35" rx="22" ry="26"/>' +
-    '<path d="M30 75 Q60 65 90 75 L95 200 L25 200 Z"/>' +
+    '<figure class="doctor-intro__video-frame">' +
+    '<video class="doctor-intro__video" id="doctor-intro-video" playsinline preload="metadata" poster="' +
+    (data.videoPoster || "/assets/images/videocover.PNG") +
+    '">' +
+    '<source src="' +
+    videoSrc +
+    '" type="video/mp4">' +
+    "</video>" +
+    '<button type="button" class="doctor-intro__play" id="doctor-intro-play" aria-label="' +
+    videoPlayLabel +
+    '">' +
+    '<svg class="doctor-intro__play-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+    '<path d="M9 7.5v9l8-4.5-8-4.5z" fill="currentColor"/>' +
     "</svg>" +
-    "</div>" +
+    '<span class="doctor-intro__play-label">' +
+    videoPlayLabel +
+    "</span>" +
+    "</button>" +
     '<figcaption class="sr-only">' +
-    data.imageAlt +
+    videoLabel +
     "</figcaption>" +
     "</figure>" +
-    '<aside class="doctor-intro__credential-card" aria-label="عنوان‌های تخصصی">' +
-    credentialCardHtml +
-    "</aside>" +
     "</div>" +
     '<div class="doctor-intro__content">' +
     '<header class="section-header section-header--compact">' +
@@ -75,23 +77,45 @@
     "</ul>" +
     '<div class="doctor-intro__actions">' +
     '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
-      source: data.ctas.primary.source,
-      wrapInGroup: false,
-      texts: {
-        doctoreto: data.ctas.primary.text,
-        axon: "دریافت نوبت از اکسون",
-      },
-    }) +
     '<a href="' +
-    data.ctas.secondary.href +
-    '" class="btn btn--secondary">' +
-    data.ctas.secondary.text +
+    (data.ctas.primary.href || "/about") +
+    '" class="btn btn--primary">' +
+    data.ctas.primary.text +
     "</a>" +
+    renderClinicContactLink(data.ctas.primary.source + "-contact") +
     "</div>" +
     "</div>" +
     "</div>" +
     "</div>" +
     "</div>" +
     "</section>";
+
+  var video = document.getElementById("doctor-intro-video");
+  var playButton = document.getElementById("doctor-intro-play");
+  if (!video || !playButton) return;
+
+  function hidePlayButton() {
+    playButton.hidden = true;
+    video.setAttribute("controls", "");
+  }
+
+  function showPlayButton() {
+    if (!video.paused) return;
+    playButton.hidden = false;
+  }
+
+  playButton.addEventListener("click", function () {
+    hidePlayButton();
+    var playPromise = video.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(function () {
+        showPlayButton();
+        video.removeAttribute("controls");
+      });
+    }
+  });
+
+  video.addEventListener("play", hidePlayButton);
+  video.addEventListener("pause", showPlayButton);
+  video.addEventListener("ended", showPlayButton);
 })();

@@ -9,7 +9,7 @@ var SITE_CONFIG = {
     {
       id: "doctoreto",
       url: "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
-      linkText: "دریافت نوبت از دکترتو",
+      linkText: "مشاهده نوبت‌های آزاد در دکترتو",
       eventName: "doctoreto_appointment_click",
     },
     {
@@ -53,7 +53,7 @@ var SITE_CONFIG = {
    * Floating WhatsApp uses whatsappUrl, or falls back to clinicPhone.
    */
   languages: [
-    { code: "fa", label: "فارسی", href: "/", flag: "iran" },
+    { code: "fa", label: "فارسی", href: null, flag: "iran" },
     { code: "en", label: "English", href: null, flag: "uk" },
     { code: "ar", label: "العربية", href: null, flag: "arabic" },
   ],

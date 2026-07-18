@@ -26,7 +26,7 @@ var PELVIC_ADHESION_PAGE = {
     description:
       "چسبندگی لگنی زمانی ایجاد می‌شود که بافت‌ها یا اندام‌های داخل لگن به یکدیگر بچسبند. این وضعیت می‌تواند پس از جراحی، عفونت یا التهاب ایجاد شود و در برخی بیماران با درد یا مشکلات باروری همراه باشد.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "pelvic-adhesion-hero",
     },
     secondaryCta: {
@@ -38,6 +38,17 @@ var PELVIC_ADHESION_PAGE = {
       "بررسی علل چسبندگی",
       "جراحی لاپاراسکوپی در موارد منتخب",
     ],
+  },
+  pageNav: [
+    { label: "علائم", href: "#symptoms" },
+    { label: "زمان بررسی", href: "#when-to-seek" },
+    { label: "روند ارزیابی", href: "#evaluation" },
+    { label: "مدارک لازم", href: "#preparation" },
+    { label: "سوالات متداول", href: "#faq" },
+  ],
+  medicalReview: {
+    text: "این محتوا با نظارت علمی دکتر طاهره پوردست تهیه یا بازبینی شده است.",
+    dateLabel: "آخرین بازبینی: تیر ۱۴۰۵",
   },
   whatIs: {
     eyebrow: "آشنایی با بیماری",
@@ -88,6 +99,7 @@ var PELVIC_ADHESION_PAGE = {
       "تشخیص علت و میزان چسبندگی نیازمند بررسی پزشک و ارزیابی کامل است.",
   },
   symptoms: {
+    id: "symptoms",
     eyebrow: "علائم احتمالی",
     title: "چسبندگی لگنی ممکن است با چه علائمی همراه باشد؟",
     items: [
@@ -103,6 +115,7 @@ var PELVIC_ADHESION_PAGE = {
       "درد لگن علل مختلفی دارد و وجود چسبندگی همیشه علت اصلی درد نیست.",
   },
   whenEvaluate: {
+    id: "when-to-seek",
     eyebrow: "زمان مراجعه",
     title: "چه زمانی بهتر است چسبندگی لگنی بررسی شود؟",
     items: [
@@ -117,7 +130,7 @@ var PELVIC_ADHESION_PAGE = {
       "تعیین نیاز به بررسی بیشتر باید با توجه به علائم، سوابق و یافته‌های پزشکی انجام شود.",
   },
   evaluation: {
-    id: "pelvic-adhesion-evaluation",
+    id: "evaluation",
     eyebrow: "روند بررسی",
     title: "چسبندگی لگنی چگونه ارزیابی می‌شود؟",
     steps: [
@@ -202,6 +215,8 @@ var PELVIC_ADHESION_PAGE = {
     },
   },
   doctor: {
+    imageSrc: "/assets/images/hero2.PNG",
+    imageAlt: "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان",
     eyebrow: "پزشک معالج",
     title: "ارزیابی چسبندگی لگنی توسط دکتر طاهره پوردست",
     paragraphs: [
@@ -212,6 +227,7 @@ var PELVIC_ADHESION_PAGE = {
     appointmentSource: "pelvic-adhesion-doctor-section",
   },
   preparation: {
+    id: "preparation",
     eyebrow: "پیش از مراجعه",
     title: "برای بررسی چسبندگی لگنی چه مدارکی همراه داشته باشید؟",
     checklist: [
@@ -282,17 +298,15 @@ var PELVIC_ADHESION_PAGE = {
         question: "چگونه نوبت دریافت کنم؟",
         answer:
           "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
-        hasAppointmentLink: true,
-        appointmentSource: "pelvic-adhesion-faq",
       },
     ],
   },
   relatedServices: {
     title: "خدمات مرتبط",
     items: [
-      { label: "اندومتریوز", href: "/services/endometriosis" },
-      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
-      { label: "کیست تخمدان", href: "/services/ovarian-cyst" },
+      { label: "اندومتریوز", href: "/services/endometriosis", description: "تشخیص و درمان تخصصی اندومتریوز" },
+      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy", description: "جراحی کم‌تهاجمی برای بررسی و درمان بیماری‌های لگنی" },
+      { label: "کیست تخمدان", href: "/services/ovarian-cyst", description: "ارزیابی انواع کیست و انتخاب مسیر درمان مناسب" },
     ],
   },
   finalCta: {
@@ -300,7 +314,7 @@ var PELVIC_ADHESION_PAGE = {
     description:
       "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "pelvic-adhesion-final-cta",
     },
   },

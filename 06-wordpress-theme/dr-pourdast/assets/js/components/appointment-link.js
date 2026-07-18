@@ -3,7 +3,10 @@
  * Renders external booking links with analytics attributes and accessibility.
  */
 
-var APPOINTMENT_SR_LABEL = " (باز شدن در تب جدید)";
+var APPOINTMENT_SR_LABEL =
+  typeof UI_STRINGS !== "undefined" && UI_STRINGS.newTabSuffix
+    ? UI_STRINGS.newTabSuffix
+    : " (باز شدن در تب جدید)";
 
 /**
  * @returns {Array<{id: string, url: string, linkText: string, eventName: string}>}
@@ -23,7 +26,10 @@ function getAppointmentProviders() {
       {
         id: "doctoreto",
         url: SITE_CONFIG.appointmentUrl,
-        linkText: "دریافت نوبت از دکترتو",
+        linkText:
+          typeof UI_STRINGS !== "undefined" && UI_STRINGS.doctoretoDefault
+            ? UI_STRINGS.doctoretoDefault
+            : "مشاهده نوبت‌های آزاد",
         eventName: "doctoreto_appointment_click",
       },
     ];
@@ -117,6 +123,12 @@ function renderAppointmentLinksGroup(options) {
   var providers = getAppointmentProviders();
   if (!providers.length) return "";
 
+  if (options.providers && options.providers.length) {
+    providers = providers.filter(function (provider) {
+      return options.providers.indexOf(provider.id) !== -1;
+    });
+  }
+
   var linksHtml = providers
     .map(function (provider, index) {
       return renderAppointmentLink({
@@ -178,21 +190,88 @@ function applyAppointmentLink(el) {
 function renderClinicContactLink(source) {
   if (typeof SITE_CONFIG === "undefined") return "";
 
+  var contactLabel =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.contactClinic
+      ? UI_STRINGS.contactClinic
+      : "تماس با مطب";
+
   if (SITE_CONFIG.clinicPhone) {
     return (
       '<a href="tel:' +
       SITE_CONFIG.clinicPhone +
-      '" class="btn btn--secondary" data-source="' +
+      '" class="btn btn--secondary" data-event="clinic_phone_click" data-source="' +
       source +
-      '">تماس با مطب</a>'
+      '">' +
+      contactLabel +
+      "</a>"
     );
   }
 
   return (
     '<span class="btn btn--secondary btn--placeholder" aria-disabled="true" data-source="' +
     source +
-    '">تماس با مطب — ' +
+    '">' +
+    contactLabel +
+    " — " +
     SITE_CONFIG.clinicPhoneDisplay +
     "</span>"
+  );
+}
+
+/**
+ * Standard CTA pair: Doctoreto (primary) + clinic contact (secondary).
+ * @param {Object} options
+ * @param {string} options.source
+ * @param {string} [options.doctoretoText]
+ * @param {string} [options.size]
+ * @param {boolean} [options.showIcon]
+ * @param {string} [options.className]
+ * @param {boolean} [options.wrapInGroup=true]
+ * @returns {string}
+ */
+function renderPrimaryCtaGroup(options) {
+  var source = options.source || "cta";
+  var html =
+    renderAppointmentLink({
+      text:
+        options.doctoretoText ||
+        uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
+      source: source,
+      provider: "doctoreto",
+      variant: "primary",
+      size: options.size,
+      showIcon: options.showIcon,
+      className: options.className,
+    }) + renderClinicContactLink(source + "-contact");
+
+  if (options.wrapInGroup === false) {
+    return html;
+  }
+
+  return '<div class="btn-group appointment-links-group">' + html + "</div>";
+}
+
+/**
+ * Axon booking as a subtle text link below primary CTAs.
+ * @param {string} source
+ * @returns {string}
+ */
+function renderAxonAltLink(source) {
+  var provider = getAppointmentProvider("axon");
+  if (!provider) return "";
+
+  return (
+    '<p class="cta-alt-link">' +
+    '<a href="' +
+    provider.url +
+    '" class="cta-alt-link__anchor" target="_blank" rel="noopener noreferrer" data-event="' +
+    provider.eventName +
+    '" data-source="' +
+    source +
+    '-axon">' +
+    uiString("axonAppointment", "دریافت نوبت از اکسون") +
+    '<span class="sr-only">' +
+    APPOINTMENT_SR_LABEL +
+    "</span></a></p>"
   );
 }

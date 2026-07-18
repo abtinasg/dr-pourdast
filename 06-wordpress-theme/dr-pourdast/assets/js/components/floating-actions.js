@@ -33,17 +33,37 @@ function getWhatsAppUrl() {
  */
 function renderFloatingActions() {
   var whatsappUrl = getWhatsAppUrl();
+  var whatsappLabel =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.whatsappLabel
+      ? UI_STRINGS.whatsappLabel
+      : "گفتگو در واتساپ";
+  var backToTopLabel =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.backToTop
+      ? UI_STRINGS.backToTop
+      : "بازگشت به بالای صفحه";
+  var newTabSuffix =
+    typeof UI_STRINGS !== "undefined" && UI_STRINGS.newTabSuffix
+      ? UI_STRINGS.newTabSuffix
+      : " (باز شدن در تب جدید)";
   var whatsappHtml = whatsappUrl
     ? '<a href="' +
       whatsappUrl +
-      '" class="floating-actions__btn floating-actions__btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="گفتگو در واتساپ" data-event="whatsapp_click" data-source="floating-button">' +
+      '" class="floating-actions__btn floating-actions__btn--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="' +
+      whatsappLabel +
+      '" data-event="whatsapp_click" data-source="floating-button">' +
       WHATSAPP_ICON +
-      '<span class="sr-only"> (باز شدن در تب جدید)</span></a>'
+      '<span class="sr-only">' +
+      newTabSuffix +
+      "</span></a>"
     : "";
 
   return (
-    '<div class="floating-actions" aria-label="میانبرهای سریع">' +
-    '<button type="button" class="floating-actions__btn floating-actions__btn--top" id="back-to-top" aria-label="بازگشت به بالای صفحه" aria-hidden="true" tabindex="-1">' +
+    '<div class="floating-actions" aria-label="' +
+    uiString("shortcutsLabel", "میانبرهای سریع") +
+    '">' +
+    '<button type="button" class="floating-actions__btn floating-actions__btn--top" id="back-to-top" aria-label="' +
+    backToTopLabel +
+    '" aria-hidden="true" tabindex="-1">' +
     BACK_TO_TOP_ICON +
     "</button>" +
     whatsappHtml +

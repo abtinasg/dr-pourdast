@@ -57,17 +57,15 @@
     "</ol>" +
     '<div class="appointment-process__actions">' +
     '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
+    renderAppointmentLink({
+      text: data.ctas.primary.text,
       source: data.ctas.primary.source,
+      provider: "doctoreto",
+      variant: "primary",
       showIcon: true,
-      wrapInGroup: false,
-      texts: {
-        doctoreto: data.ctas.primary.text,
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
-    renderClinicContactLink(data.ctas.contact.source) +
     "</div>" +
+    renderAxonAltLink(data.ctas.primary.source) +
     "</div>" +
     "</div>" +
     "</section>";

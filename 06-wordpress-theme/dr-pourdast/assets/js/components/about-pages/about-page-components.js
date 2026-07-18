@@ -25,14 +25,12 @@ function renderAboutHero(hero, credentials) {
     '">' +
     '<div class="container">' +
     '<div class="about-hero__grid">' +
-    '<figure class="about-hero__portrait" aria-label="' +
+    '<figure class="about-hero__portrait">' +
+    '<img class="about-hero__image" src="' +
+    (hero.imageSrc || "/assets/images/hero.jpg") +
+    '" alt="' +
     hero.imageAlt +
-    '">' +
-    '<div class="about-hero__placeholder" aria-hidden="true">' +
-    '<svg viewBox="0 0 120 200" fill="currentColor" class="about-hero__silhouette">' +
-    '<ellipse cx="60" cy="35" rx="22" ry="26"/>' +
-    '<path d="M30 75 Q60 65 90 75 L95 200 L25 200 Z"/>' +
-    "</svg></div>" +
+    '" width="1055" height="1008" decoding="async" fetchpriority="high">' +
     '<figcaption class="sr-only">' +
     hero.imageAlt +
     "</figcaption></figure>" +
@@ -53,21 +51,20 @@ function renderAboutHero(hero, credentials) {
     "</p>" +
     '<div class="about-hero__actions">' +
     '<div class="btn-group">' +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: hero.appointmentSource,
       showIcon: true,
       wrapInGroup: false,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
+    "</div>" +
+    '<p class="cta-alt-link">' +
     '<a href="' +
     hero.servicesLink.href +
-    '" class="btn btn--secondary">' +
+    '" class="cta-alt-link__anchor">' +
     hero.servicesLink.text +
-    "</a>" +
-    "</div></div>" +
+    "</a></p>" +
+    renderAxonAltLink(hero.appointmentSource) +
+    "</div>" +
     registrationHtml +
     "</div></div></div></section>"
   );

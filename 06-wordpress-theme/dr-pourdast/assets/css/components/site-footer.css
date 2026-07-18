@@ -1,6 +1,6 @@
 .site-footer {
   background-color: var(--color-primary-dark);
-  color: rgba(248, 246, 242, 0.9);
+  color: rgba(248, 246, 242, 0.95);
   border-block-start: 1px solid rgba(220, 228, 226, 0.12);
 }
 
@@ -99,7 +99,7 @@
 .site-footer__description {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: rgba(248, 246, 242, 0.7);
+  color: rgba(248, 246, 242, 0.85);
   max-width: 22rem;
 }
 
@@ -125,7 +125,7 @@
   display: inline-block;
   font-size: var(--text-sm);
   line-height: var(--leading-normal);
-  color: rgba(248, 246, 242, 0.75);
+  color: rgba(248, 246, 242, 0.88);
   text-decoration: none;
   padding-block: 0.125rem;
   transition: color var(--transition-fast);
@@ -167,6 +167,14 @@
   border-color: var(--color-surface-soft);
 }
 
+.site-footer .cta-alt-link__anchor {
+  color: #fff;
+}
+
+.site-footer .cta-alt-link__anchor:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .site-footer__col .btn--secondary {
   background-color: transparent;
   color: var(--color-surface);
@@ -175,7 +183,7 @@
 
 .site-footer__col .btn--secondary:hover {
   background-color: rgba(248, 246, 242, 0.08);
-  border-color: rgba(248, 246, 242, 0.55);
+  border-color: rgba(248, 246, 242, 0.78);
 }
 
 .site-footer__address {
@@ -198,7 +206,7 @@
   gap: var(--space-2);
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: rgba(248, 246, 242, 0.75);
+  color: rgba(248, 246, 242, 0.88);
 }
 
 .site-footer__contact-icon {
@@ -231,7 +239,7 @@
   align-items: center;
   gap: var(--space-2);
   font-size: var(--text-xs);
-  color: rgba(248, 246, 242, 0.7);
+  color: rgba(248, 246, 242, 0.85);
   text-decoration: none;
   padding: var(--space-2);
   border-radius: var(--radius-sm);
@@ -264,7 +272,7 @@
 .site-footer__disclaimer {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: rgba(248, 246, 242, 0.6);
+  color: rgba(248, 246, 242, 0.8);
   margin-bottom: var(--space-5);
   max-width: 48rem;
 }
@@ -287,7 +295,7 @@
 
 .site-footer__copyright {
   font-size: var(--text-xs);
-  color: rgba(248, 246, 242, 0.55);
+  color: rgba(248, 246, 242, 0.78);
   margin: 0;
 }
 
@@ -306,12 +314,12 @@
 
 .site-footer__credit {
   font-size: var(--text-xs);
-  color: rgba(248, 246, 242, 0.45);
+  color: rgba(248, 246, 242, 0.7);
   margin: 0;
 }
 
 .site-footer__credit-link {
-  color: rgba(248, 246, 242, 0.55);
+  color: rgba(248, 246, 242, 0.78);
   text-decoration: none;
   transition: color var(--transition-fast);
 }

@@ -9,7 +9,7 @@ function renderCredentialItem(item) {
   return (
     "<li class=\"credential-item\">" +
     '<span class="credential-item__icon">' +
-    item.icon +
+    (item.icon || "") +
     "</span>" +
     '<span class="credential-item__title">' +
     item.title +

@@ -48,9 +48,13 @@
         '<div class="testimonials__actions">' +
         '<button type="button" class="btn btn--secondary btn--sm testimonials__show-more" aria-expanded="false" aria-controls="' +
         gridId +
-        '">نمایش بیشتر (' +
-        remainingCount +
-        " نظر دیگر)</button>" +
+        '">' +
+        uiStringTemplate(
+          "showMoreReviews",
+          { count: remainingCount },
+          "نمایش بیشتر (" + remainingCount + " نظر دیگر)"
+        ) +
+        "</button>" +
         "</div>";
     }
   } else if (verifiedTestimonials.length === 1) {
@@ -129,7 +133,9 @@
 
       var isExpanded = text.classList.toggle("testimonial-card__quote-text--expanded");
       btn.setAttribute("aria-expanded", isExpanded ? "true" : "false");
-      btn.textContent = isExpanded ? "بستن" : "ادامه";
+      btn.textContent = isExpanded
+        ? uiString("close", "بستن")
+        : uiString("continue", "ادامه");
     });
   });
 })();

@@ -29,11 +29,12 @@ function renderProcedureTitle(item) {
  * @returns {string}
  */
 function renderProcedureItem(item) {
+  var linkLabel =
+    item.linkLabel || uiString("learnMore", "مشاهده جزئیات");
+
   return (
     "<li>" +
-    '<a href="' +
-    item.href +
-    '" class="procedure-item">' +
+    '<article class="procedure-item">' +
     '<span class="procedure-item__icon">' +
     item.icon +
     "</span>" +
@@ -43,7 +44,15 @@ function renderProcedureItem(item) {
     '<p class="procedure-item__description">' +
     item.description +
     "</p>" +
+    '<a href="' +
+    item.href +
+    '" class="procedure-item__link">' +
+    linkLabel +
+    '<svg class="procedure-item__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
+    '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    "</svg>" +
     "</a>" +
+    "</article>" +
     "</li>"
   );
 }
@@ -70,7 +79,7 @@ function renderServiceCard(item) {
     item.description +
     "</p>" +
     '<span class="service-card__link">' +
-    "مشاهده توضیحات" +
+    uiString("viewDetails", "مشاهده توضیحات") +
     '<svg class="service-card__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
     '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
     "</svg>" +

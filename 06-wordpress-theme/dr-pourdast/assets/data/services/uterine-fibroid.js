@@ -26,7 +26,7 @@ var UTERINE_FIBROID_PAGE = {
     description:
       "فیبروم رحم از شایع‌ترین تومورهای خوش‌خیم در زنان است. بسیاری از فیبروم‌ها بدون علامت هستند، اما برخی می‌توانند باعث خونریزی، درد یا مشکلات باروری شوند و نیازمند بررسی یا درمان باشند.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "uterine-fibroid-hero",
     },
     secondaryCta: {
@@ -39,6 +39,24 @@ var UTERINE_FIBROID_PAGE = {
       "جراحی کم‌تهاجمی در موارد منتخب",
     ],
   },
+  pageNav: [
+    { label: "علائم", href: "#symptoms" },
+    { label: "زمان بررسی", href: "#when-to-seek" },
+    { label: "روند ارزیابی", href: "#evaluation" },
+    { label: "مدارک لازم", href: "#preparation" },
+    { label: "سوالات متداول", href: "#faq" },
+  ],
+  medicalReview: {
+    text: "این محتوا با نظارت علمی دکتر طاهره پوردست تهیه یا بازبینی شده است.",
+    dateLabel: "آخرین بازبینی: تیر ۱۴۰۵",
+  },
+  video: {
+    src: "/assets/videos/fibrom.mp4",
+    poster: "/assets/images/fibrom-poster.jpg",
+    label: "ویدیوی معرفی درمان فیبروم رحم",
+    eyebrow: "ویدیو",
+    title: "آشنایی کوتاه با فیبروم رحم",
+  },
   whatIs: {
     eyebrow: "آشنایی با بیماری",
     title: "فیبروم رحم چیست؟",
@@ -46,6 +64,11 @@ var UTERINE_FIBROID_PAGE = {
       "فیبروم رحم (میوم) تومور خوش‌خیمی است که از عضله رحم ایجاد می‌شود. اندازه، تعداد و محل فیبروم‌ها در بیماران مختلف متفاوت است و همه فیبروم‌ها نیاز به درمان ندارند.",
       "نوع فیبروم، علائم، سن بیمار، برنامه بارداری و یافته‌های تصویربرداری در انتخاب روش پیگیری یا درمان اهمیت دارند.",
     ],
+    video: {
+      src: "/assets/videos/fibrom.mp4",
+      poster: "/assets/images/fibrom-poster.jpg",
+      label: "ویدیوی معرفی درمان فیبروم رحم",
+    },
     panel: {
       title: "نکات مهم در ارزیابی",
       points: [
@@ -84,6 +107,7 @@ var UTERINE_FIBROID_PAGE = {
       "تشخیص نوع و محل فیبروم نیازمند بررسی پزشک و تصویربرداری است.",
   },
   symptoms: {
+    id: "symptoms",
     eyebrow: "علائم شایع",
     title: "فیبروم رحم ممکن است با چه علائمی همراه باشد؟",
     items: [
@@ -99,6 +123,7 @@ var UTERINE_FIBROID_PAGE = {
       "وجود این علائم به‌تنهایی به معنای ابتلا به فیبروم نیست و علت آن‌ها باید توسط پزشک بررسی شود.",
   },
   whenEvaluate: {
+    id: "when-to-seek",
     eyebrow: "زمان مراجعه",
     title: "چه زمانی بهتر است فیبروم رحم بررسی شود؟",
     items: [
@@ -114,7 +139,7 @@ var UTERINE_FIBROID_PAGE = {
       "روش بررسی و فاصله پیگیری باید با توجه به علائم، اندازه فیبروم و شرایط بیمار تعیین شود.",
   },
   evaluation: {
-    id: "uterine-fibroid-evaluation",
+    id: "evaluation",
     eyebrow: "روند بررسی",
     title: "فیبروم رحم چگونه ارزیابی می‌شود؟",
     steps: [
@@ -200,6 +225,8 @@ var UTERINE_FIBROID_PAGE = {
     },
   },
   doctor: {
+    imageSrc: "/assets/images/hero2.PNG",
+    imageAlt: "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان",
     eyebrow: "پزشک معالج",
     title: "ارزیابی فیبروم رحم توسط دکتر طاهره پوردست",
     paragraphs: [
@@ -210,6 +237,7 @@ var UTERINE_FIBROID_PAGE = {
     appointmentSource: "uterine-fibroid-doctor-section",
   },
   preparation: {
+    id: "preparation",
     eyebrow: "پیش از مراجعه",
     title: "برای بررسی فیبروم رحم چه مدارکی همراه داشته باشید؟",
     checklist: [
@@ -280,17 +308,15 @@ var UTERINE_FIBROID_PAGE = {
         question: "چگونه نوبت دریافت کنم؟",
         answer:
           "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
-        hasAppointmentLink: true,
-        appointmentSource: "uterine-fibroid-faq",
       },
     ],
   },
   relatedServices: {
     title: "خدمات مرتبط",
     items: [
-      { label: "هیستروسکوپی", href: "/services/hysteroscopy" },
-      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
-      { label: "اندومتریوز", href: "/services/endometriosis" },
+      { label: "هیستروسکوپی", href: "/services/hysteroscopy", description: "بررسی و درمان مشکلات داخل رحم با روش کم‌تهاجمی" },
+      { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy", description: "جراحی کم‌تهاجمی برای بررسی و درمان بیماری‌های لگنی" },
+      { label: "اندومتریوز", href: "/services/endometriosis", description: "تشخیص و درمان تخصصی اندومتریوز" },
     ],
   },
   finalCta: {
@@ -298,7 +324,7 @@ var UTERINE_FIBROID_PAGE = {
     description:
       "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "مشاهده نوبت‌های آزاد",
       source: "uterine-fibroid-final-cta",
     },
   },

@@ -35,20 +35,18 @@ function renderGuideHero(hero) {
     hero.note +
     "</p>" +
     '<div class="guide-hero__actions">' +
-    '<div class="btn-group">' +
+    renderPrimaryCtaGroup({
+      source: hero.appointmentSource,
+      showIcon: true,
+    }) +
+    '<p class="cta-alt-link">' +
     '<a href="' +
     hero.primaryCta.href +
-    '" class="btn btn--primary">' +
+    '" class="cta-alt-link__anchor">' +
     hero.primaryCta.text +
-    "</a>" +
-    renderAppointmentLinksGroup({
-      source: hero.appointmentSource,
-      variant: "secondary",
-      secondaryVariant: "secondary",
-      showIcon: true,
-      wrapInGroup: false,
-    }) +
-    "</div></div>" +
+    "</a></p>" +
+    renderAxonAltLink(hero.appointmentSource) +
+    "</div>" +
     "</div>" +
     '<aside class="guide-hero__visual" aria-hidden="true">' +
     '<div class="guide-hero__visual-panel">' +
@@ -434,14 +432,11 @@ function renderGuideAppointment(section) {
     '<p class="guide-prose">' +
     section.content +
     "</p>" +
-    renderAppointmentLinksGroup({
+    renderPrimaryCtaGroup({
       source: section.appointmentSource,
       showIcon: true,
-      texts: {
-        doctoreto: "مشاهده نوبت‌های آزاد در دکترتو",
-        axon: "دریافت نوبت از اکسون",
-      },
     }) +
+    renderAxonAltLink(section.appointmentSource) +
     "</div></div></section>"
   );
 }
