@@ -82,6 +82,10 @@ var GUIDE_PAGE = {
   relatedGuides: {
     title: "راهنماهای مرتبط",
     items: [
+      {
+        label: "آیا اندومتریوز در سونوگرافی مشخص می‌شود؟",
+        href: "/articles/endometriosis-ultrasound-diagnosis",
+      },
       { label: "آمادگی برای جلسه اول", href: "/patient-guides/first-visit" },
       { label: "آمادگی پیش از لاپاراسکوپی", href: "/patient-guides/before-laparoscopy" },
       { label: "مراقبت پس از جراحی", href: "/patient-guides/after-surgery" },

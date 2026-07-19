@@ -14,17 +14,24 @@ function buildArticleStructuredData(pageData, catalogEntry, canonicalUrl) {
 
   var schema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "@id": canonicalUrl + "#article",
     headline: catalogEntry.title,
     description: catalogEntry.seoDescription || catalogEntry.excerpt,
     inLanguage: "fa-IR",
+    articleSection: getArticleCategoryLabel(catalogEntry.category),
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": canonicalUrl,
     },
     publisher: {
       "@type": "Organization",
-      name: "دکتر طاهره پوردست",
+      name: "وب‌سایت دکتر طاهره پوردست",
+      url: "https://drpourdast.ir/",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://drpourdast.ir/assets/images/favicon.svg",
+      },
     },
   };
 
@@ -46,16 +53,27 @@ function buildArticleStructuredData(pageData, catalogEntry, canonicalUrl) {
   }
 
   if (catalogEntry.author) {
-    schema.author = {
-      "@type": "Person",
-      name: catalogEntry.author,
-    };
+    var isOrganizationAuthor =
+      catalogEntry.author.indexOf("تیم") !== -1 ||
+      catalogEntry.author.indexOf("وب‌سایت") !== -1;
+
+    schema.author = isOrganizationAuthor
+      ? {
+          "@type": "Organization",
+          name: catalogEntry.author,
+          url: "https://drpourdast.ir/",
+        }
+      : {
+          "@type": "Person",
+          name: catalogEntry.author,
+        };
   }
 
   if (catalogEntry.reviewer) {
     schema.reviewedBy = {
       "@type": "Person",
       name: catalogEntry.reviewer,
+      url: "https://drpourdast.ir/about",
     };
   }
 

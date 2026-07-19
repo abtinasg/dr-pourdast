@@ -9,6 +9,7 @@
 /** @type {Record<string, string>} */
 var ARTICLE_AVAILABLE_SERVICE_ROUTES = {
   endometriosis: "/services/endometriosis",
+  "advanced-sonography": "/services/advanced-sonography",
   "gynecologic-laparoscopy": "/services/gynecologic-laparoscopy",
   hysteroscopy: "/services/hysteroscopy",
   "ovarian-cyst": "/services/ovarian-cyst",
@@ -17,6 +18,7 @@ var ARTICLE_AVAILABLE_SERVICE_ROUTES = {
 /** @type {Record<string, string>} */
 var ARTICLE_AVAILABLE_GUIDE_ROUTES = {
   "first-visit": "/patient-guides/first-visit",
+  endometriosis: "/patient-guides/endometriosis",
 };
 
 /**

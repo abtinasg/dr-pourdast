@@ -204,6 +204,12 @@ var ADVANCED_SONOGRAPHY_PAGE = {
     title: "راهنماهای مرتبط",
     items: [
       {
+        label: "سونوگرافی چه نشانه‌هایی از اندومتریوز را نشان می‌دهد؟",
+        description:
+          "کاربرد و محدودیت سونوگرافی در بررسی اندومتریوز، MRI و لاپاراسکوپی",
+        href: "/articles/endometriosis-ultrasound-diagnosis",
+      },
+      {
         label: "آمادگی برای جلسه اول",
         description:
           "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
