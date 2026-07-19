@@ -89,19 +89,6 @@ var DOCTOR_PROFILE = {
       routeExists: false,
     },
   },
-  consultation: {
-    eyebrow: "Before your visit",
-    title: "What documents should you bring to your first appointment?",
-    checklist: [
-      "Previous ultrasound reports",
-      "MRI reports, if available",
-      "Relevant laboratory tests",
-      "Prior surgical reports",
-      "Pathology results, if available",
-      "List of current medications",
-      "Summary of treatment history",
-    ]
-  },
   finalCta: {
     title: "Book a consultation appointment",
     description:

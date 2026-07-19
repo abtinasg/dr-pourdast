@@ -19,6 +19,5 @@
     renderTreatmentFocus(data.treatmentFocus) +
     renderTreatmentApproach(data.treatmentApproach) +
     renderAboutResearch(data.research) +
-    renderPreparationSection(data.consultation) +
     renderServiceAppointmentCta(data.finalCta);
 })();
