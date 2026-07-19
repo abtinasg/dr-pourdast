@@ -85,10 +85,12 @@ function renderArticleHeader(pageData, catalogEntry) {
     '">' +
     '<div class="container">' +
     '<div class="article-hero__inner">' +
+    '<div class="article-hero__topline">' +
     '<p class="article-hero__category">' +
     categoryLabel +
     "</p>" +
     metaHtml +
+    "</div>" +
     '<h1 class="article-hero__title" id="' +
     titleId +
     '">' +
