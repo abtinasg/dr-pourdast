@@ -95,6 +95,6 @@ var GUIDE_PAGE = {
   finalCta: {
     title: "برای بررسی علائم، نوبت مراجعه دریافت کنید",
     description: "برای مشاهده زمان‌های آزاد، وارد صفحه دکتر طاهره پوردست در دکترتو شوید.",
-    cta: { text: "مشاهده نوبت‌های آزاد در دکترتو", source: "endometriosis-guide-final-cta" },
+    cta: { text: "رزرو نوبت در دکترتو", source: "endometriosis-guide-final-cta" },
   },
 };

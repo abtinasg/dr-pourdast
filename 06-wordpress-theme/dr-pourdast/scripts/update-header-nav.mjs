@@ -55,11 +55,11 @@ function updateHeaderNav(html) {
 
   output = output.replace(
     /(data-source="header" class="btn btn--primary btn--sm">)دریافت نوبت(<\/a>)/g,
-    "$1مشاهده نوبت‌های آزاد$2"
+    "$1رزرو نوبت$2"
   );
   output = output.replace(
     /(data-source="mobile-nav" class="btn btn--primary">)دریافت نوبت(<\/a>)/g,
-    "$1مشاهده نوبت‌های آزاد$2"
+    "$1رزرو نوبت$2"
   );
 
   return output;

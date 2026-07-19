@@ -77,22 +77,20 @@
 .contact-hero__visual-panel {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: var(--space-4);
-  padding: var(--space-8) var(--space-6);
+  padding: var(--space-6) var(--space-5);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-card);
-  max-width: 16rem;
-  margin-inline: auto;
+  box-shadow: var(--shadow-subtle);
 }
 
 @media (min-width: 768px) {
   .contact-hero__visual-panel {
-    margin-inline: 0;
     margin-inline-start: auto;
-    max-width: none;
+    max-width: 22rem;
   }
 }
 
@@ -101,12 +99,33 @@
   height: 3rem;
   color: var(--color-primary);
   opacity: 0.5;
+  align-self: center;
 }
 
-.contact-hero__visual-label {
-  font-size: var(--text-xs);
-  color: var(--color-text-muted);
-  text-align: center;
+.contact-hero__quick-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-hero__quick-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+}
+
+.contact-hero__quick-item svg {
+  flex-shrink: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  margin-top: 0.15rem;
+  color: var(--color-primary);
 }
 
 /* Sections */
@@ -151,44 +170,31 @@
 }
 
 /* Clinic information */
-.contact-clinic__grid {
+.contact-clinic__details {
   display: grid;
-  gap: var(--space-6);
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
 }
 
-@media (min-width: 768px) {
-  .contact-clinic__grid {
-    grid-template-columns: 1fr 1.2fr;
-    gap: var(--space-8);
-    align-items: start;
+@media (min-width: 640px) {
+  .contact-clinic__details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
   }
 }
 
-.contact-clinic__summary {
-  padding: var(--space-6) var(--space-6);
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-card);
-}
-
-.contact-clinic__summary-text {
-  font-size: var(--text-sm);
-  line-height: var(--leading-relaxed);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-5);
-}
-
-.contact-clinic__details {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-5);
+@media (min-width: 1024px) {
+  .contact-clinic__details {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .contact-info__item {
-  padding: var(--space-4) var(--space-5);
+  height: 100%;
+  padding: var(--space-5) var(--space-5);
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-card);
 }
 
 .contact-info__label {
@@ -409,34 +415,69 @@
   outline-offset: 2px;
 }
 
-/* Booking block */
-@media (min-width: 768px) {
-  .contact-section--booking .contact-section__content {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: var(--space-6) var(--space-10);
-    align-items: start;
-  }
+/* Final CTA — compact, single action */
+.contact-final-cta {
+  padding-block-end: var(--section-spacing-mobile);
+}
 
-  .contact-section--booking .section-header,
-  .contact-section--booking .contact-prose,
-  .contact-section--booking .contact-note {
-    grid-column: 1;
-  }
-
-  .contact-section--booking .btn {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    align-self: center;
-    white-space: nowrap;
-  }
-
-  .contact-section--booking .contact-note {
-    grid-row: 3;
+@media (min-width: 1024px) {
+  .contact-final-cta {
+    padding-block-end: var(--section-spacing-desktop);
   }
 }
 
-/* Privacy note */
+.contact-final-cta__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  max-width: var(--content-max-desktop);
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .contact-final-cta__card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-8);
+    padding: var(--space-6) var(--space-8);
+  }
+}
+
+.contact-final-cta__title {
+  font-size: var(--text-lg);
+  line-height: var(--leading-tight);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-bottom: var(--space-2);
+}
+
+.contact-final-cta__description {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.contact-final-cta__card .btn {
+  flex-shrink: 0;
+}
+
+@media (max-width: 374px) {
+  .contact-hero__actions .btn-group,
+  .contact-final-cta__card .btn {
+    width: 100%;
+  }
+
+  .contact-hero__actions .btn-group {
+    flex-direction: column;
+  }
+}
 .contact-privacy {
   display: flex;
   gap: var(--space-4);
@@ -469,20 +510,4 @@
   color: var(--color-text-muted);
 }
 
-/* Final CTA */
-.contact-final-cta__buttons {
-  justify-content: center;
-}
-
-@media (max-width: 374px) {
-  .contact-hero__actions .btn-group,
-  .contact-final-cta__buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .contact-hero__actions .btn,
-  .contact-final-cta__buttons .btn {
-    width: 100%;
-  }
-}
+/* Privacy note */

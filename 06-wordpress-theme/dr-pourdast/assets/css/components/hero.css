@@ -251,11 +251,12 @@
   border-width: 0 1px 1px 0;
 }
 
-/* Floating info card */
+/* Floating info card — inline-start avoids overlap with bottom decorative corner */
 .hero__info-card {
   position: absolute;
   bottom: var(--space-6);
-  inset-inline-end: calc(-1 * var(--space-4));
+  inset-inline-start: calc(-1 * var(--space-4));
+  z-index: 2;
   max-width: 14rem;
   padding: var(--space-4) var(--space-5);
   background-color: var(--color-surface);
@@ -266,14 +267,14 @@
 
 @media (min-width: 768px) {
   .hero__info-card {
-    inset-inline-end: calc(-1 * var(--space-8));
+    inset-inline-start: calc(-1 * var(--space-8));
     max-width: 16rem;
   }
 }
 
 @media (max-width: 374px) {
   .hero__info-card {
-    inset-inline-end: var(--space-2);
+    inset-inline-start: var(--space-2);
     max-width: 12rem;
   }
 }

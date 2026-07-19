@@ -46,7 +46,7 @@ var FOOTER_DATA = {
   },
   contact: {
     title: "نوبت و تماس",
-    appointmentText: "مشاهده نوبت‌های آزاد در دکترتو",
+    appointmentText: "رزرو نوبت در دکترتو",
     appointmentSource: "footer",
   },
   legal: {

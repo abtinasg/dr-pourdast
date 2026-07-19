@@ -8,35 +8,27 @@ var CONTACT_PAGE = {
   slug: "contact",
   route: "/en/contact",
   seo: {
-    title: "Contact & Appointments | Dr. Tahereh Pordast",
+    title: "Contact & Clinic Address | Dr. Tahereh Pordast",
     description:
-      "Contact information, clinic address, and online appointment booking for Dr. Tahereh Pordast through Doctoreto and Axon.",
+      "Clinic address, phone number, and directions for Dr. Tahereh Pordast in Shiraz. Book online through Doctoreto or Axon.",
     canonical: "https://drpourdast.ir/en/contact",
     ogImage: "/assets/images/og-contact.jpg",
     locale: "en_US",
   },
   breadcrumb: [
     { label: "Home", href: "/en/" },
-    { label: "Contact & Appointments", href: "/en/contact" },
+    { label: "Contact", href: "/en/contact" },
   ],
   hero: {
-    eyebrow: "Contact & appointments",
-    title: "Visit information and appointment booking",
+    eyebrow: "Contact the clinic",
+    title: "Visit information and how to reach us",
     description:
-      "To view available times and book an appointment, use Dr. Tahereh Pordast's official profile on Doctoreto or Axon. Contact information and the clinic address are also available on this page.",
+      "The clinic address, phone number, and map are available on this page. To book online, use Doctoreto or Axon.",
     appointmentSource: "contact-hero",
     secondaryCta: {
-      text: "View clinic information",
+      text: "View address and map",
       href: "#clinic-information",
     },
-  },
-  booking: {
-    eyebrow: "Online appointments",
-    title: "Book an appointment online",
-    content:
-      "Available times, clinic days, and booking information are displayed through Dr. Tahereh Pordast's official profile on Doctoreto and Axon.",
-    appointmentSource: "contact-booking-section",
-    note: "Online booking is handled outside this website through Doctoreto or Axon.",
   },
   clinic: {
     id: "clinic-information",
@@ -44,51 +36,49 @@ var CONTACT_PAGE = {
     title: "Contact and visit details",
     emptyNote:
       "Verified contact information will be published in this section after coordination with the clinic.",
-    appointmentSummary:
-      "To view available times and book an appointment, use Doctoreto or Axon.",
   },
   map: {
     eyebrow: "Clinic location",
     title: "Directions to the clinic",
-    linkText: "Open directions in maps",
+    linkText: "Open directions in map",
   },
   outOfTown: {
     eyebrow: "Visiting from out of town",
-    title: "Review these items before you travel",
+    title: "Before you travel, check these points",
     points: [
       {
         title: "Confirm your appointment",
         description:
-          "Before planning your trip, check your appointment time and booking status on Doctoreto.",
+          "Before planning your trip, verify your appointment time and booking status.",
       },
       {
         title: "Bring your medical records",
         description:
-          "Bring relevant ultrasound reports, MRI studies, laboratory tests, and treatment records when available.",
+          "Bring relevant ultrasound reports, MRI, lab results, and treatment records if available.",
       },
       {
-        title: "Review the address and route",
+        title: "Check the address and route",
         description:
-          "Before traveling, review the clinic address and access route using the verified information on this page.",
+          "Before traveling, review the clinic address and directions in the map section on this page.",
       },
       {
-        title: "Contact the clinic if needed",
+        title: "Coordinate with the clinic if needed",
         description:
-          "If you have questions about documents, visit times, or the appointment process, follow up using the clinic's verified contact number.",
+          "If you have questions about documents, arrival time, or the visit process, contact the clinic through the verified phone number.",
       },
     ],
     note:
-      "This information is general in nature and visit details should be confirmed against the information listed on Doctoreto or at the clinic.",
+      "This is general information. Visit details should match what is recorded in the booking platform or at the clinic.",
   },
   whatToBring: {
     eyebrow: "Before your visit",
     title: "What documents should you bring?",
     items: [
       "Previous ultrasound reports",
-      "MRI reports, if available",
-      "Relevant laboratory tests",
-      "Prior surgical reports",
-      "Pathology results, if available",
+      "MRI if available",
+      "Relevant lab results",
+      "Previous surgery reports",
+      "Pathology results if available",
       "List of current medications",
       "Summary of treatment history",
     ],
@@ -99,55 +89,50 @@ var CONTACT_PAGE = {
   },
   faqs: {
     eyebrow: "Frequently asked questions",
-    title: "Common questions about contact and appointments",
+    title: "Common questions",
     items: [
       {
         id: "online-appointment",
         question: "How do I book an appointment online?",
         answer:
-          "Online booking is available through Dr. Tahereh Pordast's official profile on Doctoreto or Axon.",
-        hasAppointmentLink: true,
-        appointmentSource: "contact-faq",
+          "Online booking is handled through Doctoreto or Axon. The \"Book appointment\" button at the top of the page takes you to the official booking page.",
       },
       {
         id: "site-booking",
-        question: "Can I book an appointment through this website?",
+        question: "Can I book through this website?",
         answer:
-          "No. This website is for introducing services and providing general information. Appointment booking is handled through Doctoreto or Axon.",
+          "No. This website provides general information about services. Booking is done through Doctoreto or Axon.",
       },
       {
         id: "first-visit-docs",
-        question: "What documents should I bring to my first appointment?",
+        question: "What should I bring to my first visit?",
         answer:
-          "It is best to bring relevant records such as ultrasound reports, MRI studies, laboratory tests, prior surgical reports, and a list of current medications when available.",
+          "Bring relevant records such as ultrasound, MRI, lab results, previous surgery reports, and a list of medications if available.",
       },
       {
         id: "out-of-town",
-        question: "Can I visit from out of town?",
+        question: "Can I visit from another city?",
         answer:
-          "Yes, but before traveling, review your appointment time, the clinic address, and required documents, and contact the clinic if needed.",
+          "Yes, but before traveling, confirm your appointment time, clinic address, required documents, and coordinate with the clinic if needed.",
       },
       {
         id: "contact-info",
         question: "Where can I find the address and phone number?",
         answer:
-          "Verified clinic information is displayed on this page. Information that has not yet been confirmed by the clinic will not be published.",
+          "Verified clinic information is shown in the \"Clinic information\" section on this page.",
       },
     ],
   },
   privacyNote: {
     title: "Important note",
     content:
-      "To protect your privacy, do not send sensitive medical information through public messages, social media, or unofficial forms. Provide medical records during your visit or through an approved channel from the treatment team.",
+      "To protect your privacy, do not send sensitive medical information through public messages, social media, or unofficial forms. Provide medical records during your visit or through approved channels.",
   },
   finalCta: {
-    title: "Book a consultation appointment",
-    description:
-      "Available appointment times and booking information for Dr. Tahereh Pordast are available on Doctoreto and Axon.",
+    title: "Need an appointment?",
+    description: "Book online through Doctoreto or Axon.",
     cta: {
-      text: "View available appointments",
       source: "contact-final-cta",
     },
-    phoneSource: "contact-final-cta",
   },
 };

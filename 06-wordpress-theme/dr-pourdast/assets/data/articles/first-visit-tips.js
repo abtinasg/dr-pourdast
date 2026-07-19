@@ -50,6 +50,6 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "برای اولین مراجعه، نوبت دریافت کنید",
     description: "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
-    cta: { text: "مشاهده نوبت‌های آزاد در دکترتو", source: "article-first-visit-cta" },
+    cta: { text: "رزرو نوبت در دکترتو", source: "article-first-visit-cta" },
   },
 };

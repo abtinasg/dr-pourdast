@@ -83,6 +83,6 @@ var GUIDE_PAGE = {
   finalCta: {
     title: "برای بررسی خونریزی، نوبت دریافت کنید",
     description: "برای مشاهده زمان‌های آزاد، وارد صفحه دکتر طاهره پوردست در دکترتو شوید.",
-    cta: { text: "مشاهده نوبت‌های آزاد در دکترتو", source: "uterine-bleeding-guide-final-cta" },
+    cta: { text: "رزرو نوبت در دکترتو", source: "uterine-bleeding-guide-final-cta" },
   },
 };

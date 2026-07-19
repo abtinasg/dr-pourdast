@@ -9,7 +9,7 @@ var SITE_CONFIG = {
     {
       id: "doctoreto",
       url: "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
-      linkText: "مشاهده نوبت‌های آزاد در دکترتو",
+      linkText: "رزرو نوبت در دکترتو",
       eventName: "doctoreto_appointment_click",
     },
     {

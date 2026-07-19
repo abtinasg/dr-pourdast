@@ -76,7 +76,7 @@ function renderPatientGuideCard(guide) {
     '<span class="guide-card__icon">' +
     guide.icon +
     "</span>" +
-    '<span class="guide-card__content">' +
+    '<div class="guide-card__content">' +
     '<span class="guide-card__category">' +
     guide.category +
     "</span>" +
@@ -90,7 +90,7 @@ function renderPatientGuideCard(guide) {
     "مطالعه راهنما" +
     '<svg class="guide-card__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
     '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-    "</svg></span></span></a></article>"
+    "</svg></span></div></a></article>"
   );
 }
 

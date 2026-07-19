@@ -21,7 +21,7 @@ var APPOINTMENT_PROCESS = {
     {
       title: "ورود به سامانه دکترتو",
       description:
-        "با انتخاب «مشاهده نوبت‌های آزاد در دکترتو»، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو می‌شوید.",
+        "با انتخاب «رزرو نوبت در دکترتو»، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو می‌شوید.",
       icon: MEDICAL_ICONS.externalLink,
     },
     {
@@ -39,7 +39,7 @@ var APPOINTMENT_PROCESS = {
   ],
   ctas: {
     primary: {
-      text: "مشاهده نوبت‌های آزاد در دکترتو",
+      text: "رزرو نوبت در دکترتو",
       source: "appointment-process",
     },
     contact: {

@@ -919,7 +919,7 @@ function renderServiceDoctorSection(section) {
     '<div class="service-doctor__actions">' +
     renderPrimaryCtaGroup({
       source: section.appointmentSource,
-      doctoretoText: uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
+      doctoretoText: uiString("doctoretoAppointment", "رزرو نوبت"),
       showIcon: true,
     }) +
     renderAxonAltLink(section.appointmentSource) +

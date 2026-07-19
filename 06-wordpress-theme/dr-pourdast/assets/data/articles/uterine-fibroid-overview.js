@@ -51,6 +51,6 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "برای بررسی شرایط خود، نوبت مراجعه دریافت کنید",
     description: "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
-    cta: { text: "مشاهده نوبت‌های آزاد در دکترتو", source: "article-uterine-fibroid-cta" },
+    cta: { text: "رزرو نوبت در دکترتو", source: "article-uterine-fibroid-cta" },
   },
 };

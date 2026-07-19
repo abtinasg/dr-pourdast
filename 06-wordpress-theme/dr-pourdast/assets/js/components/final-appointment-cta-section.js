@@ -50,7 +50,7 @@
       source: data.ctas.primary.source,
       doctoretoText:
         data.ctas.primary.text ||
-        uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
+        uiString("doctoretoAppointment", "رزرو نوبت"),
       showIcon: true,
       wrapInGroup: false,
     }) +

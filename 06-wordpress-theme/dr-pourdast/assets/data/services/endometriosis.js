@@ -30,7 +30,7 @@ var ENDOMETRIOSIS_PAGE = {
     description:
       "اندومتریوز یکی از بیماری‌های شایع زنان است که ممکن است با درد لگنی، قاعدگی‌های دردناک و مشکلات باروری همراه باشد. انتخاب روش درمان به علائم، نتایج بررسی‌ها و شرایط هر بیمار بستگی دارد.",
     primaryCta: {
-      text: "مشاهده نوبت‌های آزاد",
+      text: "رزرو نوبت",
       source: "endometriosis-hero",
     },
     secondaryCta: {
@@ -285,7 +285,7 @@ var ENDOMETRIOSIS_PAGE = {
     description:
       "زمان مناسب را از صفحه رسمی دکتر در سامانه دکترتو انتخاب کنید.",
     cta: {
-      text: "مشاهده نوبت‌های آزاد",
+      text: "رزرو نوبت",
       source: "endometriosis-final-cta",
     },
   },

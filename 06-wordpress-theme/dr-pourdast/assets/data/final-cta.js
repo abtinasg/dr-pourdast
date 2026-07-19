@@ -16,7 +16,7 @@ var FINAL_CTA_SECTION = {
   ],
   ctas: {
     primary: {
-      text: "مشاهده نوبت‌های آزاد",
+      text: "رزرو نوبت",
       source: "final-cta",
     },
     contact: {

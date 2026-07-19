@@ -38,12 +38,66 @@ function renderClinicPhoneLink(display, source) {
 }
 
 /**
+ * Renders quick contact snippets for the hero visual panel.
+ * @returns {string}
+ */
+function renderContactHeroQuickInfo() {
+  if (typeof SITE_CONFIG === "undefined") return "";
+
+  var items = [];
+
+  if (SITE_CONFIG.clinicPhone) {
+    var phoneDisplay = SITE_CONFIG.clinicPhoneDisplay || SITE_CONFIG.clinicPhone;
+    items.push(
+      '<li class="contact-hero__quick-item">' +
+        CONTACT_PHONE_ICON +
+        "<span>" +
+        phoneDisplay +
+        "</span></li>"
+    );
+  }
+
+  if (SITE_CONFIG.clinicAddress) {
+    items.push(
+      '<li class="contact-hero__quick-item">' +
+        CONTACT_ADDRESS_ICON +
+        "<span>" +
+        SITE_CONFIG.clinicAddress +
+        "</span></li>"
+    );
+  }
+
+  if (!items.length) return "";
+
+  return (
+    '<ul class="contact-hero__quick-info" role="list">' + items.join("") + "</ul>"
+  );
+}
+
+/**
  * Renders contact page hero.
  * @param {Object} hero
  * @returns {string}
  */
 function renderContactHero(hero) {
   var titleId = "contact-hero-title";
+  var quickInfoHtml = renderContactHeroQuickInfo();
+  var visualHtml = quickInfoHtml
+    ? quickInfoHtml
+    : '<svg class="contact-hero__visual-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">' +
+      '<path d="M10 14H22V34H10V14Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<path d="M26 18H38V34H26V18Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>' +
+      '<path d="M16 22H18M30 24H34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
+      '<circle cx="32" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>' +
+      "</svg>";
+
+  var secondaryCtaHtml = hero.secondaryCta
+    ? '<a href="' +
+      hero.secondaryCta.href +
+      '" class="btn btn--secondary">' +
+      hero.secondaryCta.text +
+      "</a>"
+    : "";
 
   return (
     '<section class="contact-hero section" aria-labelledby="' +
@@ -65,64 +119,19 @@ function renderContactHero(hero) {
     "</p>" +
     '<div class="contact-hero__actions">' +
     '<div class="btn-group">' +
-    renderPrimaryCtaGroup({
+    renderAppointmentLink({
+      text: uiString("doctoretoAppointment", "رزرو نوبت"),
       source: hero.appointmentSource,
       showIcon: true,
-      wrapInGroup: false,
     }) +
+    secondaryCtaHtml +
     "</div>" +
-    renderAxonAltLink(hero.appointmentSource) +
     "</div>" +
     "</div>" +
-    '<aside class="contact-hero__visual" aria-hidden="true">' +
+    '<aside class="contact-hero__visual" aria-label="اطلاعات سریع مطب">' +
     '<div class="contact-hero__visual-panel">' +
-    '<svg class="contact-hero__visual-icon" viewBox="0 0 48 48" fill="none">' +
-    '<path d="M10 14H22V34H10V14Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>' +
-    '<path d="M26 18H38V34H26V18Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>' +
-    '<path d="M16 22H18M30 24H34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
-    '<circle cx="32" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>' +
-    "</svg>" +
-    '<p class="contact-hero__visual-label">تماس و دریافت نوبت</p>' +
+    visualHtml +
     "</div></aside>" +
-    "</div></div></section>"
-  );
-}
-
-/**
- * Renders appointment booking block.
- * @param {Object} section
- * @returns {string}
- */
-function renderAppointmentBookingBlock(section) {
-  var titleId = "contact-booking-title";
-
-  return (
-    '<section class="contact-section section contact-section--soft contact-section--booking" aria-labelledby="' +
-    titleId +
-    '">' +
-    '<div class="container">' +
-    '<div class="contact-section__content contact-section__content--wide">' +
-    '<header class="section-header section-header--compact">' +
-    '<p class="section-header__eyebrow">' +
-    section.eyebrow +
-    "</p>" +
-    '<h2 class="section-header__title" id="' +
-    titleId +
-    '">' +
-    section.title +
-    "</h2>" +
-    "</header>" +
-    '<p class="contact-prose">' +
-    section.content +
-    "</p>" +
-    renderPrimaryCtaGroup({
-      source: section.appointmentSource,
-      showIcon: true,
-    }) +
-    renderAxonAltLink(section.appointmentSource) +
-    '<p class="contact-note">' +
-    section.note +
-    "</p>" +
     "</div></div></section>"
   );
 }
@@ -242,20 +251,9 @@ function renderClinicInformation(section) {
     section.title +
     "</h2>" +
     "</header>" +
-    '<div class="contact-clinic__grid">' +
-    '<aside class="contact-clinic__summary">' +
-    '<p class="contact-clinic__summary-text">' +
-    section.appointmentSummary +
-    "</p>" +
-    renderPrimaryCtaGroup({
-      source: "contact-clinic-summary",
-      showIcon: true,
-    }) +
-    renderAxonAltLink("contact-clinic-summary") +
-    "</aside>" +
     '<div class="contact-clinic__details">' +
     detailsHtml +
-    "</div></div></div></section>"
+    "</div></div></section>"
   );
 }
 
@@ -439,37 +437,34 @@ function renderPrivacyNote(section) {
 }
 
 /**
- * Renders contact page final CTA with optional phone link.
+ * Renders a single compact final CTA at the bottom of the contact page.
  * @param {Object} section
  * @returns {string}
  */
 function renderContactFinalCta(section) {
   var titleId = "contact-final-cta-title";
-  var appointmentHtml =
-    renderPrimaryCtaGroup({
-      source: section.cta.source,
-      doctoretoText: section.cta.text,
-      showIcon: true,
-    }) + renderAxonAltLink(section.cta.source);
-
-  var secondaryHtml = appointmentHtml;
 
   return (
-    '<section class="service-final-cta section contact-final-cta" aria-labelledby="' +
+    '<section class="contact-final-cta section" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
-    '<div class="service-final-cta__card">' +
-    '<h2 class="service-final-cta__title" id="' +
+    '<div class="contact-final-cta__card">' +
+    '<div class="contact-final-cta__content">' +
+    '<h2 class="contact-final-cta__title" id="' +
     titleId +
     '">' +
     section.title +
     "</h2>" +
-    '<p class="service-final-cta__description">' +
+    '<p class="contact-final-cta__description">' +
     section.description +
     "</p>" +
-    secondaryHtml +
-    '<p class="service-final-cta__note">نوبت‌دهی اینترنتی از طریق سامانه‌های دکترتو و اکسون انجام می‌شود.</p>' +
+    "</div>" +
+    renderAppointmentLink({
+      text: uiString("doctoretoAppointment", "رزرو نوبت"),
+      source: section.cta.source,
+      showIcon: true,
+    }) +
     "</div></div></section>"
   );
 }

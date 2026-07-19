@@ -50,6 +50,6 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "برای مشاوره درباره روش مناسب، نوبت دریافت کنید",
     description: "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
-    cta: { text: "مشاهده نوبت‌های آزاد در دکترتو", source: "article-hysteroscopy-laparoscopy-cta" },
+    cta: { text: "رزرو نوبت در دکترتو", source: "article-hysteroscopy-laparoscopy-cta" },
   },
 };

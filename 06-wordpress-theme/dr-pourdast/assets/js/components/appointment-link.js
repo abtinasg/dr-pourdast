@@ -29,7 +29,7 @@ function getAppointmentProviders() {
         linkText:
           typeof UI_STRINGS !== "undefined" && UI_STRINGS.doctoretoDefault
             ? UI_STRINGS.doctoretoDefault
-            : "مشاهده نوبت‌های آزاد",
+            : "رزرو نوبت",
         eventName: "doctoreto_appointment_click",
       },
     ];
@@ -235,7 +235,7 @@ function renderPrimaryCtaGroup(options) {
     renderAppointmentLink({
       text:
         options.doctoretoText ||
-        uiString("doctoretoAppointment", "مشاهده نوبت‌های آزاد"),
+        uiString("doctoretoAppointment", "رزرو نوبت"),
       source: source,
       provider: "doctoreto",
       variant: "primary",
