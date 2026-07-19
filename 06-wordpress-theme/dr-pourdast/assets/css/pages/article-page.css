@@ -570,6 +570,10 @@
   }
 }
 
+.related-articles__item {
+  min-width: 0;
+}
+
 .related-articles__item .article-card {
   height: 100%;
 }

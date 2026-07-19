@@ -212,8 +212,8 @@ var OVARIAN_CYST_PAGE = {
       "وجود اندومتریوما همیشه به معنای نیاز فوری به جراحی نیست و انتخاب درمان باید بر اساس شرایط فردی انجام شود.",
     ],
     link: {
-      text: "مطالعه درباره اندومتریوز",
-      href: "/services/endometriosis",
+      text: "کیست شکلاتی یا اندومتریوما چیست؟",
+      href: "/articles/ovarian-endometrioma-chocolate-cyst",
     },
   },
   doctor: {

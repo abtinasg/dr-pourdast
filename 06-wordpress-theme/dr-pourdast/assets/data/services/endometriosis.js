@@ -205,6 +205,10 @@ var ENDOMETRIOSIS_PAGE = {
     title: "راهنماهای مرتبط با اندومتریوز و روند درمان",
     items: [
       {
+        label: "آشنایی با کیست اندومتریوزی تخمدان",
+        href: "/articles/ovarian-endometrioma-chocolate-cyst",
+      },
+      {
         label: "نقش سونوگرافی در بررسی اندومتریوز",
         href: "/articles/endometriosis-ultrasound-diagnosis",
       },

@@ -220,7 +220,7 @@ function renderArticleCard(article) {
     getArticleHref(article.slug) +
     '" class="article-card__link">' +
     renderArticleMedia(article, "article-card__media") +
-    '<span class="article-card__body">' +
+    '<div class="article-card__body">' +
     '<span class="article-card__category">' +
     categoryLabel +
     "</span>" +
@@ -235,7 +235,7 @@ function renderArticleCard(article) {
     "مطالعه مقاله" +
     '<svg class="article-card__arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
     '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-    "</svg></span></span></a></article>"
+    "</svg></span></div></a></article>"
   );
 }
 
