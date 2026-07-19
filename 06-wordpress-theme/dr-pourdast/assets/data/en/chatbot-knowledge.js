@@ -138,7 +138,7 @@ var CHATBOT_KNOWLEDGE = {
       keywords: ["contact", "phone", "address", "clinic", "shiraz", "hours"],
       title: "Clinic contact",
       content:
-        "Address: Shiraz, Mollasadra St., beginning of Ordibehesht, above Refah Bank, Amirkasri Building, 4th floor. Phone: 09307916968.",
+        "Address: Shiraz, Mollasadra St., beginning of Ordibehesht, above Refah Bank, Amirkasri Building, 4th floor. Phone: +98 930 791 6968.",
       href: "/en/contact",
     },
     {

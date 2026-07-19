@@ -25,10 +25,10 @@ var SITE_CONFIG = {
     "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
 
   /** Set to confirmed clinic number (e.g. "07112345678") when available */
-  clinicPhone: "09307916968",
+  clinicPhone: "+989307916968",
 
-  /** Displayed when clinicPhone is not yet confirmed — not shown in footer */
-  clinicPhoneDisplay: "09307916968",
+  /** Displayed in footer and contact sections */
+  clinicPhoneDisplay: "+98 930 791 6968",
 
   /** Confirmed clinic address — hidden when null */
   clinicAddress:

@@ -61,6 +61,6 @@ var FOOTER_DATA = {
   credit: {
     label: "Araaye",
     href: "https://araaye.com",
-    prefix: "Designed and developed by",
+    prefix: "Made with ❤️ by",
   },
 };

@@ -222,6 +222,7 @@
   font-family: var(--font-english);
   direction: ltr;
   unicode-bidi: embed;
+  font-variant-numeric: lining-nums;
 }
 
 /* Social */

@@ -61,6 +61,6 @@ var FOOTER_DATA = {
   credit: {
     label: "آرایه",
     href: "https://araaye.com",
-    prefix: "© ۱۴۰۵",
+    prefix: "ساخته شده با ❤️ توسط",
   },
 };

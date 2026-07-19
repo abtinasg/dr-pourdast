@@ -129,20 +129,7 @@ function renderServicePageNav(items) {
  * @returns {string}
  */
 function renderMedicalReview(review) {
-  if (!review || !review.text) return "";
-
-  return (
-    '<p class="service-medical-review">' +
-    '<span class="service-medical-review__text">' +
-    review.text +
-    "</span>" +
-    (review.dateLabel
-      ? '<span class="service-medical-review__date">' +
-        review.dateLabel +
-        "</span>"
-      : "") +
-    "</p>"
-  );
+  return "";
 }
 
 /**
