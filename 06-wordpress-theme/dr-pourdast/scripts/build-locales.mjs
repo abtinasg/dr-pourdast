@@ -187,8 +187,9 @@ function rewriteAssetPaths(html, depth, localeKey) {
   let output = html;
 
   output = output.replace(
-    /(href|src)="(?:\.\.\/)*assets\/data\/(?:en\/|ar\/)?([^"]+\.js)"/g,
-    (_match, attr, file) => `${attr}="${assetPrefix(depth)}assets/data/${localeKey}/${file}"`
+    /(href|src)="(?:\.\.\/)*assets\/data\/(?:en\/|ar\/)?([^"?]+\.js)(\?[^"]*)?"/g,
+    (_match, attr, file, query) =>
+      `${attr}="${assetPrefix(depth)}assets/data/${localeKey}/${file}${query || ""}"`
   );
 
   output = output.replace(

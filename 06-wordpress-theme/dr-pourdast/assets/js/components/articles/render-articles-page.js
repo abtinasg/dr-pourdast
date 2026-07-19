@@ -35,7 +35,6 @@
       emptyStates: data.emptyStates,
       pagination: data.pagination,
     }) +
-    renderMedicalDisclaimer(data.disclaimer) +
     renderRelatedGuides(data.relatedGuides) +
     renderServiceAppointmentCta(data.finalCta);
 

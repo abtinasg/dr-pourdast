@@ -2,12 +2,6 @@
  * Article page layout, FAQ, notice, and 404 helpers.
  */
 
-var ARTICLE_MEDICAL_NOTICE = {
-  paragraphs: [
-    "این مطلب صرفاً برای آگاهی عمومی تهیه شده است و جایگزین معاینه، تشخیص، نسخه یا توصیه درمانی پزشک نیست. شرایط هر بیمار باید به‌صورت جداگانه بررسی شود.",
-  ],
-};
-
 var ARTICLE_FINAL_CTA = {
   title: "برای بررسی شرایط خود، نوبت مراجعه دریافت کنید",
   description:
@@ -23,15 +17,7 @@ var ARTICLE_FINAL_CTA = {
  * @returns {string}
  */
 function renderArticleMedicalNotice() {
-  return (
-    '<section class="article-notice section" aria-labelledby="article-notice-title">' +
-    '<div class="container">' +
-    '<div class="article-notice__inner">' +
-    '<h2 class="sr-only" id="article-notice-title">تذکر پزشکی</h2>' +
-    '<p class="article-notice__text">' +
-    ARTICLE_MEDICAL_NOTICE.paragraphs[0] +
-    "</p></div></div></section>"
-  );
+  return "";
 }
 
 /**
