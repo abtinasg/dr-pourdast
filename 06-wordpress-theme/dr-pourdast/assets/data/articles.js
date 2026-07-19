@@ -21,4 +21,21 @@ var ARTICLE_CATEGORY_LABELS = {
  *
  * @type {Array<Object>}
  */
-var ARTICLES_CATALOG = [];
+var ARTICLES_CATALOG = [
+  {
+    slug: "period-pain-vs-endometriosis",
+    title: "تفاوت درد پریود طبیعی و اندومتریوز: چه زمانی باید بررسی شود؟",
+    excerpt:
+      "راهنمای آموزشی برای تشخیص تفاوت درد قاعدگی معمول و دردی که نیاز به بررسی دارد؛ از ارزیابی بالینی تا نقش لاپاراسکوپی.",
+    category: "endometriosis",
+    publishedAt: "۱۴۰۵/۰۴/۲۸",
+    status: "published",
+    featured: true,
+    image: "/assets/images/article-period-pain-comparison.webp",
+    imageAlt: "مقایسه درد معمول قاعدگی و دردی که نیاز به بررسی پزشکی دارد",
+    seoTitle:
+      "تفاوت درد پریود طبیعی و اندومتریوز: چه زمانی باید بررسی شود؟ | دکتر طاهره پوردست",
+    seoDescription:
+      "راهنمای آموزشی برای تشخیص تفاوت درد قاعدگی معمول و دردی که نیاز به بررسی دارد؛ از ارزیابی بالینی تا نقش لاپاراسکوپی در برخی بیماران.",
+  },
+];
