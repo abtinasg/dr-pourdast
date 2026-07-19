@@ -26,7 +26,6 @@ var FOOTER_DATA = {
       { label: "خانه", href: "/" },
       { label: "درباره دکتر", href: "/about" },
       { label: "خدمات تخصصی", href: "/services" },
-      { label: "راهنمای بیماران", href: "/patient-guides" },
       { label: "مقالات", href: "/articles" },
       { label: "سؤالات پرتکرار", href: "/faq" },
       { label: "تماس با ما", href: "/contact" },

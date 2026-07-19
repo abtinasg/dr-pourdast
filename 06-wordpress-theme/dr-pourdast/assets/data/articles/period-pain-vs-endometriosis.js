@@ -220,7 +220,6 @@ var ARTICLE_PAGE = {
     ],
   },
   relatedServiceSlugs: ["endometriosis", "gynecologic-laparoscopy"],
-  relatedGuideSlugs: ["endometriosis", "before-laparoscopy"],
   author: {
     label: "نویسنده",
     name: "دکتر طاهره پوردست",

@@ -238,32 +238,7 @@ var PELVIC_ADHESION_PAGE = {
       "قائمة الأدوية المستخدمة",
       "ملخص الأعراض ووقت بدئها",
       "تاريخ الحمل عند الاقتضاء",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description: "المستندات اللازمة للتقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "دليل مريضات بطانة الرحم المهاجرة",
-        description: "التعرف على الأعراض ومسار الفحص",
-        href: "/ar/patient-guides/endometriosis",
-      },
-      {
-        label: "الاستعداد قبل منظار البطن",
-        description: "معلومات عامة قبل الجراحة",
-        href: "/ar/patient-guides/before-laparoscopy",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

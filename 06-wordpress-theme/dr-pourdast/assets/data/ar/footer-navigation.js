@@ -26,7 +26,6 @@ var FOOTER_DATA = {
       { label: "الرئيسية", href: "/ar" },
       { label: "عن الطبيبة", href: "/ar/about" },
       { label: "الخدمات التخصصية", href: "/ar/services" },
-      { label: "دليل المرضى", href: "/ar/patient-guides" },
       { label: "المقالات", href: "/ar/articles" },
       { label: "الأسئلة الشائعة", href: "/ar/faq" },
       { label: "اتصل بنا", href: "/ar/contact" },

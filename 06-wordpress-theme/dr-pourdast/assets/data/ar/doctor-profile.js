@@ -100,11 +100,7 @@ var DOCTOR_PROFILE = {
       "تقرير الفحص النسيجي إن وُجد",
       "قائمة الأدوية المستخدمة",
       "ملخص السجل العلاجي",
-    ],
-    guideLink: {
-      text: "عرض دليل الزيارة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
+    ]
   },
   finalCta: {
     title: "لحجز موعد",

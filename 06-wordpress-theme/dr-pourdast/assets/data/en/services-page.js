@@ -63,15 +63,6 @@ var SERVICES_PAGE = {
       "The content in this section is provided for general educational purposes only and does not replace examination, diagnosis, or medical treatment recommendations.",
     ],
   },
-  relatedGuides: {
-    eyebrow: "Patient guides",
-    title: "Prepare for your visit",
-    items: [
-      { label: "Preparing for your first visit", href: "/en/patient-guides/first-visit" },
-      { label: "Endometriosis patient guide", href: "/en/patient-guides/endometriosis" },
-      { label: "Preparing for laparoscopy", href: "/en/patient-guides/before-laparoscopy" },
-    ],
-  },
   finalCta: {
     title: "Book an appointment to discuss your condition",
     description:

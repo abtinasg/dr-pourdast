@@ -50,7 +50,6 @@ var ARTICLES_PAGE = {
         "ستتوفر مواد هذا القسم بعد مراجعتها واعتمادها من الطبيبة.",
       actions: [
         { label: "عرض الخدمات المتخصصة", href: "/ar/services" },
-        { label: "عرض دليل المريضات", href: "/ar/patient-guides" },
       ],
     },
     noSearch: {
@@ -69,24 +68,6 @@ var ARTICLES_PAGE = {
   disclaimer: {
     paragraphs: [
       "المحتوى في هذا القسم مُعدّ للتوعية العامة فقط ولا يغني عن الفحص أو التشخيص أو الوصفة أو التوصيات العلاجية من الطبيب. يجب تقييم حالة كل مريضة على حدة.",
-    ],
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "للاستعداد قبل الزيارة",
-    items: [
-      {
-        label: "الاستعداد للزيارة الأولى",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "دليل مريضات بطانة الرحم المهاجرة",
-        href: "/ar/patient-guides/endometriosis",
-      },
-      {
-        label: "الاستعداد قبل منظار البطن",
-        href: "/ar/patient-guides/before-laparoscopy",
-      },
     ],
   },
   finalCta: {

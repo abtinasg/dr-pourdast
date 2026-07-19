@@ -238,32 +238,7 @@ var PELVIC_ADHESION_PAGE = {
       "List of current medications",
       "Summary of symptoms and when they began",
       "Pregnancy history when relevant",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Related Guides",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description: "Records needed for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Endometriosis Patient Guide",
-        description: "Learn about symptoms and the evaluation pathway",
-        href: "/en/patient-guides/endometriosis",
-      },
-      {
-        label: "Preparing for Laparoscopy",
-        description: "General information before surgery",
-        href: "/en/patient-guides/before-laparoscopy",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

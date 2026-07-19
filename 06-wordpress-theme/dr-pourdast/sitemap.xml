@@ -61,36 +61,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drpourdast.ir/patient-guides</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/patient-guides/first-visit</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/patient-guides/endometriosis</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/patient-guides/before-laparoscopy</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/patient-guides/after-surgery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/patient-guides/uterine-bleeding</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://drpourdast.ir/articles</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

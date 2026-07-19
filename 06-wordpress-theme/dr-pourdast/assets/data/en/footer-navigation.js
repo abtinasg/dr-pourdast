@@ -26,7 +26,6 @@ var FOOTER_DATA = {
       { label: "Home", href: "/en/" },
       { label: "About", href: "/en/about" },
       { label: "Services", href: "/en/services" },
-      { label: "Patient Guides", href: "/en/patient-guides" },
       { label: "Articles", href: "/en/articles" },
       { label: "FAQ", href: "/en/faq" },
       { label: "Contact", href: "/en/contact" },

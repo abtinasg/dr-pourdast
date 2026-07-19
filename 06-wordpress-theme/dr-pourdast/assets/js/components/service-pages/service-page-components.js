@@ -1014,60 +1014,54 @@ function renderResearchSection(section) {
  * @param {Object} section
  * @returns {string}
  */
-function renderRelatedGuides(section) {
-  if (!section || !section.items || section.items.length === 0) {
+function renderMedicalDisclaimer(section) {
+  if (!section || !section.paragraphs || !section.paragraphs.length) {
     return "";
   }
 
-  var titleId = "related-guides-title";
+  var titleId = "medical-disclaimer-title";
 
-  var linksHtml = section.items
-    .map(function (item) {
-      var descriptionHtml = item.description
-        ? '<span class="service-guides__description">' +
-          item.description +
-          "</span>"
-        : "";
-
-      return (
-        '<li><a href="' +
-        item.href +
-        '" class="service-guides__link' +
-        (item.description ? " service-guides__link--detailed" : "") +
-        '">' +
-        '<span class="service-guides__text">' +
-        '<span class="service-guides__label">' +
-        item.label +
-        "</span>" +
-        descriptionHtml +
-        "</span>" +
-        '<svg class="service-guides__icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
-        '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-        "</svg></a></li>"
-      );
+  var paragraphsHtml = section.paragraphs
+    .map(function (p) {
+      return "<p>" + p + "</p>";
     })
     .join("");
 
+  var titleHtml = section.title
+    ? '<h2 class="guides-disclaimer__title" id="' +
+      titleId +
+      '">' +
+      section.title +
+      "</h2>"
+    : '<h2 class="sr-only" id="' +
+      titleId +
+      '">تذکر پزشکی</h2>';
+
   return (
-    '<section class="service-section section" aria-labelledby="' +
+    '<section class="guides-section section" aria-labelledby="' +
     titleId +
     '">' +
     '<div class="container">' +
-    '<div class="service-section__content">' +
-    '<header class="section-header section-header--compact">' +
-    '<p class="section-header__eyebrow">' +
-    section.eyebrow +
-    "</p>" +
-    '<h2 class="section-header__title" id="' +
-    titleId +
-    '">' +
-    section.title +
-    "</h2>" +
-    "</header>" +
-    '<ul class="service-guides" role="list">' +
-    linksHtml +
-    "</ul></div></div></section>"
+    '<div class="guides-disclaimer">' +
+    '<svg class="guides-disclaimer__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+    '<circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>' +
+    '<path d="M12 8V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>' +
+    '<circle cx="12" cy="16" r="1" fill="currentColor"/>' +
+    "</svg>" +
+    '<div class="guides-disclaimer__content">' +
+    titleHtml +
+    '<div class="guides-disclaimer__text">' +
+    paragraphsHtml +
+    "</div></div></div></div></section>"
   );
+}
+
+/**
+ * @deprecated Patient guides section removed from the site.
+ * @returns {string}
+ */
+function renderRelatedGuides(section) {
+  return "";
 }
 
 /**
@@ -1115,12 +1109,14 @@ function renderPreparationSection(section) {
     '<ul class="service-checklist" role="list">' +
     checklistHtml +
     "</ul>" +
-    '<p class="service-guide-link">' +
-    '<a href="' +
-    section.guideLink.href +
-    '" class="service-guide-link__anchor">' +
-    section.guideLink.text +
-    "</a></p>" +
+    (section.guideLink
+      ? '<p class="service-guide-link">' +
+        '<a href="' +
+        section.guideLink.href +
+        '" class="service-guide-link__anchor">' +
+        section.guideLink.text +
+        "</a></p>"
+      : "") +
     "</div></div></section>"
   );
 }

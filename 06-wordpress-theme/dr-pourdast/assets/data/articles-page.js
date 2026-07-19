@@ -50,7 +50,6 @@ var ARTICLES_PAGE = {
         "مطالب این بخش پس از بررسی و تأیید پزشک در دسترس قرار خواهند گرفت.",
       actions: [
         { label: "مشاهده خدمات تخصصی", href: "/services" },
-        { label: "مشاهده راهنمای بیماران", href: "/patient-guides" },
       ],
     },
     noSearch: {
@@ -69,24 +68,6 @@ var ARTICLES_PAGE = {
   disclaimer: {
     paragraphs: [
       "مطالب این بخش صرفاً برای آگاهی عمومی تهیه شده‌اند و جایگزین معاینه، تشخیص، نسخه یا توصیه درمانی پزشک نیستند. شرایط هر بیمار باید به‌صورت جداگانه بررسی شود.",
-    ],
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "برای آمادگی پیش از مراجعه",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "راهنمای بیماران اندومتریوز",
-        href: "/patient-guides/endometriosis",
-      },
-      {
-        label: "آمادگی پیش از لاپاراسکوپی",
-        href: "/patient-guides/before-laparoscopy",
-      },
     ],
   },
   finalCta: {

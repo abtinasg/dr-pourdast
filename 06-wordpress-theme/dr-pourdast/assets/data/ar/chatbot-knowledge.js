@@ -51,7 +51,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "مستندات الزيارة الأولى",
       content:
         "يُفضل إحضار التحاليل وتقارير الموجات فوق الصوتية وMRI وتقارير العمليات السابقة وقائمة الأدوية والسجل العلاجي.",
-      href: "/ar/patient-guides/first-visit",
+      href: "/ar/contact",
     },
     {
       id: "laparoscopy",
@@ -66,8 +66,8 @@ var CHATBOT_KNOWLEDGE = {
       keywords: ["منظار", "بطن", "بعد", "تعافي", "رعاية"],
       title: "الرعاية بعد منظار البطن",
       content:
-        "عادةً ما تكون فترة التعافي بعد منظار البطن أقصر من الجراحة المفتوحة. راجع دليل المريضات للتفاصيل.",
-      href: "/ar/patient-guides/after-surgery",
+        "عادةً ما تكون فترة التعافي بعد منظار البطن أقصر من الجراحة المفتوحة. اتبعي تعليمات الطبيبة بعد العملية.",
+      href: "/ar/services/gynecologic-laparoscopy",
     },
     {
       id: "hysteroscopy",
@@ -107,7 +107,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "النزيف الرحمي غير الطبيعي",
       content:
         "للنزيف الرحمي غير الطبيعي أسباب متعددة. عند تغيّر نمط الدورة أو النزيف الشديد أو المطول، يُنصح بمراجعة الطبيب.",
-      href: "/ar/patient-guides/uterine-bleeding",
+      href: "/ar/services/gynecologic-consultation",
     },
     {
       id: "pelvic-pain",
@@ -156,14 +156,6 @@ var CHATBOT_KNOWLEDGE = {
       content:
         "تغطي المقالات بطانة الرحم المهاجرة ومنظار البطن وصحة الرحم والمبيض ونصائح الزيارة الأولى.",
       href: "/ar/articles",
-    },
-    {
-      id: "patient-guides",
-      keywords: ["دليل", "مريضة", "تحضير", "قبل", "بعد"],
-      title: "دليل المريضات",
-      content:
-        "تشمل الأدلة التحضير للزيارة الأولى وفهم بطانة الرحم المهاجرة والتحضير قبل منظار البطن والرعاية بعد الجراحة.",
-      href: "/ar/patient-guides",
     },
     {
       id: "faq",

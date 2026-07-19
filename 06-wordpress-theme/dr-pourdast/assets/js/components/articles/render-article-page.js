@@ -46,11 +46,6 @@
     3
   );
 
-  var relatedGuides = resolveRelatedGuidesSection(
-    pageData.relatedGuideSlugs || catalogEntry.relatedGuideSlugs,
-    3
-  );
-
   var relatedArticles = getRelatedArticles(
     ARTICLES_CATALOG,
     catalogEntry.slug,
@@ -71,7 +66,6 @@
     renderArticleReferences(references) +
     renderArticleFaq(faqs) +
     (relatedServices ? renderRelatedServices(relatedServices) : "") +
-    (relatedGuides ? renderRelatedGuides(relatedGuides) : "") +
     renderRelatedArticles(relatedArticles) +
     renderArticleShareActions(metadata.canonical) +
     renderServiceAppointmentCta(pageData.finalCta || ARTICLE_FINAL_CTA);

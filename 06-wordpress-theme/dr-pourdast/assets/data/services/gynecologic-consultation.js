@@ -80,10 +80,6 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
         title: "اختلالات قاعدگی",
         description:
           "بررسی قاعدگی‌های نامنظم، خونریزی‌های غیرطبیعی، درد قاعدگی و تغییرات چرخه.",
-        link: {
-          text: "راهنمای خونریزی‌های رحمی",
-          href: "/patient-guides/uterine-bleeding",
-        },
       },
       {
         title: "فیبروم رحم",
@@ -209,35 +205,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
       "فهرست داروهای مصرفی",
       "تاریخ آخرین قاعدگی",
       "خلاصه علائم و زمان شروع آن‌ها",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "شناخت خونریزی‌های غیرطبیعی",
-        description:
-          "آشنایی با برخی علل خونریزی غیرطبیعی و اهمیت ارزیابی پزشکی",
-        href: "/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "نکات مهم پیش از مراجعه",
-        description:
-          "اطلاعاتی که به تشخیص سریع‌تر و دقیق‌تر کمک می‌کند",
-        href: "/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

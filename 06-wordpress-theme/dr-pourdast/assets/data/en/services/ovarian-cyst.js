@@ -242,35 +242,7 @@ var OVARIAN_CYST_PAGE = {
       "List of current medications",
       "Date of last menstrual period",
       "Summary of symptoms and when they began",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Guides Related to Ovarian Cysts",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Understanding Endometriosis",
-        description:
-          "Learn about symptoms and evaluation of endometriosis and related cysts",
-        href: "/en/patient-guides/endometriosis",
-      },
-      {
-        label: "General Post-Surgery Care",
-        description:
-          "General information about follow-up and care after surgical procedures",
-        href: "/en/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

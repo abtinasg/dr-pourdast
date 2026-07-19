@@ -179,35 +179,7 @@ var CHILDBIRTH_PAGE = {
       "سابقه بارداری و زایمان قبلی",
       "تاریخ آخرین قاعدگی",
       "سوالات و نگرانی‌های خود را یادداشت کنید",
-    ],
-    guideLink: {
-      text: "راهنمای آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "سونوگرافی بارداری",
-        description:
-          "اهمیت سونوگرافی در پیگیری رشد جنین",
-        href: "/services/advanced-sonography",
-      },
-      {
-        label: "مشاوره تخصصی زنان",
-        description:
-          "ارزیابی و مراقبت‌های زنان در دوران‌های مختلف",
-        href: "/services/gynecologic-consultation",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

@@ -179,35 +179,7 @@ var CHILDBIRTH_PAGE = {
       "تاريخ الحمل والولادة السابق",
       "تاريخ آخر دورة شهرية",
       "دوّني أسئلتك وقلقك",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "موجات فوق صوتية للحمل",
-        description:
-          "أهمية الموجات فوق الصوتية في متابعة نمو الجنين",
-        href: "/ar/services/advanced-sonography",
-      },
-      {
-        label: "استشارة أمراض النساء",
-        description:
-          "تقييم ورعاية صحة المرأة في مختلف المراحل",
-        href: "/ar/services/gynecologic-consultation",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

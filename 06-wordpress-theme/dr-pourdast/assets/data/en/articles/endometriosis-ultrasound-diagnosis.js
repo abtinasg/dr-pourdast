@@ -613,7 +613,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'Bringing prior images, not just written reports, may be helpful for comparison. Before your visit, you can also read the <a href="/en/patient-guides/first-visit">Preparing for Your First Visit</a> guide.',
+          'Bringing prior images, not just written reports, may be helpful for comparison..',
       },
       {
         type: "heading",
@@ -879,7 +879,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "ovarian-cyst",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "Author",
     name: "Dr. Tahereh Pordast Medical Content Team",

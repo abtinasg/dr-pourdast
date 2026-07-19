@@ -190,46 +190,12 @@ var ENDOMETRIOSIS_PAGE = {
       "فهرست داروهای مصرفی",
       "خلاصه سوابق درمانی",
       "اطلاعات مربوط به چرخه قاعدگی و زمان شروع علائم",
-    ],
-    guideLink: {
-      text: "مشاهده راهنمای کامل جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
+    ]
   },
   /**
    * Patient guide links only — no detailed instructions on this page.
    * All guide content must be reviewed and approved by the doctor.
    */
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط با اندومتریوز و روند درمان",
-    items: [
-      {
-        label: "آشنایی با کیست اندومتریوزی تخمدان",
-        href: "/articles/ovarian-endometrioma-chocolate-cyst",
-      },
-      {
-        label: "نقش سونوگرافی در بررسی اندومتریوز",
-        href: "/articles/endometriosis-ultrasound-diagnosis",
-      },
-      {
-        label: "راهنمای بیماران اندومتریوز",
-        href: "/patient-guides/endometriosis",
-      },
-      {
-        label: "آمادگی برای جلسه اول",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "آمادگی پیش از لاپاراسکوپی",
-        href: "/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "مراقبت‌های عمومی پس از جراحی",
-        href: "/patient-guides/after-surgery",
-      },
-    ],
-  },
   faqs: [
     {
       id: "pain-period",

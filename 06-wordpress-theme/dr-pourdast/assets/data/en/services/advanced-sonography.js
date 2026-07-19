@@ -193,35 +193,7 @@ var ADVANCED_SONOGRAPHY_PAGE = {
       "List of current medications",
       "Summary of symptoms and reason for visit",
       "Prior surgical or treatment reports",
-    ],
-    guideLink: {
-      text: "Guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Related Guides",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Understanding Endometriosis",
-        description:
-          "General information about endometriosis symptoms and the evaluation pathway",
-        href: "/en/patient-guides/endometriosis",
-      },
-      {
-        label: "Abnormal Bleeding",
-        description:
-          "The importance of evaluating abnormal uterine bleeding",
-        href: "/en/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

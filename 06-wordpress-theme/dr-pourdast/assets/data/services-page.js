@@ -63,15 +63,6 @@ var SERVICES_PAGE = {
       "مطالب این بخش صرفاً برای آگاهی عمومی تهیه شده‌اند و جایگزین معاینه، تشخیص یا توصیه درمانی پزشک نیستند.",
     ],
   },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "برای آمادگی پیش از مراجعه",
-    items: [
-      { label: "آمادگی برای جلسه اول", href: "/patient-guides/first-visit" },
-      { label: "راهنمای بیماران اندومتریوز", href: "/patient-guides/endometriosis" },
-      { label: "آمادگی پیش از لاپاراسکوپی", href: "/patient-guides/before-laparoscopy" },
-    ],
-  },
   finalCta: {
     title: "برای بررسی شرایط خود، نوبت مراجعه دریافت کنید",
     description:

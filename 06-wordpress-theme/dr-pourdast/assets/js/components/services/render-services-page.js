@@ -28,20 +28,6 @@
     })
     .join("");
 
-  var guidesHtml = data.relatedGuides.items
-    .map(function (item) {
-      return (
-        '<li><a href="' +
-        item.href +
-        '" class="service-related__link">' +
-        item.label +
-        '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true">' +
-        '<path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-        "</svg></a></li>"
-      );
-    })
-    .join("");
-
   mount.outerHTML =
     renderServiceBreadcrumb(data.breadcrumb) +
     '<section class="guides-hero section" aria-labelledby="' +
@@ -111,19 +97,5 @@
     approachHtml +
     "</ul></div></div></section>" +
     renderMedicalDisclaimer(data.disclaimer) +
-    '<section class="guides-section section" aria-labelledby="services-related-guides-title">' +
-    '<div class="container">' +
-    '<div class="guides-section__content">' +
-    '<header class="section-header section-header--compact">' +
-    '<p class="section-header__eyebrow">' +
-    data.relatedGuides.eyebrow +
-    "</p>" +
-    '<h2 class="section-header__title" id="services-related-guides-title">' +
-    data.relatedGuides.title +
-    "</h2>" +
-    "</header>" +
-    '<ul class="service-related" role="list">' +
-    guidesHtml +
-    "</ul></div></div></section>" +
     renderServiceAppointmentCta(data.finalCta);
 })();

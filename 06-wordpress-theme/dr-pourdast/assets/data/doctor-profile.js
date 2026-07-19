@@ -100,11 +100,7 @@ var DOCTOR_PROFILE = {
       "جواب پاتولوژی در صورت وجود",
       "فهرست داروهای مصرفی",
       "خلاصه سوابق درمانی",
-    ],
-    guideLink: {
-      text: "مشاهده راهنمای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
+    ]
   },
   finalCta: {
     title: "برای دریافت نوبت مراجعه",

@@ -248,32 +248,7 @@ var UTERINE_FIBROID_PAGE = {
       "فهرست داروهای مصرفی",
       "خلاصه الگوی قاعدگی و خونریزی",
       "سوابق بارداری در صورت ارتباط",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط با فیبروم رحم",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description: "مدارک و اطلاعات لازم برای ارزیابی اولیه",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "آشنایی با خونریزی غیرطبیعی رحم",
-        description: "اطلاعات عمومی درباره زمان مراجعه برای بررسی",
-        href: "/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "مراقبت‌های عمومی پس از جراحی",
-        description: "پیگیری و مراقبت پس از اقدامات درمانی",
-        href: "/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

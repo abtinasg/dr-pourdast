@@ -190,38 +190,12 @@ var ENDOMETRIOSIS_PAGE = {
       "قائمة الأدوية المستخدمة",
       "ملخص تاريخ العلاج",
       "معلومات عن الدورة الشهرية ووقت بدء الأعراض",
-    ],
-    guideLink: {
-      text: "عرض دليل الجلسة الأولى الكامل",
-      href: "/ar/patient-guides/first-visit",
-    },
+    ]
   },
   /**
    * Patient guide links only — no detailed instructions on this page.
    * All guide content must be reviewed and approved by the doctor.
    */
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة ببطانة الرحم المهاجرة ومسار العلاج",
-    items: [
-      {
-        label: "دليل مريضات بطانة الرحم المهاجرة",
-        href: "/ar/patient-guides/endometriosis",
-      },
-      {
-        label: "الاستعداد للجلسة الأولى",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "الاستعداد قبل منظار البطن",
-        href: "/ar/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "الرعاية العامة بعد الجراحة",
-        href: "/ar/patient-guides/after-surgery",
-      },
-    ],
-  },
   faqs: [
     {
       id: "pain-period",

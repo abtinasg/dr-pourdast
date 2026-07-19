@@ -238,32 +238,7 @@ var PELVIC_ADHESION_PAGE = {
       "فهرست داروهای مصرفی",
       "خلاصه علائم و زمان شروع",
       "سوابق بارداری در صورت ارتباط",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description: "مدارک لازم برای ارزیابی اولیه",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "راهنمای بیماران اندومتریوز",
-        description: "آشنایی با علائم و روند بررسی",
-        href: "/patient-guides/endometriosis",
-      },
-      {
-        label: "آمادگی پیش از لاپاراسکوپی",
-        description: "اطلاعات عمومی پیش از جراحی",
-        href: "/patient-guides/before-laparoscopy",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

@@ -248,32 +248,7 @@ var UTERINE_FIBROID_PAGE = {
       "قائمة الأدوية المستخدمة",
       "ملخص نمط الدورة والنزيف",
       "تاريخ الحمل عند الاقتضاء",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة بالورم الليفي الرحمي",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description: "المستندات والمعلومات اللازمة للتقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "التعرّف على نزيف الرحم غير الطبيعي",
-        description: "معلومات عامة عن وقت المراجعة للفحص",
-        href: "/ar/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "الرعاية العامة بعد الجراحة",
-        description: "المتابعة والرعاية بعد الإجراءات العلاجية",
-        href: "/ar/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

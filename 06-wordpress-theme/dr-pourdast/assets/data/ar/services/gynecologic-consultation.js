@@ -80,10 +80,6 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
         title: "اضطرابات الدورة الشهرية",
         description:
           "فحص الدورة غير المنتظمة والنزيف غير الطبيعي وآلام الدورة والتغيرات المرتبطة بالدورة.",
-        link: {
-          text: "دليل نزيف الرحم",
-          href: "/ar/patient-guides/uterine-bleeding",
-        },
       },
       {
         title: "الورم الليفي الرحمي",
@@ -209,35 +205,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
       "قائمة الأدوية المستخدمة",
       "تاريخ آخر دورة شهرية",
       "ملخص الأعراض ووقت بدئها",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "التعرّف على النزيف غير الطبيعي",
-        description:
-          "معلومات عامة عن بعض أسباب النزيف غير الطبيعي وأهمية التقييم الطبي",
-        href: "/ar/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "نقاط مهمة قبل المراجعة",
-        description:
-          "معلومات تساعد على تشخيص أسرع وأدق",
-        href: "/ar/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

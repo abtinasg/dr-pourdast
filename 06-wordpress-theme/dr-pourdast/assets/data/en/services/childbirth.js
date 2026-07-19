@@ -179,35 +179,7 @@ var CHILDBIRTH_PAGE = {
       "Prior pregnancy and delivery history",
       "Date of last menstrual period",
       "Note your questions and concerns",
-    ],
-    guideLink: {
-      text: "Guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Related Guides",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Pregnancy Ultrasound",
-        description:
-          "The importance of ultrasound in monitoring fetal growth",
-        href: "/en/services/advanced-sonography",
-      },
-      {
-        label: "Gynecologic Consultation",
-        description:
-          "Evaluation and women's health care across different life stages",
-        href: "/en/services/gynecologic-consultation",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

@@ -242,35 +242,7 @@ var OVARIAN_CYST_PAGE = {
       "قائمة الأدوية المستخدمة",
       "تاريخ آخر دورة شهرية",
       "ملخص الأعراض ووقت بدئها",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة بكيس المبيض",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "التعرّف على بطانة الرحم المهاجرة",
-        description:
-          "التعرف على أعراض بطانة الرحم المهاجرة ومسار فحصها والأكياس المرتبطة بها",
-        href: "/ar/patient-guides/endometriosis",
-      },
-      {
-        label: "الرعاية العامة بعد الجراحة",
-        description:
-          "معلومات عامة عن المتابعة والرعاية بعد الإجراءات الجراحية",
-        href: "/ar/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

@@ -50,7 +50,6 @@ var ARTICLES_PAGE = {
         "Content in this section will be available after review and approval by the physician.",
       actions: [
         { label: "View specialty services", href: "/en/services" },
-        { label: "View patient guides", href: "/en/patient-guides" },
       ],
     },
     noSearch: {
@@ -69,24 +68,6 @@ var ARTICLES_PAGE = {
   disclaimer: {
     paragraphs: [
       "The content in this section is provided for general educational purposes only and does not replace examination, diagnosis, prescriptions, or medical treatment recommendations. Each patient's condition must be evaluated individually.",
-    ],
-  },
-  relatedGuides: {
-    eyebrow: "Patient guides",
-    title: "Prepare for your visit",
-    items: [
-      {
-        label: "Preparing for your first visit",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Endometriosis patient guide",
-        href: "/en/patient-guides/endometriosis",
-      },
-      {
-        label: "Preparing for laparoscopy",
-        href: "/en/patient-guides/before-laparoscopy",
-      },
     ],
   },
   finalCta: {

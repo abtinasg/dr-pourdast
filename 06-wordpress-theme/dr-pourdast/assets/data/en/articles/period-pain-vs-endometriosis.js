@@ -220,7 +220,6 @@ var ARTICLE_PAGE = {
     ],
   },
   relatedServiceSlugs: ["endometriosis", "gynecologic-laparoscopy"],
-  relatedGuideSlugs: ["endometriosis", "before-laparoscopy"],
   author: {
     label: "Author",
     name: "Dr. Tahereh Pordast",

@@ -598,7 +598,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'Before your visit, you can also read the <a href="/en/patient-guides/first-visit">Preparing for Your First Visit</a> guide.',
+          'Before your visit, you can also read the guide.',
       },
       {
         type: "heading",
@@ -756,7 +756,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "gynecologic-laparoscopy",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "Author",
     name: "Dr. Tahereh Pordast Medical Content Team",

@@ -193,41 +193,7 @@ var ADVANCED_SONOGRAPHY_PAGE = {
       "فهرست داروهای مصرفی",
       "خلاصه علائم و دلیل مراجعه",
       "گزارش جراحی یا درمان قبلی",
-    ],
-    guideLink: {
-      text: "راهنمای آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط",
-    items: [
-      {
-        label: "سونوگرافی چه نشانه‌هایی از اندومتریوز را نشان می‌دهد؟",
-        description:
-          "کاربرد و محدودیت سونوگرافی در بررسی اندومتریوز، MRI و لاپاراسکوپی",
-        href: "/articles/endometriosis-ultrasound-diagnosis",
-      },
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "شناخت اندومتریوز",
-        description:
-          "آشنایی با علائم و روند بررسی اندومتریوز",
-        href: "/patient-guides/endometriosis",
-      },
-      {
-        label: "خونریزی‌های غیرطبیعی",
-        description:
-          "اهمیت ارزیابی خونریزی‌های غیرطبیعی رحم",
-        href: "/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

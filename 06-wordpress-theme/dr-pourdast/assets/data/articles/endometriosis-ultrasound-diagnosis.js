@@ -613,7 +613,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'همراه‌داشتن تصاویر قبلی، نه‌فقط متن گزارش آن‌ها، ممکن است برای مقایسه تغییرات مفید باشد. می‌توانید پیش از مراجعه، <a href="/patient-guides/first-visit">راهنمای آمادگی برای جلسه اول</a> را نیز مطالعه کنید.',
+          'همراه‌داشتن تصاویر قبلی، نه‌فقط متن گزارش آن‌ها، ممکن است برای مقایسه تغییرات مفید باشد..',
       },
       {
         type: "heading",
@@ -879,7 +879,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "ovarian-cyst",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "نویسنده",
     name: "تیم محتوای پزشکی وب‌سایت دکتر طاهره پوردست",

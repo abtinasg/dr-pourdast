@@ -232,35 +232,7 @@ var HYSTEROSCOPY_PAGE = {
       "Summary of pregnancy and treatment history",
       "Menstrual cycle information",
       "Timing and severity of abnormal bleeding",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Guides Related to Uterine Evaluation and Treatment",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "General Post-Procedure Care",
-        description:
-          "General information about follow-up and care after therapeutic procedures",
-        href: "/en/patient-guides/after-surgery",
-      },
-      {
-        label: "Understanding Uterine Bleeding Problems",
-        description:
-          "General information about some causes of abnormal bleeding and the importance of medical evaluation",
-        href: "/en/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

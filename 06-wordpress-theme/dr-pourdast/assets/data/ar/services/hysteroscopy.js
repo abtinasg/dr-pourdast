@@ -232,35 +232,7 @@ var HYSTEROSCOPY_PAGE = {
       "ملخص تاريخ الحمل والعلاج",
       "معلومات الدورة الشهرية",
       "وقت وشدة النزيفات غير الطبيعية",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة بفحص وعلاج مشكلات الرحم",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "الرعاية العامة بعد الإجراء العلاجي",
-        description:
-          "معلومات عامة عن المتابعة والرعاية بعد الإجراءات العلاجية",
-        href: "/ar/patient-guides/after-surgery",
-      },
-      {
-        label: "التعرّف على مشكلات ونزيف الرحم",
-        description:
-          "معلومات عامة عن بعض أسباب النزيف غير الطبيعي وأهمية التقييم الطبي",
-        href: "/ar/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

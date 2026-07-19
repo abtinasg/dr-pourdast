@@ -63,15 +63,6 @@ var SERVICES_PAGE = {
       "المحتوى في هذا القسم مُعدّ للتوعية العامة فقط ولا يغني عن الفحص أو التشخيص أو التوصيات العلاجية من الطبيب.",
     ],
   },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "للاستعداد قبل الزيارة",
-    items: [
-      { label: "الاستعداد للزيارة الأولى", href: "/ar/patient-guides/first-visit" },
-      { label: "دليل مريضات بطانة الرحم المهاجرة", href: "/ar/patient-guides/endometriosis" },
-      { label: "الاستعداد قبل منظار البطن", href: "/ar/patient-guides/before-laparoscopy" },
-    ],
-  },
   finalCta: {
     title: "لتقييم حالتك، احجزي موعداً",
     description:

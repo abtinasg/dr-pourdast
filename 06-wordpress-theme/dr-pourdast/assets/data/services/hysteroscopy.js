@@ -232,35 +232,7 @@ var HYSTEROSCOPY_PAGE = {
       "خلاصه سوابق بارداری و درمان",
       "اطلاعات چرخه قاعدگی",
       "زمان و شدت خونریزی‌های غیرطبیعی",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط با بررسی و درمان مشکلات رحم",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "مراقبت‌های عمومی پس از اقدام درمانی",
-        description:
-          "اطلاعات عمومی درباره پیگیری و مراقبت بعد از اقدامات درمانی",
-        href: "/patient-guides/after-surgery",
-      },
-      {
-        label: "شناخت مشکلات و خونریزی‌های رحمی",
-        description:
-          "آشنایی عمومی با برخی علل خونریزی غیرطبیعی و اهمیت ارزیابی پزشکی",
-        href: "/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

@@ -15,12 +15,6 @@ var ARTICLE_AVAILABLE_SERVICE_ROUTES = {
   "ovarian-cyst": "/services/ovarian-cyst",
 };
 
-/** @type {Record<string, string>} */
-var ARTICLE_AVAILABLE_GUIDE_ROUTES = {
-  "first-visit": "/patient-guides/first-visit",
-  endometriosis: "/patient-guides/endometriosis",
-};
-
 /**
  * @returns {string}
  */
@@ -277,52 +271,6 @@ function resolveRelatedServicesSection(slugs, limit) {
   return {
     eyebrow: "خدمات مرتبط",
     title: "خدمات تخصصی مرتبط با این موضوع",
-    items: items,
-  };
-}
-
-/**
- * @param {string[]} slugs
- * @param {number} [limit]
- * @returns {{ eyebrow: string, title: string, items: Array<{label: string, href: string, description?: string}> }|null}
- */
-function resolveRelatedGuidesSection(slugs, limit) {
-  if (!slugs || !slugs.length) return null;
-
-  var maxItems = limit || 3;
-  var items = [];
-  var guideItems =
-    typeof PATIENT_GUIDES_PAGE !== "undefined" &&
-    PATIENT_GUIDES_PAGE.guides &&
-    PATIENT_GUIDES_PAGE.guides.items
-      ? PATIENT_GUIDES_PAGE.guides.items
-      : [];
-
-  for (var i = 0; i < slugs.length && items.length < maxItems; i++) {
-    var slug = slugs[i];
-    var guide = null;
-
-    for (var j = 0; j < guideItems.length; j++) {
-      if (guideItems[j].slug === slug) {
-        guide = guideItems[j];
-        break;
-      }
-    }
-
-    if (!guide) continue;
-
-    items.push({
-      label: guide.title,
-      href: guide.href,
-      description: guide.description,
-    });
-  }
-
-  if (!items.length) return null;
-
-  return {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط برای مطالعه بیشتر",
     items: items,
   };
 }

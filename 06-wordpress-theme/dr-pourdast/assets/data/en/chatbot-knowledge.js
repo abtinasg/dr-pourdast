@@ -51,7 +51,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "First visit documents",
       content:
         "Bring lab results, ultrasounds, MRI reports, prior surgical reports, a list of current medications, and relevant treatment history.",
-      href: "/en/patient-guides/first-visit",
+      href: "/en/contact",
     },
     {
       id: "laparoscopy",
@@ -66,8 +66,8 @@ var CHATBOT_KNOWLEDGE = {
       keywords: ["laparoscopy", "recovery", "after", "care"],
       title: "After laparoscopy",
       content:
-        "Recovery after laparoscopy is usually shorter than open surgery. See the patient guides section for detailed post-operative care information.",
-      href: "/en/patient-guides/after-surgery",
+        "Recovery after laparoscopy is usually shorter than open surgery. Follow your physician's specific post-operative instructions.",
+      href: "/en/services/gynecologic-laparoscopy",
     },
     {
       id: "hysteroscopy",
@@ -107,7 +107,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Abnormal uterine bleeding",
       content:
         "Abnormal uterine bleeding can have various causes. If your cycle pattern changes or bleeding is heavy or prolonged, see a physician.",
-      href: "/en/patient-guides/uterine-bleeding",
+      href: "/en/services/gynecologic-consultation",
     },
     {
       id: "pelvic-pain",
@@ -156,14 +156,6 @@ var CHATBOT_KNOWLEDGE = {
       content:
         "The articles section covers endometriosis, laparoscopy, uterine and ovarian health, and tips for your first visit.",
       href: "/en/articles",
-    },
-    {
-      id: "patient-guides",
-      keywords: ["guide", "patient", "preparation", "before", "after"],
-      title: "Patient guides",
-      content:
-        "Patient guides cover preparing for your first visit, understanding endometriosis, pre-laparoscopy preparation, and post-surgery care.",
-      href: "/en/patient-guides",
     },
     {
       id: "faq",

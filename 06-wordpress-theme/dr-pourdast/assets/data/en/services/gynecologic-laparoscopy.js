@@ -205,35 +205,7 @@ var LAPAROSCOPY_PAGE = {
       "List of current medications",
       "Summary of medical and treatment history",
       "Pregnancy or fertility information when relevant",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Guides Related to Laparoscopy",
-    items: [
-      {
-        label: "Preparing for Laparoscopy",
-        description:
-          "General information about records, coordination, and pre-operative preparation",
-        href: "/en/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "General Post-Surgery Care",
-        description:
-          "General principles of follow-up and care after surgery",
-        href: "/en/patient-guides/after-surgery",
-      },
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

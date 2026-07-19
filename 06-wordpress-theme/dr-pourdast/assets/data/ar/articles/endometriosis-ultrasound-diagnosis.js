@@ -613,7 +613,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'إحضار الصور السابقة، وليس نص التقرير فقط، قد يكون مفيداً للمقارنة. ويمكنك أيضاً قبل المراجعة قراءة <a href="/ar/patient-guides/first-visit">دليل الاستعداد للجلسة الأولى</a>.',
+          'إحضار الصور السابقة، وليس نص التقرير فقط، قد يكون مفيداً للمقارنة..',
       },
       {
         type: "heading",
@@ -879,7 +879,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "ovarian-cyst",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "الكاتبة",
     name: "فريق المحتوى الطبي لموقع د. طاهرة پوردست",

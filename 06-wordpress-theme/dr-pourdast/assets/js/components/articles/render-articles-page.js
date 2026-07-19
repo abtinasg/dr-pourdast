@@ -35,7 +35,6 @@
       emptyStates: data.emptyStates,
       pagination: data.pagination,
     }) +
-    renderRelatedGuides(data.relatedGuides) +
     renderServiceAppointmentCta(data.finalCta);
 
   mount.outerHTML = html;

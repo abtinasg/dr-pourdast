@@ -193,35 +193,7 @@ var ADVANCED_SONOGRAPHY_PAGE = {
       "قائمة الأدوية المستخدمة",
       "ملخص الأعراض وسبب المراجعة",
       "تقرير جراحة أو علاج سابق",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة",
-    items: [
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-      {
-        label: "التعرّف على بطانة الرحم المهاجرة",
-        description:
-          "معلومات عامة عن أعراض بطانة الرحم المهاجرة ومسار الفحص",
-        href: "/ar/patient-guides/endometriosis",
-      },
-      {
-        label: "النزيف غير الطبيعي",
-        description:
-          "أهمية تقييم نزيف الرحم غير الطبيعي",
-        href: "/ar/patient-guides/uterine-bleeding",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

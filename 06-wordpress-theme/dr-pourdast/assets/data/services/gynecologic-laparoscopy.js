@@ -205,35 +205,7 @@ var LAPAROSCOPY_PAGE = {
       "فهرست داروهای مصرفی",
       "خلاصه سوابق بیماری و درمان",
       "اطلاعات مرتبط با بارداری یا باروری در صورت نیاز",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط با لاپاراسکوپی",
-    items: [
-      {
-        label: "آمادگی پیش از لاپاراسکوپی",
-        description:
-          "اطلاعات عمومی درباره مدارک، هماهنگی‌ها و آمادگی‌های پیش از جراحی",
-        href: "/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "مراقبت‌های عمومی پس از جراحی",
-        description:
-          "آشنایی با اصول عمومی پیگیری و مراقبت بعد از جراحی",
-        href: "/patient-guides/after-surgery",
-      },
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",

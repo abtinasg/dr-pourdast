@@ -598,7 +598,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'پیش از مراجعه می‌توانید <a href="/patient-guides/first-visit">راهنمای آمادگی برای جلسه اول</a> را نیز مطالعه کنید.',
+          'پیش از مراجعه می‌توانید را نیز مطالعه کنید.',
       },
       {
         type: "heading",
@@ -756,7 +756,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "gynecologic-laparoscopy",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "نویسنده",
     name: "تیم محتوای پزشکی وب‌سایت دکتر طاهره پوردست",

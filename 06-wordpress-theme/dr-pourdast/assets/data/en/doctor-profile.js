@@ -100,11 +100,7 @@ var DOCTOR_PROFILE = {
       "Pathology results, if available",
       "List of current medications",
       "Summary of treatment history",
-    ],
-    guideLink: {
-      text: "View first-visit guide",
-      href: "/en/patient-guides/first-visit",
-    },
+    ]
   },
   finalCta: {
     title: "Book a consultation appointment",

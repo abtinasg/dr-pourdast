@@ -598,7 +598,7 @@ var ARTICLE_PAGE = {
       {
         type: "paragraph",
         text:
-          'قبل المراجعة يمكنك أيضاً قراءة <a href="/ar/patient-guides/first-visit">دليل الاستعداد للجلسة الأولى</a>.',
+          'قبل المراجعة يمكنك أيضاً قراءة.',
       },
       {
         type: "heading",
@@ -756,7 +756,6 @@ var ARTICLE_PAGE = {
     "advanced-sonography",
     "gynecologic-laparoscopy",
   ],
-  relatedGuideSlugs: ["first-visit", "endometriosis"],
   author: {
     label: "الكاتبة",
     name: "فريق المحتوى الطبي لموقع د. طاهرة پوردست",

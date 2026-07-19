@@ -80,10 +80,6 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
         title: "Menstrual disorders",
         description:
           "Assessment of irregular periods, abnormal bleeding, painful menstruation, and cycle-related changes.",
-        link: {
-          text: "Guide to uterine bleeding",
-          href: "/en/patient-guides/uterine-bleeding",
-        },
       },
       {
         title: "Uterine fibroids",
@@ -209,35 +205,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
       "List of current medications",
       "Date of last menstrual period",
       "Summary of symptoms and when they began",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Related Guides",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description:
-          "Records and information to bring for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Understanding Abnormal Bleeding",
-        description:
-          "General information about some causes of abnormal bleeding and the importance of medical evaluation",
-        href: "/en/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "Important Points Before Your Visit",
-        description:
-          "Information that helps support faster and more accurate diagnosis",
-        href: "/en/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

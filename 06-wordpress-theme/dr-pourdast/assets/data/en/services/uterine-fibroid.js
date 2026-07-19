@@ -248,32 +248,7 @@ var UTERINE_FIBROID_PAGE = {
       "List of current medications",
       "Summary of menstrual pattern and bleeding",
       "Pregnancy history when relevant",
-    ],
-    guideLink: {
-      text: "Complete guide to preparing for your first visit",
-      href: "/en/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Guides Related to Uterine Fibroids",
-    items: [
-      {
-        label: "Preparing for Your First Visit",
-        description: "Records and information needed for initial evaluation",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Understanding Abnormal Uterine Bleeding",
-        description: "General information about when to seek evaluation",
-        href: "/en/patient-guides/uterine-bleeding",
-      },
-      {
-        label: "General Post-Surgery Care",
-        description: "Follow-up and care after therapeutic procedures",
-        href: "/en/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "Frequently Asked Questions",

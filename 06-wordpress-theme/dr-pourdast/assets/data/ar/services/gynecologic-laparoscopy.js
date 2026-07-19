@@ -205,35 +205,7 @@ var LAPAROSCOPY_PAGE = {
       "قائمة الأدوية المستخدمة",
       "ملخص تاريخ المرض والعلاج",
       "معلومات عن الحمل أو الخصوبة عند الحاجة",
-    ],
-    guideLink: {
-      text: "دليل الاستعداد الكامل للجلسة الأولى",
-      href: "/ar/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "دليل المريضات",
-    title: "أدلة مرتبطة بمنظار البطن",
-    items: [
-      {
-        label: "الاستعداد قبل منظار البطن",
-        description:
-          "معلومات عامة عن المستندات والتنسيق والاستعداد قبل الجراحة",
-        href: "/ar/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "الرعاية العامة بعد الجراحة",
-        description:
-          "التعرّف على مبادئ المتابعة والرعاية بعد الجراحة",
-        href: "/ar/patient-guides/after-surgery",
-      },
-      {
-        label: "الاستعداد للجلسة الأولى",
-        description:
-          "المستندات والمعلومات التي يُفضّل إحضارها أثناء التقييم الأولي",
-        href: "/ar/patient-guides/first-visit",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "أسئلة شائعة",

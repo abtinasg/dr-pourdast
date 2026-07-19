@@ -81,11 +81,7 @@ var CONTACT_PAGE = {
       "Pathology results if available",
       "List of current medications",
       "Summary of treatment history",
-    ],
-    guideLink: {
-      text: "View the complete first-visit guide",
-      href: "/en/patient-guides/first-visit",
-    },
+    ]
   },
   faqs: {
     eyebrow: "Frequently asked questions",

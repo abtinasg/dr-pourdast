@@ -190,38 +190,12 @@ var ENDOMETRIOSIS_PAGE = {
       "List of current medications",
       "Summary of treatment history",
       "Information about menstrual cycle and symptom onset",
-    ],
-    guideLink: {
-      text: "View the complete first-visit guide",
-      href: "/en/patient-guides/first-visit",
-    },
+    ]
   },
   /**
    * Patient guide links only — no detailed instructions on this page.
    * All guide content must be reviewed and approved by the doctor.
    */
-  relatedGuides: {
-    eyebrow: "Patient Guides",
-    title: "Guides Related to Endometriosis and Treatment",
-    items: [
-      {
-        label: "Endometriosis Patient Guide",
-        href: "/en/patient-guides/endometriosis",
-      },
-      {
-        label: "Preparing for Your First Visit",
-        href: "/en/patient-guides/first-visit",
-      },
-      {
-        label: "Preparing for Laparoscopy",
-        href: "/en/patient-guides/before-laparoscopy",
-      },
-      {
-        label: "General Post-Surgery Care",
-        href: "/en/patient-guides/after-surgery",
-      },
-    ],
-  },
   faqs: [
     {
       id: "pain-period",

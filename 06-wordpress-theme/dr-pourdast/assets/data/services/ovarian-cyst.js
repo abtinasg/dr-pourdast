@@ -242,35 +242,7 @@ var OVARIAN_CYST_PAGE = {
       "فهرست داروهای مصرفی",
       "تاریخ آخرین قاعدگی",
       "خلاصه علائم و زمان شروع آن‌ها",
-    ],
-    guideLink: {
-      text: "راهنمای کامل آمادگی برای جلسه اول",
-      href: "/patient-guides/first-visit",
-    },
-  },
-  relatedGuides: {
-    eyebrow: "راهنمای بیماران",
-    title: "راهنماهای مرتبط با کیست تخمدان",
-    items: [
-      {
-        label: "آمادگی برای جلسه اول",
-        description:
-          "مدارک و اطلاعاتی که بهتر است هنگام ارزیابی اولیه همراه داشته باشید",
-        href: "/patient-guides/first-visit",
-      },
-      {
-        label: "آشنایی با اندومتریوز",
-        description:
-          "شناخت علائم و روند بررسی اندومتریوز و کیست‌های مرتبط با آن",
-        href: "/patient-guides/endometriosis",
-      },
-      {
-        label: "مراقبت‌های عمومی پس از جراحی",
-        description:
-          "اطلاعات عمومی درباره پیگیری و مراقبت پس از اقدامات جراحی",
-        href: "/patient-guides/after-surgery",
-      },
-    ],
+    ]
   },
   faqs: {
     eyebrow: "سؤالات پرتکرار",
