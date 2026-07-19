@@ -61,6 +61,6 @@ var FOOTER_DATA = {
   credit: {
     label: "آرایه",
     href: "https://araaye.com",
-    prefix: "صُنع بـ ❤️ بواسطة",
+    prefix: "صُنع بـ 🤍 بواسطة",
   },
 };
