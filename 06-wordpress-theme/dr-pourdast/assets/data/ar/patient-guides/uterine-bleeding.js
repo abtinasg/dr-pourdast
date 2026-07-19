@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "معلومات عامة عن الأعراض، والأسباب الشائعة، ووقت المراجعة لتقييم النزيف غير المعتاد.",
     note: "يجب أن يفحص أي نزيف غير طبيعي الطبيبة.",
-    primaryCta: { text: "قراءة مقال النزيف غير الطبيعي", href: "/ar/articles/abnormal-bleeding" },
+    primaryCta: { text: "عرض صفحة الاستشارة التخصصية", href: "/ar/services/gynecologic-consultation" },
     appointmentSource: "uterine-bleeding-guide-hero",
   },
   prose: {

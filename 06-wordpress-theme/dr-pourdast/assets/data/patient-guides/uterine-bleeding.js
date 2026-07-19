@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "اطلاعات عمومی درباره علائم، علل شایع و زمان مراجعه برای بررسی خونریزی غیرمعمول.",
     note: "هر خونریزی غیرطبیعی باید توسط پزشک بررسی شود.",
-    primaryCta: { text: "مطالعه مقاله خونریزی غیرطبیعی", href: "/articles/abnormal-bleeding" },
+    primaryCta: { text: "مشاهده صفحه مشاوره تخصصی", href: "/services/gynecologic-consultation" },
     appointmentSource: "uterine-bleeding-guide-hero",
   },
   prose: {

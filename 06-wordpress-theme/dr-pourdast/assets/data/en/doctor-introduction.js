@@ -16,7 +16,7 @@ var DOCTOR_INTRODUCTION = {
   title: "About Dr. Tahereh Pordast",
   biography: [
     "Dr. Tahereh Pordast is an obstetrician-gynecologist with an advanced fellowship in gynecologic laparoscopy. Her main focus is the diagnosis and treatment of endometriosis, uterine and ovarian conditions, and minimally invasive gynecologic surgery.",
-    "She is an associate professor at Shiraz University of Medical Sciences and combines clinical practice with teaching and research in gynecology. Her approach centers on careful patient assessment and choosing the least invasive treatment.",
+    "She is a professor at Shiraz University of Medical Sciences and combines clinical practice with teaching and research in gynecology. Her approach centers on careful patient assessment and choosing the least invasive treatment.",
   ],
   imageAlt: "Photo of Dr. Tahereh Pordast, obstetrician-gynecologist",
   videoSrc: "/assets/videos/doctor-intro.mp4",
@@ -29,7 +29,7 @@ var DOCTOR_INTRODUCTION = {
       icon: MEDICAL_ICONS.fellowship,
     },
     {
-      title: "Associate Professor, Shiraz University of Medical Sciences",
+      title: "Professor at Shiraz University of Medical Sciences",
       icon: MEDICAL_ICONS.university,
     },
     {

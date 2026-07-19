@@ -46,7 +46,7 @@ var DOCTOR_PROFILE = {
     items: [
       { label: "تخصص زنان و زایمان", verified: true },
       { label: "فلوشیپ لاپاراسکوپی پیشرفته زنان", verified: true },
-      { label: "دانشیار دانشگاه علوم پزشکی شیراز", verified: true },
+      { label: "استاد دانشگاه علوم پزشکی شیراز", verified: true },
       { label: "شماره نظام پزشکی ۹۰۵۶۶", verified: true },
       { label: "شیراز", verified: true },
     ],

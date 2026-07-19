@@ -34,7 +34,7 @@ var SERVICES_SECTION = {
           highlight: "استشارة",
           description:
             "تقييم وعلاج العدوى والأورام الليفية الرحمية واضطرابات الدورة الشهرية وغيرها من مشكلات أمراض النساء الشائعة.",
-          href: "/ar/contact",
+          href: "/ar/services/gynecologic-consultation",
           icon: MEDICAL_ICONS.consultation,
         },
         {
@@ -42,7 +42,7 @@ var SERVICES_SECTION = {
           highlight: "الموجات فوق الصوتية",
           description:
             "فحص دقيق للرحم والمبيضين وسماكة بطانة الرحم وآفات الحوض بالموجات فوق الصوتية المتخصصة.",
-          href: "/ar/contact",
+          href: "/ar/services/advanced-sonography",
           icon: MEDICAL_ICONS.ultrasound,
         },
         {
@@ -50,7 +50,7 @@ var SERVICES_SECTION = {
           highlight: "الولادة",
           description:
             "استشارة واختيار الطريقة المناسبة للولادة الطبيعية أو القيصرية وفق حالة الأم والجنين.",
-          href: "/ar/contact",
+          href: "/ar/services/childbirth",
           icon: MEDICAL_ICONS.childbirth,
         },
       ],

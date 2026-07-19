@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "General information about follow-up, daily activity, and care after laparoscopic or hysteroscopic surgery.",
     note: "Follow the exact post-operative instructions provided by your treating physician.",
-    primaryCta: { text: "Read laparoscopy recovery article", href: "/en/articles/laparoscopy-recovery" },
+    primaryCta: { text: "View laparoscopy service page", href: "/en/services/gynecologic-laparoscopy" },
     appointmentSource: "after-surgery-guide-hero",
   },
   prose: {

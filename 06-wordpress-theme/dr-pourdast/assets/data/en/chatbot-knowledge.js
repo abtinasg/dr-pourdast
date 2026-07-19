@@ -27,7 +27,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Endometriosis symptoms",
       content:
         "Endometriosis may cause severe menstrual pain, pelvic pain, pain during intercourse, digestive symptoms, or fertility problems. Symptoms vary and a definitive diagnosis requires medical evaluation.",
-      href: "/en/articles/endometriosis-symptoms",
+      href: "/en/services/endometriosis",
     },
     {
       id: "endometriosis-surgery",
@@ -43,7 +43,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Diagnosing endometriosis",
       content:
         "Diagnosis begins with a clinical exam and may include ultrasound, MRI, and in some cases laparoscopy to confirm the diagnosis.",
-      href: "/en/articles/endometriosis-diagnosis",
+      href: "/en/services/endometriosis",
     },
     {
       id: "first-visit",
@@ -67,7 +67,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "After laparoscopy",
       content:
         "Recovery after laparoscopy is usually shorter than open surgery. See the patient guides section for detailed post-operative care information.",
-      href: "/en/articles/laparoscopy-recovery",
+      href: "/en/patient-guides/after-surgery",
     },
     {
       id: "hysteroscopy",
@@ -83,7 +83,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Hysteroscopy vs laparoscopy",
       content:
         "Hysteroscopy examines the inside of the uterus; laparoscopy examines the pelvis and internal organs. The appropriate method depends on your condition.",
-      href: "/en/articles/hysteroscopy-vs-laparoscopy",
+      href: "/en/services/hysteroscopy",
     },
     {
       id: "ovarian-cyst",
@@ -107,7 +107,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Abnormal uterine bleeding",
       content:
         "Abnormal uterine bleeding can have various causes. If your cycle pattern changes or bleeding is heavy or prolonged, see a physician.",
-      href: "/en/articles/abnormal-bleeding",
+      href: "/en/patient-guides/uterine-bleeding",
     },
     {
       id: "pelvic-pain",
@@ -115,7 +115,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "Chronic pelvic pain",
       content:
         "Chronic pelvic pain may have various causes including endometriosis, adhesions, cysts, or other conditions. Specialist evaluation is needed.",
-      href: "/en/articles/pelvic-pain-causes",
+      href: "/en/services/endometriosis",
     },
     {
       id: "pelvic-adhesion",

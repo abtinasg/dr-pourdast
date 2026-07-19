@@ -34,7 +34,7 @@ var SERVICES_SECTION = {
           highlight: "مشاوره",
           description:
             "ارزیابی و درمان عفونت‌ها، فیبروم رحم، اختلالات قاعدگی و سایر مشکلات شایع زنان.",
-          href: "/contact",
+          href: "/services/gynecologic-consultation",
           icon: MEDICAL_ICONS.consultation,
         },
         {
@@ -42,7 +42,7 @@ var SERVICES_SECTION = {
           highlight: "سونوگرافی",
           description:
             "بررسی دقیق رحم، تخمدان‌ها، ضخامت آندومتر و ضایعات لگنی با سونوگرافی تخصصی.",
-          href: "/contact",
+          href: "/services/advanced-sonography",
           icon: MEDICAL_ICONS.ultrasound,
         },
         {
@@ -50,7 +50,7 @@ var SERVICES_SECTION = {
           highlight: "زایمان",
           description:
             "مشاوره و انتخاب روش مناسب زایمان طبیعی یا سزارین با توجه به شرایط مادر و جنین.",
-          href: "/contact",
+          href: "/services/childbirth",
           icon: MEDICAL_ICONS.childbirth,
         },
       ],

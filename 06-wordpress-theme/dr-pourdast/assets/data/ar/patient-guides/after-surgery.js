@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "معلومات عامة عن المتابعة، والنشاط اليومي، والرعاية بعد جراحة منظار البطن أو منظار الرحم.",
     note: "احصلي على التعليمات الدقيقة بعد العملية من الطبيبة المعالجة.",
-    primaryCta: { text: "قراءة مقال التعافي بعد منظار البطن", href: "/ar/articles/laparoscopy-recovery" },
+    primaryCta: { text: "عرض صفحة منظار البطن", href: "/ar/services/gynecologic-laparoscopy" },
     appointmentSource: "after-surgery-guide-hero",
   },
   prose: {

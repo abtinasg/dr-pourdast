@@ -36,6 +36,9 @@ var FOOTER_DATA = {
     title: "Specialized Services",
     ariaLabel: "Specialized services",
     links: [
+      { label: "Specialist Gynecologic Consultation", href: "/en/services/gynecologic-consultation" },
+      { label: "Advanced Sonography", href: "/en/services/advanced-sonography" },
+      { label: "Childbirth", href: "/en/services/childbirth" },
       { label: "Endometriosis", href: "/en/services/endometriosis" },
       { label: "Gynecologic Laparoscopy", href: "/en/services/gynecologic-laparoscopy" },
       { label: "Hysteroscopy", href: "/en/services/hysteroscopy" },

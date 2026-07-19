@@ -36,6 +36,9 @@ var FOOTER_DATA = {
     title: "خدمات تخصصی",
     ariaLabel: "خدمات تخصصی",
     links: [
+      { label: "مشاوره و معاینه تخصصی زنان", href: "/services/gynecologic-consultation" },
+      { label: "سونوگرافی پیشرفته", href: "/services/advanced-sonography" },
+      { label: "زایمان", href: "/services/childbirth" },
       { label: "اندومتریوز", href: "/services/endometriosis" },
       { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
       { label: "هیستروسکوپی", href: "/services/hysteroscopy" },

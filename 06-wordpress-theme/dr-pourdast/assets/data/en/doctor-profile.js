@@ -46,7 +46,7 @@ var DOCTOR_PROFILE = {
     items: [
       { label: "Obstetrician & Gynecologist", verified: true },
       { label: "Advanced Gynecologic Laparoscopy Fellowship", verified: true },
-      { label: "Associate Professor, Shiraz University of Medical Sciences", verified: true },
+      { label: "Professor at Shiraz University of Medical Sciences", verified: true },
       { label: "Medical License No. 90566", verified: true },
       { label: "Shiraz", verified: true },
     ],

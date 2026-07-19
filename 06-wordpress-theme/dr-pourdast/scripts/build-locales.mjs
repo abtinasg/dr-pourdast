@@ -44,7 +44,7 @@ const TEXT_REPLACEMENTS = {
     "تشخیص دقیق، درمان علمی و جراحی‌های کم‌تهاجمی زنان با همراهی دکتر طاهره پوردست، متخصص زنان و زایمان و فلوشیپ لاپاراسکوپی پیشرفته زنان.":
       "Accurate diagnosis, evidence-based treatment, and minimally invasive gynecologic surgery with Dr. Tahereh Pordast, obstetrician-gynecologist and advanced laparoscopy fellow.",
     "فلوشیپ لاپاراسکوپی زنان": "Fellowship in Gynecologic Laparoscopy",
-    "دانشیار دانشگاه علوم پزشکی شیراز": "Associate Professor, Shiraz University of Medical Sciences",
+    "استاد دانشگاه علوم پزشکی شیراز": "Professor at Shiraz University of Medical Sciences",
     "شماره نظام پزشکی ۹۰۵۶۶": "Medical License No. 90566",
     "اعتبارنامه‌های تخصصی": "Professional credentials",
     "تصویر دکتر طاهره پوردست — به‌زودی": "Photo of Dr. Tahereh Pordast — coming soon",
@@ -82,7 +82,7 @@ const TEXT_REPLACEMENTS = {
     "تشخیص دقیق، درمان علمی و جراحی‌های کم‌تهاجمی زنان با همراهی دکتر طاهره پوردست، متخصص زنان و زایمان و فلوشیپ لاپاراسکوپی پیشرفته زنان.":
       "تشخيص دقيق وعلاج علمي وجراحات نسائية طفيفة التوغل مع د. طاهرة پوردست، أخصائية نساء وتوليد وزميلة منظار البطن المتقدم.",
     "فلوشیپ لاپاراسکوپی زنان": "زمالة منظار البطن النسائي",
-    "دانشیار دانشگاه علوم پزشکی شیراز": "أستاذة مشاركة في جامعة شيراز للعلوم الطبية",
+    "استاد دانشگاه علوم پزشکی شیراز": "أستاذة في جامعة علوم طب شيراز",
     "شماره نظام پزشکی ۹۰۵۶۶": "رقم الترخيص الطبي 90566",
     "اعتبارنامه‌های تخصصی": "الاعتمادات المهنية",
     "تصویر دکتر طاهره پوردست — به‌زودi": "صورة د. طاهرة پوردست — قريباً",

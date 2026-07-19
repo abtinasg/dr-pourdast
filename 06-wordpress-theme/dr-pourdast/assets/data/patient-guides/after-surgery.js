@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "اطلاعات عمومی درباره پیگیری، فعالیت روزانه و مراقبت‌های بعد از جراحی لاپاراسکوپی یا هیستروسکوپی.",
     note: "دستورالعمل دقیق پس از عمل را از پزشک معالج دریافت کنید.",
-    primaryCta: { text: "مطالعه مقاله بازیابی لاپاراسکوپی", href: "/articles/laparoscopy-recovery" },
+    primaryCta: { text: "مشاهده صفحه لاپاراسکوپی", href: "/services/gynecologic-laparoscopy" },
     appointmentSource: "after-surgery-guide-hero",
   },
   prose: {

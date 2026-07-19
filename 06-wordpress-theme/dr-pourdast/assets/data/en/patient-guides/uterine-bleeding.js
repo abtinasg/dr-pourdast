@@ -25,7 +25,7 @@ var GUIDE_PAGE = {
     description:
       "General information about symptoms, common causes, and when to seek evaluation for unusual bleeding.",
     note: "Any abnormal uterine bleeding should be evaluated by a physician.",
-    primaryCta: { text: "Read abnormal bleeding article", href: "/en/articles/abnormal-bleeding" },
+    primaryCta: { text: "View gynecologic consultation page", href: "/en/services/gynecologic-consultation" },
     appointmentSource: "uterine-bleeding-guide-hero",
   },
   prose: {

@@ -34,7 +34,7 @@ var SERVICES_SECTION = {
           highlight: "Consultation",
           description:
             "Evaluation and treatment of infections, uterine fibroids, menstrual disorders, and other common gynecologic concerns.",
-          href: "/en/contact",
+          href: "/en/services/gynecologic-consultation",
           icon: MEDICAL_ICONS.consultation,
         },
         {
@@ -42,7 +42,7 @@ var SERVICES_SECTION = {
           highlight: "Ultrasound",
           description:
             "Specialist ultrasound assessment of the uterus, ovaries, endometrial thickness, and pelvic lesions.",
-          href: "/en/contact",
+          href: "/en/services/advanced-sonography",
           icon: MEDICAL_ICONS.ultrasound,
         },
         {
@@ -50,7 +50,7 @@ var SERVICES_SECTION = {
           highlight: "Delivery",
           description:
             "Counseling and choosing the appropriate vaginal or cesarean delivery based on maternal and fetal circumstances.",
-          href: "/en/contact",
+          href: "/en/services/childbirth",
           icon: MEDICAL_ICONS.childbirth,
         },
       ],

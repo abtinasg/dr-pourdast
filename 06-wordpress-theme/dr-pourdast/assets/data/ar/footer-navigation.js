@@ -36,6 +36,9 @@ var FOOTER_DATA = {
     title: "الخدمات التخصصية",
     ariaLabel: "الخدمات التخصصية",
     links: [
+      { label: "استشارة ومعاينة نسائية تخصصية", href: "/ar/services/gynecologic-consultation" },
+      { label: "سونوغرافيا متقدمة", href: "/ar/services/advanced-sonography" },
+      { label: "الولادة", href: "/ar/services/childbirth" },
       { label: "بطانة الرحم المهاجرة", href: "/ar/services/endometriosis" },
       { label: "منظار البطن النسائي", href: "/ar/services/gynecologic-laparoscopy" },
       { label: "منظار الرحم", href: "/ar/services/hysteroscopy" },

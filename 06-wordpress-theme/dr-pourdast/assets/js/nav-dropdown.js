@@ -9,6 +9,9 @@
       allLabel: "همه خدمات",
       allHref: "/services",
       items: [
+        { title: "مشاوره و معاینه تخصصی زنان", href: "/services/gynecologic-consultation" },
+        { title: "سونوگرافی پیشرفته", href: "/services/advanced-sonography" },
+        { title: "زایمان", href: "/services/childbirth" },
         { title: "اندومتریوز", href: "/services/endometriosis" },
         { title: "کیست تخمدان", href: "/services/ovarian-cyst" },
         { title: "فیبروم رحم", href: "/services/uterine-fibroid" },
@@ -21,6 +24,9 @@
       allLabel: "All services",
       allHref: "/en/services",
       items: [
+        { title: "Specialist Gynecologic Consultation", href: "/en/services/gynecologic-consultation" },
+        { title: "Advanced Sonography", href: "/en/services/advanced-sonography" },
+        { title: "Childbirth", href: "/en/services/childbirth" },
         { title: "Endometriosis", href: "/en/services/endometriosis" },
         { title: "Ovarian Cyst", href: "/en/services/ovarian-cyst" },
         { title: "Uterine Fibroid", href: "/en/services/uterine-fibroid" },
@@ -36,6 +42,9 @@
       allLabel: "جميع الخدمات",
       allHref: "/ar/services",
       items: [
+        { title: "استشارة ومعاينة نسائية تخصصية", href: "/ar/services/gynecologic-consultation" },
+        { title: "سونوغرافيا متقدمة", href: "/ar/services/advanced-sonography" },
+        { title: "الولادة", href: "/ar/services/childbirth" },
         { title: "بطانة الرحم المهاجرة", href: "/ar/services/endometriosis" },
         { title: "كيس المبيض", href: "/ar/services/ovarian-cyst" },
         { title: "الورم الليفي الرحمي", href: "/ar/services/uterine-fibroid" },

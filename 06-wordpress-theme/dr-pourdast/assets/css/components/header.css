@@ -63,6 +63,14 @@
   height: 100%;
 }
 
+.site-header__logo-mark path:first-of-type {
+  fill: #1A4A54 !important;
+}
+
+.site-header__logo-mark path:last-of-type {
+  fill: #C4956A !important;
+}
+
 .site-header__logo-text {
   display: flex;
   flex-direction: column;

@@ -46,7 +46,7 @@ var DOCTOR_PROFILE = {
     items: [
       { label: "تخصص أمراض النساء والتوليد", verified: true },
       { label: "زمالة منظار البطن المتقدم لأمراض النساء", verified: true },
-      { label: "أستاذة مشاركة في جامعة العلوم الطبية بشيراز", verified: true },
+      { label: "أستاذة في جامعة علوم طب شيراز", verified: true },
       { label: "رقم الترخيص الطبي ۹۰۵۶۶", verified: true },
       { label: "شيراز", verified: true },
     ],

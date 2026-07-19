@@ -27,7 +27,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "أعراض بطانة الرحم المهاجرة",
       content:
         "قد تُصاحب بطانة الرحم المهاجرة آلاماً شديدة في الدورة، وآلاماً في الحوض، وآلاماً أثناء العلاقة، ومشكلات هضمية، أو اضطراباً في الخصوبة. يختلف ذلك بين الأفراد ويتطلب التشخيص تقييماً طبياً.",
-      href: "/ar/articles/endometriosis-symptoms",
+      href: "/ar/services/endometriosis",
     },
     {
       id: "endometriosis-surgery",
@@ -43,7 +43,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "تشخيص بطانة الرحم المهاجرة",
       content:
         "يبدأ التشخيص بالفحص السريري وقد يشمل الموجات فوق الصوتية وMRI وفي بعض الحالات منظار البطن لتأكيد التشخيص.",
-      href: "/ar/articles/endometriosis-diagnosis",
+      href: "/ar/services/endometriosis",
     },
     {
       id: "first-visit",
@@ -67,7 +67,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "الرعاية بعد منظار البطن",
       content:
         "عادةً ما تكون فترة التعافي بعد منظار البطن أقصر من الجراحة المفتوحة. راجع دليل المريضات للتفاصيل.",
-      href: "/ar/articles/laparoscopy-recovery",
+      href: "/ar/patient-guides/after-surgery",
     },
     {
       id: "hysteroscopy",
@@ -83,7 +83,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "الفرق بين منظار الرحم والبطن",
       content:
         "منظار الرحم يفحص داخل الرحم، ومنظار البطن يفحص الحوض والأعضاء الداخلية. يحدد الطبيب الطريقة المناسبة.",
-      href: "/ar/articles/hysteroscopy-vs-laparoscopy",
+      href: "/ar/services/hysteroscopy",
     },
     {
       id: "ovarian-cyst",
@@ -107,7 +107,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "النزيف الرحمي غير الطبيعي",
       content:
         "للنزيف الرحمي غير الطبيعي أسباب متعددة. عند تغيّر نمط الدورة أو النزيف الشديد أو المطول، يُنصح بمراجعة الطبيب.",
-      href: "/ar/articles/abnormal-bleeding",
+      href: "/ar/patient-guides/uterine-bleeding",
     },
     {
       id: "pelvic-pain",
@@ -115,7 +115,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "ألم الحوض المزمن",
       content:
         "قد يكون لألم الحوض المزمن أسباب متعددة منها بطانة الرحم المهاجرة والالتصاقات والأكياس. يلزم تقييم متخصص.",
-      href: "/ar/articles/pelvic-pain-causes",
+      href: "/ar/services/endometriosis",
     },
     {
       id: "pelvic-adhesion",

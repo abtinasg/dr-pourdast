@@ -28,7 +28,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "علائم اندومتریوز",
       content:
         "اندومتریوز می‌تواند با دردهای شدید قاعدگی، درد لگنی، درد هنگام رابطه، مشکلات گوارشی یا اختلال در باروری همراه باشد. شدت و نوع علائم در افراد مختلف متفاوت است و تشخیص قطعی نیازمند ارزیابی پزشک است.",
-      href: "/articles/endometriosis-symptoms",
+      href: "/services/endometriosis",
     },
     {
       id: "endometriosis-surgery",
@@ -44,7 +44,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "تشخیص اندومتریوز",
       content:
         "تشخیص اندومتریوز از معاینه بالینی شروع می‌شود و ممکن است شامل سونوگرافی، MRI و در برخی موارد لاپاراسکوپی برای تأیید تشخیص باشد.",
-      href: "/articles/endometriosis-diagnosis",
+      href: "/services/endometriosis",
     },
     {
       id: "first-visit",
@@ -68,7 +68,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "مراقبت پس از لاپاراسکوپی",
       content:
         "پس از لاپاراسکوپی معمولاً دوره نقاهت کوتاه‌تری نسبت به جراحی باز دارید. راهنمای کامل مراقبت‌های پس از عمل در بخش راهنمای بیماران موجود است.",
-      href: "/articles/laparoscopy-recovery",
+      href: "/patient-guides/after-surgery",
     },
     {
       id: "hysteroscopy",
@@ -84,7 +84,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "تفاوت هیستروسکوپی و لاپاراسکوپی",
       content:
         "هیستروسکوپی برای بررسی داخل رحم و لاپاراسکوپی برای بررسی لگن و اندام‌های داخلی استفاده می‌شود. انتخاب روش به تشخیص پزشک بستگی دارد.",
-      href: "/articles/hysteroscopy-vs-laparoscopy",
+      href: "/services/hysteroscopy",
     },
     {
       id: "ovarian-cyst",
@@ -108,7 +108,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "خونریزی غیرطبیعی رحم",
       content:
         "خونریزی غیرطبیعی رحم می‌تواند علل مختلفی داشته باشد. در صورت تغییر الگوی قاعدگی، خونریزی شدید یا طولانی، مراجعه به پزشک توصیه می‌شود.",
-      href: "/articles/abnormal-bleeding",
+      href: "/patient-guides/uterine-bleeding",
     },
     {
       id: "pelvic-pain",
@@ -116,7 +116,7 @@ var CHATBOT_KNOWLEDGE = {
       title: "درد لگن مزمن",
       content:
         "درد لگن مزمن می‌تواند علل مختلفی از جمله اندومتریوز، چسبندگی، کیست یا مشکلات دیگر داشته باشد. ارزیابی تخصصی برای تشخیص علت لازم است.",
-      href: "/articles/pelvic-pain-causes",
+      href: "/services/endometriosis",
     },
     {
       id: "pelvic-adhesion",
