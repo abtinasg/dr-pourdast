@@ -22,11 +22,52 @@ var ARTICLE_AVAILABLE_GUIDE_ROUTES = {
 };
 
 /**
+ * @returns {string}
+ */
+function getArticleRoutePrefix() {
+  if (typeof ARTICLE_PAGE !== "undefined" && ARTICLE_PAGE.route) {
+    var articleMatch = ARTICLE_PAGE.route.match(/^(.*\/articles)\//);
+
+    if (articleMatch) {
+      return articleMatch[1];
+    }
+  }
+
+  if (typeof ARTICLES_PAGE !== "undefined" && ARTICLES_PAGE.route) {
+    return ARTICLES_PAGE.route;
+  }
+
+  return "/articles";
+}
+
+/**
  * @param {string} slug
  * @returns {string}
  */
 function getArticleHref(slug) {
-  return "/articles/" + slug;
+  return getArticleRoutePrefix() + "/" + slug;
+}
+
+/**
+ * @param {string} slug
+ * @returns {Object|null}
+ */
+function findServiceItemBySlug(slug) {
+  if (typeof SERVICES_SECTION === "undefined") return null;
+
+  for (var i = 0; i < SERVICES_SECTION.items.length; i++) {
+    var item = SERVICES_SECTION.items[i];
+    var href = item.href || "";
+
+    if (
+      href === "/services/" + slug ||
+      href.endsWith("/services/" + slug)
+    ) {
+      return item;
+    }
+  }
+
+  return null;
 }
 
 /**
@@ -221,18 +262,7 @@ function resolveRelatedServicesSection(slugs, limit) {
 
   for (var i = 0; i < slugs.length && items.length < maxItems; i++) {
     var slug = slugs[i];
-    var href = ARTICLE_AVAILABLE_SERVICE_ROUTES[slug];
-
-    if (!href) continue;
-
-    var service = null;
-
-    for (var j = 0; j < SERVICES_SECTION.items.length; j++) {
-      if (SERVICES_SECTION.items[j].href === href) {
-        service = SERVICES_SECTION.items[j];
-        break;
-      }
-    }
+    var service = findServiceItemBySlug(slug);
 
     if (!service) continue;
 
@@ -270,10 +300,6 @@ function resolveRelatedGuidesSection(slugs, limit) {
 
   for (var i = 0; i < slugs.length && items.length < maxItems; i++) {
     var slug = slugs[i];
-    var href = ARTICLE_AVAILABLE_GUIDE_ROUTES[slug];
-
-    if (!href) continue;
-
     var guide = null;
 
     for (var j = 0; j < guideItems.length; j++) {

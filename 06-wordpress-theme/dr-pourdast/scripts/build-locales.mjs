@@ -164,13 +164,28 @@ function findPrimaryDataScript(html) {
     ...html.matchAll(/assets\/data\/([a-z0-9\-\/]+\.js)/g),
   ].map((match) => match[1]);
 
-  const pageData = matches.find((file) =>
-    /(doctor-profile|contact-page|services-page|articles-page|patient-guides|faq-page|privacy-page|terms-page|services\/|articles\/|patient-guides\/)/.test(
-      file
-    )
+  const specificArticle = matches.find((file) =>
+    /^articles\/[^/]+\.js$/.test(file)
   );
+  if (specificArticle) return specificArticle;
 
-  return pageData || null;
+  const specificGuide = matches.find((file) =>
+    /^patient-guides\/[^/]+\.js$/.test(file)
+  );
+  if (specificGuide) return specificGuide;
+
+  const specificService = matches.find((file) =>
+    /^services\/[^/]+\.js$/.test(file)
+  );
+  if (specificService) return specificService;
+
+  return (
+    matches.find((file) =>
+      /^(doctor-profile|contact-page|services-page|articles-page|patient-guides|faq-page|privacy-page|terms-page)\.js$/.test(
+        file
+      )
+    ) || null
+  );
 }
 
 function applyReplacements(html, localeKey) {

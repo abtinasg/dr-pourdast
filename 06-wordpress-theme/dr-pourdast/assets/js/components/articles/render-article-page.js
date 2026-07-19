@@ -32,7 +32,7 @@
       pageData.body ? pageData.body.blocks : []
     );
 
-  var breadcrumbItems = [
+  var breadcrumbItems = pageData.breadcrumb || [
     { label: "خانه", href: "/" },
     { label: "مقالات", href: "/articles" },
     {
@@ -74,7 +74,7 @@
     (relatedGuides ? renderRelatedGuides(relatedGuides) : "") +
     renderRelatedArticles(relatedArticles) +
     renderArticleShareActions(metadata.canonical) +
-    renderServiceAppointmentCta(ARTICLE_FINAL_CTA);
+    renderServiceAppointmentCta(pageData.finalCta || ARTICLE_FINAL_CTA);
 
   applyArticlePageMeta(metadata);
   renderArticleStructuredData(pageData, catalogEntry, metadata.canonical);
