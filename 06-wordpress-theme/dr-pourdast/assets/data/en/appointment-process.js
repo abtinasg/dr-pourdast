@@ -16,30 +16,30 @@ var APPOINTMENT_PROCESS = {
   eyebrow: "Booking",
   title: "How to book an appointment",
   subtitle:
-    "In three steps, choose and reserve a suitable time on Doctoreto.",
+    "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots with her clinic colleagues.",
   steps: [
     {
-      title: "Open Doctoreto",
+      title: "Open Axon",
       description:
-        "Select “View appointments on Doctoreto” to open Dr. Tahereh Pordast’s official profile.",
+        "Select “Book on Axon” to open Dr. Tahereh Poordast’s official profile. Axon also offers visit and ultrasound appointment options.",
       icon: MEDICAL_ICONS.externalLink,
     },
     {
       title: "Choose a suitable time",
       description:
-        "View available clinic times and select the day and hour that work best for your visit.",
+        "View available times and select the day and hour that work best. For an earlier appointment, you can use Doctoreto; those visits are handled by the doctor’s colleagues in consultation with her.",
       icon: MEDICAL_ICONS.calendar,
     },
     {
       title: "Visit the clinic",
       description:
-        "After booking, visit the clinic at your scheduled time. Visit details follow the confirmed information shown in the booking system.",
+        "After booking, visit the clinic at your scheduled time. If surgery is needed, Dr. Poordast performs it herself. Colleague visits help speed up the treatment process.",
       icon: MEDICAL_ICONS.clinic,
     },
   ],
   ctas: {
     primary: {
-      text: "View appointments on Doctoreto",
+      text: "Book on Axon",
       source: "appointment-process",
     },
     contact: {

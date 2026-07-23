@@ -21,27 +21,27 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://drpourdast.ir/services/advanced-sonography</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/services/ovarian-cyst</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/services/gynecologic-laparoscopy</loc>
+    <loc>https://drpourdast.ir/services/uterine-fibroid</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://drpourdast.ir/services/gynecologic-consultation</loc>
     <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://drpourdast.ir/services/advanced-sonography</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://drpourdast.ir/services/uterine-fibroid</loc>
+    <loc>https://drpourdast.ir/services/ovarian-cyst</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drpourdast.ir/services/gynecologic-laparoscopy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -52,11 +52,6 @@
   </url>
   <url>
     <loc>https://drpourdast.ir/services/pelvic-adhesion</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://drpourdast.ir/services/childbirth</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

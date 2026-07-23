@@ -2,7 +2,7 @@
  * Article: الفرق بين ألم الدورة الطبيعي وبطانة الرحم المهاجرة
  *
  * All article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLE_PAGE = {
   slug: "period-pain-vs-endometriosis",
@@ -242,7 +242,7 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "احجزي موعداً لتقييم ألم الحيض أو أعراض الحوض",
     description:
-      "لعرض الأوقات المتاحة وتأكيد الموعد، ادخلي إلى الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، ادخلي إلى Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "article-period-pain-vs-endometriosis-cta",

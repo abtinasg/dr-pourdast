@@ -2,7 +2,7 @@
  * Article: هل تظهر بطانة الرحم المهاجرة في السونوغرافيا؟
  *
  * All article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLE_PAGE = {
   slug: "endometriosis-ultrasound-diagnosis",
@@ -902,7 +902,7 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "احجزي موعداً لتقييم أعراض الحوض أو نتائج السونوغرافيا",
     description:
-      "لعرض الأوقات المتاحة وتأكيد الموعد، ادخلي إلى الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، ادخلي إلى Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "article-endometriosis-ultrasound-diagnosis-cta",

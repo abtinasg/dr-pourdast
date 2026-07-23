@@ -3,7 +3,7 @@
  * Shared between page render and client-side filtering.
  *
  * All medical article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 
 /** @type {Record<string, string>} */

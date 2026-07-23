@@ -60,7 +60,7 @@
     renderAppointmentLink({
       text: data.ctas.primary.text,
       source: data.ctas.primary.source,
-      provider: "doctoreto",
+      provider: "axon",
       variant: "primary",
       showIcon: true,
     }) +

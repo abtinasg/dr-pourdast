@@ -2,15 +2,15 @@
  * Hysteroscopy service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var HYSTEROSCOPY_PAGE = {
   slug: "hysteroscopy",
   route: "/en/services/hysteroscopy",
   seo: {
-    title: "Hysteroscopy in Shiraz | Dr. Tahereh Pordast",
+    title: "Hysteroscopy in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about diagnostic and operative hysteroscopy, its applications, the evaluation pathway, and general pre-visit considerations by Dr. Tahereh Pordast, obstetrician-gynecologist and advanced fellowship-trained gynecologic laparoscopist in Shiraz.",
+      "Learn about diagnostic and operative hysteroscopy, its applications, the evaluation pathway, and general pre-visit considerations by Dr. Tahereh Poordast, obstetrician-gynecologist and advanced fellowship-trained gynecologic laparoscopist in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/hysteroscopy",
     ogImage: "/assets/images/og-hysteroscopy.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var HYSTEROSCOPY_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -208,12 +208,12 @@ var HYSTEROSCOPY_PAGE = {
       "Benefits, limitations, and potential risks should be discussed with your physician before the procedure.",
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
-    imageAlt: "Dr. Tahereh Pourdast",
+    imageSrc: "/assets/images/hero2.jpg",
+    imageAlt: "Dr. Tahereh Poordast",
     eyebrow: "Treating Physician",
-    title: "Evaluation of Uterine Conditions by Dr. Tahereh Pordast",
+    title: "Evaluation of Uterine Conditions by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During evaluation, patient symptoms, ultrasound findings, treatment history, and medical findings are reviewed so that an appropriate diagnostic or therapeutic approach can be selected when needed.",
     ],
     aboutLink: "/en/about",
@@ -278,7 +278,7 @@ var HYSTEROSCOPY_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
@@ -293,7 +293,7 @@ var HYSTEROSCOPY_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment to discuss hysteroscopy",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "hysteroscopy-final-cta",

@@ -2,15 +2,15 @@
  * Pelvic adhesion service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var PELVIC_ADHESION_PAGE = {
   slug: "pelvic-adhesion",
   route: "/en/services/pelvic-adhesion",
   seo: {
-    title: "Pelvic Adhesion Treatment in Shiraz | Dr. Tahereh Pordast",
+    title: "Pelvic Adhesion Treatment in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about pelvic adhesion symptoms, causes, diagnostic approaches, and treatment options, with a focus on specialist evaluation and minimally invasive gynecologic surgery by Dr. Tahereh Pordast in Shiraz.",
+      "Learn about pelvic adhesion symptoms, causes, diagnostic approaches, and treatment options, with a focus on specialist evaluation and minimally invasive gynecologic surgery by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/pelvic-adhesion",
     ogImage: "/assets/images/og-pelvic-adhesion.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var PELVIC_ADHESION_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -215,12 +215,12 @@ var PELVIC_ADHESION_PAGE = {
     },
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
-    imageAlt: "Dr. Tahereh Pourdast",
+    imageSrc: "/assets/images/hero2.jpg",
+    imageAlt: "Dr. Tahereh Poordast",
     eyebrow: "Treating Physician",
-    title: "Pelvic Adhesion Evaluation by Dr. Tahereh Pordast",
+    title: "Pelvic Adhesion Evaluation by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During evaluation, symptoms, surgical history, prior reports, and fertility status are reviewed to select the appropriate treatment pathway.",
     ],
     aboutLink: "/en/about",
@@ -272,7 +272,7 @@ var PELVIC_ADHESION_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
@@ -287,7 +287,7 @@ var PELVIC_ADHESION_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment for pelvic pain and adhesions",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "pelvic-adhesion-final-cta",

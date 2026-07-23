@@ -2,7 +2,7 @@
  * Services hub page content.
  *
  * All medical content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var SERVICES_PAGE = {
   slug: "services",
@@ -66,9 +66,9 @@ var SERVICES_PAGE = {
   finalCta: {
     title: "برای بررسی شرایط خود، نوبت مراجعه دریافت کنید",
     description:
-      "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
+      "برای ویزیت توسط خانم دکتر، از سامانه اکسون نوبت بگیرید. نوبت‌های دکترتو توسط همکاران ایشان انجام می‌شود و معمولاً زودتر در دسترس است.",
     cta: {
-      text: "رزرو نوبت در دکترتو",
+      text: "رزرو نوبت در اکسون",
       source: "services-hub-final-cta",
     },
   },

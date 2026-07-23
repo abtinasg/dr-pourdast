@@ -215,7 +215,7 @@ function renderChatbotWidget() {
     '">' +
     '<header class="chatbot__header">' +
     '<div class="chatbot__header-text">' +
-    '<p class="chatbot__eyebrow">Dr. Pourdast</p>' +
+    '<p class="chatbot__eyebrow">Dr. Poordast</p>' +
     '<h2 class="chatbot__title">' +
     escapeChatHtml(knowledge.openLabel) +
     "</h2>" +

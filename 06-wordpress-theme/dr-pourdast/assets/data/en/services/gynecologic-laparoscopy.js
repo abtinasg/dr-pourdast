@@ -2,15 +2,15 @@
  * Gynecologic laparoscopy service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var LAPAROSCOPY_PAGE = {
   slug: "gynecologic-laparoscopy",
   route: "/en/services/gynecologic-laparoscopy",
   seo: {
-    title: "Gynecologic Laparoscopy in Shiraz | Dr. Tahereh Pordast",
+    title: "Gynecologic Laparoscopy in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about gynecologic laparoscopy applications, the evaluation pathway, pre-operative preparation, and general post-operative care by Dr. Tahereh Pordast, advanced fellowship-trained gynecologic laparoscopist in Shiraz.",
+      "Learn about gynecologic laparoscopy applications, the evaluation pathway, pre-operative preparation, and general post-operative care by Dr. Tahereh Poordast, advanced fellowship-trained gynecologic laparoscopist in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/gynecologic-laparoscopy",
     ogImage: "/assets/images/og-laparoscopy.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var LAPAROSCOPY_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -184,9 +184,9 @@ var LAPAROSCOPY_PAGE = {
     imageAlt: "Gynecologic laparoscopy instruments and equipment",
     imageFit: "center",
     eyebrow: "Treating Physician",
-    title: "Evaluation and Surgery by Dr. Tahereh Pordast",
+    title: "Evaluation and Surgery by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During evaluation, symptoms, medical records, imaging findings, prior treatments, and individual circumstances are reviewed to select the most appropriate treatment pathway.",
     ],
     aboutLink: "/en/about",
@@ -251,13 +251,13 @@ var LAPAROSCOPY_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    */
   research: {
     eyebrow: "Academic Activity",
@@ -275,7 +275,7 @@ var LAPAROSCOPY_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment to discuss laparoscopy",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "laparoscopy-final-cta",

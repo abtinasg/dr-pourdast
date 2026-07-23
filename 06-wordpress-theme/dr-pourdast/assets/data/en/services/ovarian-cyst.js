@@ -2,15 +2,15 @@
  * Ovarian cyst service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var OVARIAN_CYST_PAGE = {
   slug: "ovarian-cyst",
   route: "/en/services/ovarian-cyst",
   seo: {
-    title: "Ovarian Cyst Treatment in Shiraz | Dr. Tahereh Pordast",
+    title: "Ovarian Cyst Treatment in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about types of ovarian cysts, symptoms, evaluation methods, and treatment options, with a focus on specialist assessment and minimally invasive gynecologic surgery by Dr. Tahereh Pordast in Shiraz.",
+      "Learn about types of ovarian cysts, symptoms, evaluation methods, and treatment options, with a focus on specialist assessment and minimally invasive gynecologic surgery by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/ovarian-cyst",
     ogImage: "/assets/images/og-ovarian-cyst.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var OVARIAN_CYST_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -221,9 +221,9 @@ var OVARIAN_CYST_PAGE = {
     imageAlt: "Ovarian cyst evaluation with ultrasound",
     imageFit: "center",
     eyebrow: "Treating Physician",
-    title: "Ovarian Cyst Evaluation by Dr. Tahereh Pordast",
+    title: "Ovarian Cyst Evaluation by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During ovarian cyst evaluation, patient symptoms, ultrasound findings, cyst changes, treatment history, and individual circumstances are reviewed to select the appropriate monitoring or treatment approach.",
     ],
     aboutLink: "/en/about",
@@ -294,7 +294,7 @@ var OVARIAN_CYST_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
@@ -309,7 +309,7 @@ var OVARIAN_CYST_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment for ovarian cyst assessment",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "ovarian-cyst-final-cta",

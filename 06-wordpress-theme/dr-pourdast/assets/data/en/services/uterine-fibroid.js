@@ -2,15 +2,15 @@
  * Uterine fibroid service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var UTERINE_FIBROID_PAGE = {
   slug: "uterine-fibroid",
   route: "/en/services/uterine-fibroid",
   seo: {
-    title: "Uterine Fibroid Treatment in Shiraz | Dr. Tahereh Pordast",
+    title: "Uterine Fibroid Treatment in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about uterine fibroid symptoms, types, evaluation methods, and treatment options, with a focus on specialist assessment and minimally invasive gynecologic surgery by Dr. Tahereh Pordast in Shiraz.",
+      "Learn about uterine fibroid symptoms, types, evaluation methods, and treatment options, with a focus on specialist assessment and minimally invasive gynecologic surgery by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/uterine-fibroid",
     ogImage: "/assets/images/og-uterine-fibroid.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var UTERINE_FIBROID_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   video: {
@@ -225,12 +225,12 @@ var UTERINE_FIBROID_PAGE = {
     },
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
-    imageAlt: "Dr. Tahereh Pourdast",
+    imageSrc: "/assets/images/hero2.jpg",
+    imageAlt: "Dr. Tahereh Poordast",
     eyebrow: "Treating Physician",
-    title: "Uterine Fibroid Evaluation by Dr. Tahereh Pordast",
+    title: "Uterine Fibroid Evaluation by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During fibroid evaluation, symptoms, imaging findings, treatment history, and fertility status are reviewed to select the appropriate approach.",
     ],
     aboutLink: "/en/about",
@@ -282,7 +282,7 @@ var UTERINE_FIBROID_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
@@ -297,7 +297,7 @@ var UTERINE_FIBROID_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment for uterine fibroid assessment",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "uterine-fibroid-final-cta",

@@ -13,7 +13,7 @@
 /** @type {Object} */
 var FOOTER_DATA = {
   identity: {
-    name: "Dr. Tahereh Pordast",
+    name: "Dr. Tahereh Poordast",
     subtitle: "Obstetrician & Gynecologist",
     fellowship: "Advanced Gynecologic Laparoscopy Fellowship",
     description:
@@ -35,20 +35,19 @@ var FOOTER_DATA = {
     title: "Specialized Services",
     ariaLabel: "Specialized services",
     links: [
-      { label: "Specialist Gynecologic Consultation", href: "/en/services/gynecologic-consultation" },
-      { label: "Advanced Sonography", href: "/en/services/advanced-sonography" },
-      { label: "Childbirth", href: "/en/services/childbirth" },
       { label: "Endometriosis", href: "/en/services/endometriosis" },
+      { label: "Uterine Fibroid Treatment", href: "/en/services/uterine-fibroid" },
+      { label: "Infection Screening Exam", href: "/en/services/gynecologic-consultation" },
+      { label: "Advanced Sonography", href: "/en/services/advanced-sonography" },
       { label: "Gynecologic Laparoscopy", href: "/en/services/gynecologic-laparoscopy" },
       { label: "Hysteroscopy", href: "/en/services/hysteroscopy" },
       { label: "Ovarian Cyst", href: "/en/services/ovarian-cyst" },
-      { label: "Uterine Fibroid", href: "/en/services/uterine-fibroid" },
       { label: "Pelvic Adhesion", href: "/en/services/pelvic-adhesion" },
     ],
   },
   contact: {
     title: "Appointments & Contact",
-    appointmentText: "View available appointments",
+    appointmentText: "Book on Axon",
     appointmentSource: "footer",
   },
   legal: {

@@ -2,7 +2,7 @@
  * Advanced sonography service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ADVANCED_SONOGRAPHY_PAGE = {
   slug: "advanced-sonography",
@@ -233,7 +233,7 @@ var ADVANCED_SONOGRAPHY_PAGE = {
         id: "appointment",
         question: "كيف أحجز موعداً؟",
         answer:
-          "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+          "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
       },
     ],
   },
@@ -248,7 +248,7 @@ var ADVANCED_SONOGRAPHY_PAGE = {
   finalCta: {
     title: "احجزي موعد تقييم للموجات فوق الصوتية التخصصية",
     description:
-      "لعرض الأوقات المتاحة وحجز الموعد، قم بزيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، استخدمي Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "advanced-sonography-final-cta",

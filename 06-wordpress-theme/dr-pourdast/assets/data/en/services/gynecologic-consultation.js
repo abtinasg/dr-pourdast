@@ -2,15 +2,15 @@
  * Gynecologic consultation service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var GYNECOLOGIC_CONSULTATION_PAGE = {
   slug: "gynecologic-consultation",
   route: "/en/services/gynecologic-consultation",
   seo: {
-    title: "Gynecologic Consultation and Examination in Shiraz | Dr. Tahereh Pordast",
+    title: "Gynecologic Consultation and Examination in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Evaluation and treatment of infections, uterine fibroids, menstrual disorders, and other common women's health concerns through specialist consultation and examination by Dr. Tahereh Pordast in Shiraz.",
+      "Evaluation and treatment of infections, uterine fibroids, menstrual disorders, and other common women's health concerns through specialist consultation and examination by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/gynecologic-consultation",
     ogImage: "/assets/images/og-gynecologic-consultation.jpg",
     locale: "en_US",
@@ -47,7 +47,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -183,11 +183,11 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
   },
   doctor: {
     imageSrc: "/assets/images/hero.jpg",
-    imageAlt: "Dr. Tahereh Pourdast, obstetrician-gynecologist",
+    imageAlt: "Dr. Tahereh Poordast, obstetrician-gynecologist",
     eyebrow: "Treating Physician",
-    title: "Specialist Gynecologic Consultation by Dr. Tahereh Pordast",
+    title: "Specialist Gynecologic Consultation by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy.",
       "During consultation visits, patient symptoms, medical history, and prior findings are carefully reviewed so an appropriate treatment pathway can be selected.",
     ],
     aboutLink: "/en/about",
@@ -245,7 +245,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
         id: "appointment",
         question: "How do I book an appointment?",
         answer:
-          "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+          "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
       },
     ],
   },
@@ -260,7 +260,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
   finalCta: {
     title: "Book an evaluation appointment for gynecologic consultation",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View open appointments",
       source: "gynecologic-consultation-final-cta",

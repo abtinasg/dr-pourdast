@@ -5,9 +5,9 @@ var FAQ_PAGE = {
   slug: "faq",
   route: "/en/faq",
   seo: {
-    title: "Frequently Asked Questions | Dr. Tahereh Pordast",
+    title: "Frequently Asked Questions | Dr. Tahereh Poordast",
     description:
-      "Answers to common patient questions about endometriosis, laparoscopy, hysteroscopy, the visit process, and booking appointments with Dr. Tahereh Pordast.",
+      "Answers to common patient questions about endometriosis, laparoscopy, hysteroscopy, the visit process, and booking appointments with Dr. Tahereh Poordast.",
     canonical: "https://drpourdast.ir/en/faq",
     ogImage: "/assets/images/og-faq.jpg",
     locale: "en_US",
@@ -27,7 +27,7 @@ var FAQ_PAGE = {
   finalCta: {
     title: "Have another question? Book an evaluation appointment",
     description:
-      "To discuss your individual condition, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots with her colleagues.",
     cta: {
       text: "View available appointments",
       source: "faq-page-final-cta",

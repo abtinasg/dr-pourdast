@@ -2,7 +2,7 @@
  * Article: What Is an Ovarian Chocolate Cyst, and When Does It Need Treatment?
  *
  * All article content must be reviewed and approved
- * by Dr. Tahereh Pordast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLE_PAGE = {
   slug: "ovarian-endometrioma-chocolate-cyst",
@@ -603,12 +603,12 @@ var ARTICLE_PAGE = {
       {
         type: "heading",
         level: 2,
-        text: "Chocolate cyst and endometriosis evaluation with Dr. Tahereh Pordast in Shiraz",
+        text: "Chocolate cyst and endometriosis evaluation with Dr. Tahereh Poordast in Shiraz",
       },
       {
         type: "paragraph",
         text:
-          "Dr. Tahereh Pordast is an obstetrician-gynecologist with a fellowship in advanced gynecologic laparoscopy. Her practice includes evaluation and treatment of endometriosis, ovarian cysts, and minimally invasive gynecologic surgery.",
+          "Dr. Tahereh Poordast is an obstetrician-gynecologist with a fellowship in advanced gynecologic laparoscopy. Her practice includes evaluation and treatment of endometriosis, ovarian cysts, and minimally invasive gynecologic surgery.",
       },
       {
         type: "paragraph",
@@ -758,10 +758,10 @@ var ARTICLE_PAGE = {
   ],
   author: {
     label: "Author",
-    name: "Dr. Tahereh Pordast Medical Content Team",
+    name: "Dr. Tahereh Poordast Medical Content Team",
     title: "Medical educational content",
     note:
-      "This article was prepared by the medical content team and the scientific reviewer name will be published only after review and approval by Dr. Tahereh Pordast.",
+      "This article was prepared by the medical content team and the scientific reviewer name will be published only after review and approval by Dr. Tahereh Poordast.",
   },
   relatedArticles: {
     eyebrow: "Related content",
@@ -779,7 +779,7 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "Book an appointment to evaluate an ovarian cyst or endometriosis symptoms",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "Book on Doctoreto",
       source: "article-ovarian-endometrioma-chocolate-cyst-cta",

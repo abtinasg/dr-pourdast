@@ -130,7 +130,7 @@ var CHATBOT_KNOWLEDGE = {
       keywords: ["appointment", "book", "schedule", "doctoreto", "axon", "online"],
       title: "Book an appointment",
       content:
-        "Online booking is available through Doctoreto and Axon. Select View appointments to go to the official booking page.",
+        "Visits with Dr. Tahereh Poordast are booked on Axon, which also offers ultrasound appointments. Doctoreto usually has earlier slots handled by her colleagues. The Book appointment button takes you to Axon.",
       href: "/en/contact",
     },
     {

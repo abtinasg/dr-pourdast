@@ -3,9 +3,9 @@
  */
 var UI_STRINGS = {
   copyrightSuffix: "تمامی حقوق محفوظ است.",
-  axonAppointment: "دریافت نوبت از اکسون",
-  doctoretoAppointment: "رزرو نوبت",
-  doctoretoDefault: "رزرو نوبت",
+  axonAppointment: "رزرو نوبت در اکسون",
+  doctoretoAppointment: "نوبت‌دهی در دکترتو",
+  doctoretoDefault: "رزرو نوبت در اکسون",
   headerAppointment: "رزرو نوبت",
   newTabSuffix: " (باز شدن در تب جدید)",
   contactClinic: "تماس با مطب",
@@ -26,7 +26,7 @@ var UI_STRINGS = {
   learnMore: "مشاهده جزئیات",
   viewDetails: "مشاهده جزئیات",
   bookingNote:
-    "نوبت‌دهی اینترنتی از طریق سامانه‌های دکترتو و اکسون انجام می‌شود.",
+    "ویزیت خانم دکتر در اکسون ثبت می‌شود. نوبت‌های دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد.",
 };
 
 /**

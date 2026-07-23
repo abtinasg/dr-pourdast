@@ -5,9 +5,9 @@ var LEGAL_PAGE = {
   slug: "privacy",
   route: "/en/privacy",
   seo: {
-    title: "Privacy Policy | Dr. Tahereh Pordast",
+    title: "Privacy Policy | Dr. Tahereh Poordast",
     description:
-      "Privacy policy for the website of Dr. Tahereh Pordast regarding data collection, protection of medical information, and use of online services.",
+      "Privacy policy for the website of Dr. Tahereh Poordast regarding data collection, protection of medical information, and use of online services.",
     canonical: "https://drpourdast.ir/en/privacy",
     locale: "en_US",
   },
@@ -19,7 +19,7 @@ var LEGAL_PAGE = {
     eyebrow: "Privacy policy",
     title: "Your privacy matters to us",
     description:
-      "This page explains how your information is managed on the website of Dr. Tahereh Pordast and what measures are taken to protect patient privacy.",
+      "This page explains how your information is managed on the website of Dr. Tahereh Poordast and what measures are taken to protect patient privacy.",
     updatedAt: "Last updated: June 22, 2026",
   },
   sections: [
@@ -27,8 +27,8 @@ var LEGAL_PAGE = {
       id: "scope",
       title: "Scope of this policy",
       paragraphs: [
-        "This privacy policy applies to the official website of Dr. Tahereh Pordast (drpourdast.ir) and the content published on it.",
-        "This website is designed to provide general information about medical services, patient guides, and visit pathways. Appointment booking and processing of sensitive visit information are handled through Doctoreto and are also subject to that platform's policies.",
+        "This privacy policy applies to the official website of Dr. Tahereh Poordast (drpourdast.ir) and the content published on it.",
+        "This website is designed to provide general information about medical services, patient guides, and visit pathways. Appointment booking and processing of sensitive visit information are handled through Axon and Doctoreto and are also subject to those platforms' policies.",
       ],
     },
     {
@@ -40,7 +40,7 @@ var LEGAL_PAGE = {
       items: [
         "Basic technical information such as browser type, device, visit time, and pages viewed (when analytics tools are enabled)",
         "Information you provide during phone contact or in-person visits at the clinic",
-        "Information you enter on Doctoreto when booking an appointment",
+        "Information you enter on Axon or Doctoreto when booking an appointment",
         "Messages or documents sent through unofficial channels (such as social media)",
       ],
     },
@@ -67,7 +67,7 @@ var LEGAL_PAGE = {
       title: "Sharing with third parties",
       paragraphs: [
         "Your information will not be sold commercially to third parties without a valid legal basis or legitimate professional need.",
-        "Links to Doctoreto are provided for online booking. Once you enter that platform, data processing is governed by Doctoreto's laws and policies.",
+        "Links to Axon (and Doctoreto when needed) are provided for online booking. Once you enter those platforms, data processing is governed by their policies.",
         "Information may be disclosed within the framework of applicable regulations when required by law or by competent authorities.",
       ],
     },
@@ -85,7 +85,7 @@ var LEGAL_PAGE = {
         "Request an explanation of how general contact information is used",
         "Request correction of inaccurate information when possible",
         "Refrain from sending sensitive information through inappropriate channels",
-        "Contact the clinic or Doctoreto directly to follow up on matters related to appointments and medical records",
+        "Contact the clinic, Axon, or Doctoreto directly to follow up on matters related to appointments and medical records",
       ],
     },
     {

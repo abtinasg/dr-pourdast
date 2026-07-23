@@ -67,7 +67,7 @@ var FAQ_SECTION = {
       id: "appointment",
       question: "How can I book an appointment?",
       answer:
-        "Online booking is available through Dr. Tahereh Pordast's official profile on Doctoreto. Select the option to view available appointments to access the official booking page.",
+        "Visits with Dr. Tahereh Poordast are booked on Axon, which also offers ultrasound appointments. Doctoreto usually has earlier slots handled by her colleagues in consultation with her; if surgery is needed, she performs it herself.",
       hasAppointmentLink: true,
       isActive: true,
       displayOrder: 6,

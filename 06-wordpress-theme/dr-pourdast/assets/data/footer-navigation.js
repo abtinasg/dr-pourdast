@@ -15,7 +15,7 @@ var FOOTER_DATA = {
   identity: {
     name: "دکتر طاهره پوردست",
     subtitle: "متخصص زنان و زایمان",
-    fellowship: "فلوشیپ لاپاراسکوپی پیشرفته زنان",
+    fellowship: "فلوشیپ فوق تخصصی لاپاراسکوپی و هیستروسکوپی پیشرفته زنان",
     description:
       "ارائه خدمات تخصصی در زمینه تشخیص و درمان بیماری‌های زنان، اندومتریوز و جراحی‌های کم‌تهاجمی.",
   },
@@ -35,20 +35,19 @@ var FOOTER_DATA = {
     title: "خدمات تخصصی",
     ariaLabel: "خدمات تخصصی",
     links: [
-      { label: "مشاوره و معاینه تخصصی زنان", href: "/services/gynecologic-consultation" },
-      { label: "سونوگرافی پیشرفته", href: "/services/advanced-sonography" },
-      { label: "زایمان", href: "/services/childbirth" },
       { label: "اندومتریوز", href: "/services/endometriosis" },
+      { label: "درمان فیبروم رحم", href: "/services/uterine-fibroid" },
+      { label: "معاینه و چک عفونت", href: "/services/gynecologic-consultation" },
+      { label: "سونوگرافی پیشرفته", href: "/services/advanced-sonography" },
       { label: "لاپاراسکوپی زنان", href: "/services/gynecologic-laparoscopy" },
       { label: "هیستروسکوپی", href: "/services/hysteroscopy" },
       { label: "کیست تخمدان", href: "/services/ovarian-cyst" },
-      { label: "فیبروم رحم", href: "/services/uterine-fibroid" },
       { label: "چسبندگی لگنی", href: "/services/pelvic-adhesion" },
     ],
   },
   contact: {
     title: "نوبت و تماس",
-    appointmentText: "رزرو نوبت در دکترتو",
+    appointmentText: "رزرو نوبت در اکسون",
     appointmentSource: "footer",
   },
   legal: {

@@ -4,15 +4,15 @@
 var UI_STRINGS = {
   copyrightSuffix: "All rights reserved.",
   axonAppointment: "Book on Axon",
-  doctoretoAppointment: "View open appointments",
-  doctoretoDefault: "View open appointments",
-  headerAppointment: "View appointments",
+  doctoretoAppointment: "Book on Doctoreto",
+  doctoretoDefault: "Book on Axon",
+  headerAppointment: "Book appointment",
   newTabSuffix: " (opens in new tab)",
   contactClinic: "Contact clinic",
   whatsappLabel: "Chat on WhatsApp",
   backToTop: "Back to top",
   languageNavLabel: "Language selection",
-  appointmentDefault: "View open appointments",
+  appointmentDefault: "Book appointment",
   legalNavLabel: "Legal links",
   shortcutsLabel: "Quick shortcuts",
   continue: "Continue",
@@ -25,7 +25,8 @@ var UI_STRINGS = {
   pageSections: "Page sections",
   learnMore: "View details",
   viewDetails: "View details",
-  bookingNote: "Online booking is available through Doctoreto and Axon.",
+  bookingNote:
+    "Visits with the doctor are booked on Axon. Doctoreto usually offers earlier slots with her colleagues.",
 };
 
 function uiString(key, fallback) {

@@ -168,7 +168,7 @@ var ENDOMETRIOSIS_PAGE = {
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    * Section hidden when items array is empty.
    *
    * @type {{ eyebrow: string, title: string, items: Array<{title: string, category: string, year: string, href?: string, external?: boolean, verified: boolean}> }}
@@ -231,7 +231,7 @@ var ENDOMETRIOSIS_PAGE = {
       id: "appointment",
       question: "چگونه نوبت دریافت کنم؟",
       answer:
-        "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود. می‌توانید از بخش نوبت‌دهی ابتدای صفحه یا پایین صفحه اقدام کنید.",
+        "ویزیت مستقیم توسط خانم دکتر در سامانه اکسون ثبت می‌شود. نوبت‌دهی در دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد و با خانم دکتر مشورت می‌شود. می‌توانید از بخش نوبت‌دهی ابتدای صفحه یا پایین صفحه اقدام کنید.",
     },
   ],
   relatedServices: {
@@ -257,7 +257,7 @@ var ENDOMETRIOSIS_PAGE = {
   finalCta: {
     title: "برای ارزیابی دقیق علائم، نوبت مراجعه رزرو کنید",
     description:
-      "زمان مناسب را از صفحه رسمی دکتر در سامانه دکترتو انتخاب کنید.",
+      "برای ویزیت خانم دکتر از اکسون نوبت بگیرید. نوبت زودتر معمولاً در دکترتو توسط همکاران ایشان در دسترس است.",
     cta: {
       text: "رزرو نوبت",
       source: "endometriosis-final-cta",

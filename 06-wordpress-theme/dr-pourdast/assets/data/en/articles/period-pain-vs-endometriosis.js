@@ -2,14 +2,14 @@
  * Article: Normal Period Pain vs. Endometriosis
  *
  * All article content must be reviewed and approved
- * by Dr. Tahereh Pordast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLE_PAGE = {
   slug: "period-pain-vs-endometriosis",
   route: "/en/articles/period-pain-vs-endometriosis",
   seo: {
     title:
-      "Normal Period Pain vs. Endometriosis: When Should You Be Evaluated? | Dr. Tahereh Pordast",
+      "Normal Period Pain vs. Endometriosis: When Should You Be Evaluated? | Dr. Tahereh Poordast",
     description:
       "An educational guide to recognizing the difference between typical menstrual pain and pain that warrants evaluation, from clinical assessment to the role of laparoscopy in selected patients.",
     canonical: "https://drpourdast.ir/en/articles/period-pain-vs-endometriosis",
@@ -222,7 +222,7 @@ var ARTICLE_PAGE = {
   relatedServiceSlugs: ["endometriosis", "gynecologic-laparoscopy"],
   author: {
     label: "Author",
-    name: "Dr. Tahereh Pordast",
+    name: "Dr. Tahereh Poordast",
     title: "Obstetrician-Gynecologist — Advanced Gynecologic Laparoscopy Fellowship",
     note: "This article was prepared by the medical content team and requires final review.",
   },
@@ -242,7 +242,7 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "Book an appointment to evaluate menstrual or pelvic pain",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "Book on Doctoreto",
       source: "article-period-pain-vs-endometriosis-cta",

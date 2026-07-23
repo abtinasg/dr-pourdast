@@ -204,7 +204,7 @@
   height: 100%;
   max-width: none;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center 35%;
 }
 
 @media (prefers-reduced-motion: no-preference) {

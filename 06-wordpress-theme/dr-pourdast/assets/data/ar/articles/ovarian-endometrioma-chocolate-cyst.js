@@ -2,7 +2,7 @@
  * Article: ما كيس الشوكولاتة في المبيض ومتى يحتاج إلى علاج؟
  *
  * All article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLE_PAGE = {
   slug: "ovarian-endometrioma-chocolate-cyst",
@@ -779,7 +779,7 @@ var ARTICLE_PAGE = {
   finalCta: {
     title: "احجزي موعداً لتقييم كيس المبيض أو أعراض بطانة الرحم المهاجرة",
     description:
-      "لعرض الأوقات المتاحة وتأكيد الموعد، ادخلي إلى الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، ادخلي إلى Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "article-ovarian-endometrioma-chocolate-cyst-cta",

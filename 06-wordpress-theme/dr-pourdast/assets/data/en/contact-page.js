@@ -8,9 +8,9 @@ var CONTACT_PAGE = {
   slug: "contact",
   route: "/en/contact",
   seo: {
-    title: "Contact & Clinic Address | Dr. Tahereh Pordast",
+    title: "Contact & Clinic Address | Dr. Tahereh Poordast",
     description:
-      "Clinic address, phone number, and directions for Dr. Tahereh Pordast in Shiraz. Book online through Doctoreto or Axon.",
+      "Clinic address, phone number, and directions for Dr. Tahereh Poordast in Shiraz. Doctor visits on Axon; earlier slots on Doctoreto with colleagues.",
     canonical: "https://drpourdast.ir/en/contact",
     ogImage: "/assets/images/og-contact.jpg",
     locale: "en_US",
@@ -23,7 +23,7 @@ var CONTACT_PAGE = {
     eyebrow: "Contact the clinic",
     title: "Visit information and how to reach us",
     description:
-      "The clinic address, phone number, and map are available on this page. To book online, use Doctoreto or Axon.",
+      "The clinic address, phone number, and map are available on this page. Visits with Dr. Poordast are booked on Axon; Doctoreto usually offers earlier slots with her colleagues.",
     appointmentSource: "contact-hero",
     secondaryCta: {
       text: "View address and map",
@@ -91,13 +91,13 @@ var CONTACT_PAGE = {
         id: "online-appointment",
         question: "How do I book an appointment online?",
         answer:
-          "Online booking is handled through Doctoreto or Axon. The \"Book appointment\" button at the top of the page takes you to the official booking page.",
+          "Visits with Dr. Poordast are booked on Axon, which also offers ultrasound appointments. Doctoreto usually has earlier slots handled by her colleagues in consultation with her. The \"Book appointment\" button takes you to Axon.",
       },
       {
         id: "site-booking",
         question: "Can I book through this website?",
         answer:
-          "No. This website provides general information about services. Booking is done through Doctoreto or Axon.",
+          "No. This website provides general information about services. Booking is done through Axon (visit with the doctor) or Doctoreto (earlier slots with colleagues).",
       },
       {
         id: "first-visit-docs",
@@ -126,7 +126,8 @@ var CONTACT_PAGE = {
   },
   finalCta: {
     title: "Need an appointment?",
-    description: "Book online through Doctoreto or Axon.",
+    description:
+      "Visits with the doctor are booked on Axon. Doctoreto usually offers earlier slots with her colleagues.",
     cta: {
       source: "contact-final-cta",
     },

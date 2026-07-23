@@ -2,7 +2,7 @@
  * Gynecologic laparoscopy service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var LAPAROSCOPY_PAGE = {
   slug: "gynecologic-laparoscopy",
@@ -251,13 +251,13 @@ var LAPAROSCOPY_PAGE = {
         id: "appointment",
         question: "چگونه نوبت دریافت کنم؟",
         answer:
-          "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
+          "ویزیت مستقیم توسط خانم دکتر در سامانه اکسون ثبت می‌شود. نوبت‌دهی در دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد و با خانم دکتر مشورت می‌شود.",
       },
     ],
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    */
   research: {
     eyebrow: "فعالیت علمی",
@@ -275,7 +275,7 @@ var LAPAROSCOPY_PAGE = {
   finalCta: {
     title: "برای بررسی نیاز به لاپاراسکوپی، نوبت ارزیابی دریافت کنید",
     description:
-      "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
+      "برای ویزیت توسط خانم دکتر، از سامانه اکسون نوبت بگیرید. نوبت‌های دکترتو توسط همکاران ایشان انجام می‌شود و معمولاً زودتر در دسترس است.",
     cta: {
       text: "رزرو نوبت",
       source: "laparoscopy-final-cta",

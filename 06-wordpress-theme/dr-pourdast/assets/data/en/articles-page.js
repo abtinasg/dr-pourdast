@@ -2,15 +2,15 @@
  * Articles hub page content.
  *
  * All medical article content must be reviewed and approved
- * by Dr. Tahereh Pordast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLES_PAGE = {
   slug: "articles",
   route: "/en/articles",
   seo: {
-    title: "Gynecologic Articles & Patient Education | Dr. Tahereh Pordast",
+    title: "Gynecologic Articles & Patient Education | Dr. Tahereh Poordast",
     description:
-      "Educational articles about endometriosis, laparoscopy, uterine and ovarian conditions, and women's health on the website of Dr. Tahereh Pordast.",
+      "Educational articles about endometriosis, laparoscopy, uterine and ovarian conditions, and women's health on the website of Dr. Tahereh Poordast.",
     canonical: "https://drpourdast.ir/en/articles",
     ogImage: "/assets/images/og-articles.jpg",
     locale: "en_US",
@@ -73,7 +73,7 @@ var ARTICLES_PAGE = {
   finalCta: {
     title: "Book an appointment to discuss your condition",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View available appointments",
       source: "articles-final-cta",

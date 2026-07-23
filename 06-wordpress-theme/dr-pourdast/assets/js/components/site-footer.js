@@ -116,7 +116,7 @@
     renderAppointmentLink({
       text: data.contact.appointmentText,
       source: data.contact.appointmentSource,
-      provider: "doctoreto",
+      provider: "axon",
       variant: "primary",
       size: "sm",
       showIcon: true,

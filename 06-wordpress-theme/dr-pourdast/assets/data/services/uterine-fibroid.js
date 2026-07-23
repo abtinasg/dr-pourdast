@@ -2,7 +2,7 @@
  * Uterine fibroid service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var UTERINE_FIBROID_PAGE = {
   slug: "uterine-fibroid",
@@ -18,7 +18,7 @@ var UTERINE_FIBROID_PAGE = {
   breadcrumb: [
     { label: "خانه", href: "/" },
     { label: "خدمات تخصصی", href: "/services" },
-    { label: "فیبروم رحم", href: "/services/uterine-fibroid" },
+    { label: "درمان فیبروم رحم", href: "/services/uterine-fibroid" },
   ],
   hero: {
     eyebrow: "بررسی و درمان مشکلات رحم",
@@ -225,7 +225,7 @@ var UTERINE_FIBROID_PAGE = {
     },
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
+    imageSrc: "/assets/images/hero2.jpg",
     imageAlt: "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان",
     eyebrow: "پزشک معالج",
     title: "ارزیابی فیبروم رحم توسط دکتر طاهره پوردست",
@@ -282,7 +282,7 @@ var UTERINE_FIBROID_PAGE = {
         id: "appointment",
         question: "چگونه نوبت دریافت کنم؟",
         answer:
-          "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
+          "ویزیت مستقیم توسط خانم دکتر در سامانه اکسون ثبت می‌شود. نوبت‌دهی در دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد و با خانم دکتر مشورت می‌شود.",
       },
     ],
   },
@@ -297,7 +297,7 @@ var UTERINE_FIBROID_PAGE = {
   finalCta: {
     title: "برای بررسی فیبروم رحم، نوبت ارزیابی دریافت کنید",
     description:
-      "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
+      "برای ویزیت توسط خانم دکتر، از سامانه اکسون نوبت بگیرید. نوبت‌های دکترتو توسط همکاران ایشان انجام می‌شود و معمولاً زودتر در دسترس است.",
     cta: {
       text: "رزرو نوبت",
       source: "uterine-fibroid-final-cta",

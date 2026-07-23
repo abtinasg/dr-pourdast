@@ -2,7 +2,7 @@
  * Renders a single article page from ARTICLE_PAGE data.
  *
  * All medical article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 (function () {
   "use strict";

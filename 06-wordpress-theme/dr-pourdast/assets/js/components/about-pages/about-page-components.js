@@ -12,7 +12,12 @@ function renderAboutHero(hero, credentials) {
   var titleId = "about-hero-title";
 
   var registrationItem = credentials.items.find(function (item) {
-    return item.verified && item.label.indexOf("نظام پزشکی") !== -1;
+    return (
+      item.verified &&
+      (item.label.indexOf("نظام پزشکی") !== -1 ||
+        item.label.indexOf("Medical License") !== -1 ||
+        item.label.indexOf("الترخيص") !== -1)
+    );
   });
 
   var registrationHtml = registrationItem
@@ -27,7 +32,7 @@ function renderAboutHero(hero, credentials) {
     '<div class="about-hero__grid">' +
     '<figure class="about-hero__portrait">' +
     '<img class="about-hero__image" src="' +
-    (hero.imageSrc || "/assets/images/hero.jpg") +
+    (hero.imageSrc || "/assets/images/about-hero.jpg") +
     '" alt="' +
     hero.imageAlt +
     '" width="1055" height="1008" decoding="async" fetchpriority="high">' +

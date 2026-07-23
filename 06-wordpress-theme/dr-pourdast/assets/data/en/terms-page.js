@@ -5,9 +5,9 @@ var LEGAL_PAGE = {
   slug: "terms",
   route: "/en/terms",
   seo: {
-    title: "Terms of Use | Dr. Tahereh Pordast",
+    title: "Terms of Use | Dr. Tahereh Poordast",
     description:
-      "Terms of use for the website of Dr. Tahereh Pordast, including limitations of liability, content usage, and references to the appointment booking platform.",
+      "Terms of use for the website of Dr. Tahereh Poordast, including limitations of liability, content usage, and references to the appointment booking platform.",
     canonical: "https://drpourdast.ir/en/terms",
     locale: "en_US",
   },
@@ -19,7 +19,7 @@ var LEGAL_PAGE = {
     eyebrow: "Terms of use",
     title: "Rules for using this website",
     description:
-      "By using the website of Dr. Tahereh Pordast, you agree to the following terms. Please read them before using the site.",
+      "By using the website of Dr. Tahereh Poordast, you agree to the following terms. Please read them before using the site.",
     updatedAt: "Last updated: June 22, 2026",
   },
   sections: [
@@ -43,8 +43,8 @@ var LEGAL_PAGE = {
       id: "appointments",
       title: "Appointments and online services",
       items: [
-        "Appointment booking is handled through Doctoreto and takes place outside this website.",
-        "Available times, visit fees, and admission conditions are according to the information listed on Doctoreto or at the clinic.",
+        "Primary appointment booking for visits with the doctor is handled through Axon and takes place outside this website. Doctoreto usually offers earlier slots with clinic colleagues.",
+        "Available times, visit fees, and admission conditions are according to the information listed on Axon, Doctoreto, or at the clinic.",
         "This website is not responsible for technical disruptions, schedule changes, or appointment cancellations on third-party platforms.",
       ],
     },
@@ -60,7 +60,7 @@ var LEGAL_PAGE = {
       id: "intellectual-property",
       title: "Content ownership",
       paragraphs: [
-        "Texts, page structure, design, and other elements of this website belong to Dr. Tahereh Pordast or the relevant licensors.",
+        "Texts, page structure, design, and other elements of this website belong to Dr. Tahereh Poordast or the relevant licensors.",
         "Commercial use, extensive republication, or content extraction without written permission is not permitted.",
       ],
     },
@@ -68,7 +68,7 @@ var LEGAL_PAGE = {
       id: "external-links",
       title: "External links",
       paragraphs: [
-        "This website may link to other platforms such as Doctoreto or informational resources. The content and policies of those platforms are outside the control of this website.",
+        "This website may link to other platforms such as Axon, Doctoreto, or informational resources. The content and policies of those platforms are outside the control of this website.",
       ],
     },
     {
@@ -99,7 +99,7 @@ var LEGAL_PAGE = {
   note: {
     title: "Questions or concerns",
     content:
-      "For matters related to appointments, the clinic address, or the visit process, use the contact and appointments page or Doctoreto.",
+      "For matters related to appointments, the clinic address, or the visit process, use the contact and appointments page or Axon and Doctoreto.",
   },
   relatedLink: {
     label: "View privacy policy",

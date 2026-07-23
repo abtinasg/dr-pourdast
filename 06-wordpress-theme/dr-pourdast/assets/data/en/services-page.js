@@ -2,15 +2,15 @@
  * Services hub page content.
  *
  * All medical content must be reviewed and approved
- * by Dr. Tahereh Pordast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var SERVICES_PAGE = {
   slug: "services",
   route: "/en/services",
   seo: {
-    title: "Gynecologic Specialty Services | Dr. Tahereh Pordast",
+    title: "Gynecologic Specialty Services | Dr. Tahereh Poordast",
     description:
-      "Specialty diagnosis and treatment services for endometriosis, ovarian cysts, uterine fibroids, pelvic adhesions, hysteroscopy, and gynecologic laparoscopy by Dr. Tahereh Pordast in Shiraz.",
+      "Specialty diagnosis and treatment services for endometriosis, ovarian cysts, uterine fibroids, pelvic adhesions, hysteroscopy, and gynecologic laparoscopy by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services",
     ogImage: "/assets/images/og-services.jpg",
     locale: "en_US",
@@ -66,7 +66,7 @@ var SERVICES_PAGE = {
   finalCta: {
     title: "Book an appointment to discuss your condition",
     description:
-      "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto.",
+      "For a visit with Dr. Tahereh Poordast, book on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
     cta: {
       text: "View available appointments",
       source: "services-hub-final-cta",

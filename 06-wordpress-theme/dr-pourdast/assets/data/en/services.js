@@ -22,42 +22,11 @@ var SERVICES_SECTION = {
   eyebrow: "Treatment Areas",
   title: "Specialized Gynecologic & Minimally Invasive Surgery Services",
   subtitle:
-    "Evaluation, diagnosis, and treatment of gynecologic conditions with a focus on endometriosis and advanced laparoscopic surgery",
+    "Evaluation, diagnosis, and treatment of gynecologic conditions with a focus on endometriosis, uterine fibroids, and specialist examination",
   groups: [
     {
-      id: "obstetrics",
-      title: "Specialist Gynecology, Obstetrics & Ultrasound",
-      variant: "open",
-      items: [
-        {
-          title: "Specialist Gynecologic Consultation & Exam",
-          highlight: "Consultation",
-          description:
-            "Evaluation and treatment of infections, uterine fibroids, menstrual disorders, and other common gynecologic concerns.",
-          href: "/en/services/gynecologic-consultation",
-          icon: MEDICAL_ICONS.consultation,
-        },
-        {
-          title: "Advanced Ultrasound",
-          highlight: "Ultrasound",
-          description:
-            "Specialist ultrasound assessment of the uterus, ovaries, endometrial thickness, and pelvic lesions.",
-          href: "/en/services/advanced-sonography",
-          icon: MEDICAL_ICONS.ultrasound,
-        },
-        {
-          title: "Delivery (Vaginal & Cesarean)",
-          highlight: "Delivery",
-          description:
-            "Counseling and choosing the appropriate vaginal or cesarean delivery based on maternal and fetal circumstances.",
-          href: "/en/services/childbirth",
-          icon: MEDICAL_ICONS.childbirth,
-        },
-      ],
-    },
-    {
-      id: "conditions",
-      title: "Diagnosis & Treatment of Gynecologic Conditions",
+      id: "priority",
+      title: "Primary Services",
       variant: "open",
       items: [
         {
@@ -68,6 +37,29 @@ var SERVICES_SECTION = {
           icon: MEDICAL_ICONS.endometriosis,
         },
         {
+          title: "Uterine Fibroid Treatment",
+          highlight: "Fibroid",
+          description:
+            "Diagnosis, follow-up, and selecting the right treatment for uterine fibroids — from medication to minimally invasive surgery.",
+          href: "/en/services/uterine-fibroid",
+          icon: MEDICAL_ICONS.uterineFibroid,
+        },
+        {
+          title: "Infection Screening Exam",
+          highlight: "Exam",
+          description:
+            "Specialist gynecologic examination for infection screening and evaluation of common women's health concerns.",
+          href: "/en/services/gynecologic-consultation",
+          icon: MEDICAL_ICONS.consultation,
+        },
+      ],
+    },
+    {
+      id: "conditions",
+      title: "Other Gynecologic Conditions",
+      variant: "open",
+      items: [
+        {
           title: "Ovarian Cyst",
           description:
             "Diagnosis and treatment of ovarian cysts based on cyst type, symptoms, and each patient's circumstances.",
@@ -75,11 +67,20 @@ var SERVICES_SECTION = {
           icon: MEDICAL_ICONS.ovarianCyst,
         },
         {
-          title: "Uterine Fibroid",
+          title: "Advanced Ultrasound",
+          highlight: "Ultrasound",
           description:
-            "Diagnosis, follow-up, and selecting the right treatment for uterine fibroids — from medication to minimally invasive surgery.",
-          href: "/en/services/uterine-fibroid",
-          icon: MEDICAL_ICONS.uterineFibroid,
+            "Specialist ultrasound assessment of the uterus, ovaries, endometrial thickness, and pelvic lesions.",
+          href: "/en/services/advanced-sonography",
+          icon: MEDICAL_ICONS.ultrasound,
+        },
+        {
+          title: "Pelvic Adhesion",
+          highlight: "Adhesion",
+          description:
+            "Diagnosis and treatment of pelvic adhesions and related chronic pain or infertility concerns.",
+          href: "/en/services/pelvic-adhesion",
+          icon: MEDICAL_ICONS.pelvicAdhesion,
         },
       ],
     },
@@ -103,14 +104,6 @@ var SERVICES_SECTION = {
             "Evaluation and treatment of intrauterine conditions using a minimally invasive approach without abdominal incisions.",
           href: "/en/services/hysteroscopy",
           icon: MEDICAL_ICONS.hysteroscopy,
-        },
-        {
-          title: "Pelvic Adhesion",
-          highlight: "Adhesion",
-          description:
-            "Diagnosis and treatment of pelvic adhesions and related chronic pain or infertility concerns.",
-          href: "/en/services/pelvic-adhesion",
-          icon: MEDICAL_ICONS.pelvicAdhesion,
         },
       ],
     },

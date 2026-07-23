@@ -2,7 +2,7 @@
  * Medical articles catalog.
  *
  * All medical article content must be reviewed and approved
- * by Dr. Tahereh Pordast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 
 /** @typedef {"endometriosis"|"laparoscopy"|"uterine-health"|"ovarian-health"|"patient-education"} ArticleCategory */
@@ -34,7 +34,7 @@ var ARTICLES_CATALOG = [
     image: "/assets/images/article-period-pain-comparison.webp",
     imageAlt: "Comparison of typical menstrual pain and pain that warrants medical evaluation",
     seoTitle:
-      "Normal Period Pain vs. Endometriosis: When Should You Be Evaluated? | Dr. Tahereh Pordast",
+      "Normal Period Pain vs. Endometriosis: When Should You Be Evaluated? | Dr. Tahereh Poordast",
     seoDescription:
       "An educational guide to recognizing the difference between typical menstrual pain and pain that warrants evaluation, from clinical assessment to the role of laparoscopy in selected patients.",
   },
@@ -53,7 +53,7 @@ var ARTICLES_CATALOG = [
     seoTitle: "Can Endometriosis Be Seen on Ultrasound? | Diagnostic Guide",
     seoDescription:
       "What types of endometriosis can ultrasound show? Learn about the uses and limitations of ultrasound, how it differs from MRI, and the role of laparoscopy in diagnosis.",
-    author: "Dr. Tahereh Pordast Medical Content Team",
+    author: "Dr. Tahereh Poordast Medical Content Team",
   },
   {
     slug: "ovarian-endometrioma-chocolate-cyst",
@@ -70,6 +70,6 @@ var ARTICLES_CATALOG = [
     seoTitle: "What Is an Ovarian Chocolate Cyst? Symptoms, Treatment, and When Surgery Is Considered",
     seoDescription:
       "What is a chocolate cyst or endometrioma? Learn about symptoms, ultrasound diagnosis, effects on fertility, medical treatment, and when surgery may be considered.",
-    author: "Dr. Tahereh Pordast Medical Content Team",
+    author: "Dr. Tahereh Poordast Medical Content Team",
   },
 ];

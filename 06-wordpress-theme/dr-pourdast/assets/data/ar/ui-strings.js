@@ -4,15 +4,15 @@
 var UI_STRINGS = {
   copyrightSuffix: "جميع الحقوق محفوظة.",
   axonAppointment: "حجز موعد عبر Axon",
-  doctoretoAppointment: "عرض المواعيد المتاحة",
-  doctoretoDefault: "عرض المواعيد المتاحة",
-  headerAppointment: "عرض المواعيد المتاحة",
+  doctoretoAppointment: "حجز موعد عبر Doctoreto",
+  doctoretoDefault: "حجز موعد عبر Axon",
+  headerAppointment: "حجز موعد",
   newTabSuffix: " (يفتح في تبويب جديد)",
   contactClinic: "الاتصال بالعيادة",
   whatsappLabel: "محادثة عبر واتساب",
   backToTop: "العودة إلى الأعلى",
   languageNavLabel: "اختيار اللغة",
-  appointmentDefault: "عرض المواعيد المتاحة",
+  appointmentDefault: "حجز موعد",
   legalNavLabel: "روابط قانونية",
   shortcutsLabel: "اختصارات سريعة",
   continue: "متابعة",
@@ -25,7 +25,8 @@ var UI_STRINGS = {
   pageSections: "أقسام الصفحة",
   learnMore: "عرض التفاصيل",
   viewDetails: "عرض التفاصيل",
-  bookingNote: "الحجز الإلكتروني متاح عبر Doctoreto وAxon.",
+  bookingNote:
+    "تُحجز زيارة الدكتورة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها.",
 };
 
 function uiString(key, fallback) {

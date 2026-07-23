@@ -2,7 +2,7 @@
  * Uterine fibroid service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var UTERINE_FIBROID_PAGE = {
   slug: "uterine-fibroid",
@@ -225,8 +225,8 @@ var UTERINE_FIBROID_PAGE = {
     },
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
-    imageAlt: "Dr. Tahereh Pourdast",
+    imageSrc: "/assets/images/hero2.jpg",
+    imageAlt: "Dr. Tahereh Poordast",
     eyebrow: "الطبيبة المعالجة",
     title: "تقييم الورم الليفي الرحمي لدى د. طاهرة پوردست",
     paragraphs: [
@@ -282,7 +282,7 @@ var UTERINE_FIBROID_PAGE = {
         id: "appointment",
         question: "كيف أحجز موعداً؟",
         answer:
-          "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+          "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
       },
     ],
   },
@@ -297,7 +297,7 @@ var UTERINE_FIBROID_PAGE = {
   finalCta: {
     title: "احجزي موعد تقييم لفحص الورم الليفي الرحمي",
     description:
-      "لعرض الأوقات المتاحة وحجز الموعد، قم بزيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، استخدمي Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "uterine-fibroid-final-cta",

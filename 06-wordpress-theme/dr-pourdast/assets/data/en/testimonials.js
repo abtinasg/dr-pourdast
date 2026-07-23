@@ -37,7 +37,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "axon-tahereh-laparoscopy-1405-04-11",
       quote:
-        "Dr. Pordast is a dedicated, compassionate physician with positive energy. I had laparoscopic myoma surgery five months ago, and her technique was excellent.",
+        "Dr. Poordast is a dedicated, compassionate physician with positive energy. I had laparoscopic myoma surgery five months ago, and her technique was excellent.",
       displayName: "Tahereh",
       service: "Ultrasound + In-Person Visit",
       source: "Axon",
@@ -56,7 +56,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "axon-atefeh-inperson-1405-04-12",
       quote:
-        "Dr. Pordast is an exceptionally kind and approachable physician. She has an excellent medical team that follows up closely with patients and sends appointment reminders. Her diagnostic skills are outstanding, both in ultrasound and in identifying conditions.",
+        "Dr. Poordast is an exceptionally kind and approachable physician. She has an excellent medical team that follows up closely with patients and sends appointment reminders. Her diagnostic skills are outstanding, both in ultrasound and in identifying conditions.",
       displayName: "Atefeh",
       service: "In-Person Appointment",
       source: "Axon",
@@ -94,7 +94,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "axon-ziba-ultrasound-1405-04-05",
       quote:
-        "Dr. Tahereh Pordast is very kind and approachable. Wishing her continued health and wellbeing.",
+        "Dr. Tahereh Poordast is very kind and approachable. Wishing her continued health and wellbeing.",
       displayName: "Ziba",
       service: "Ultrasound + In-Person Visit",
       source: "Axon",
@@ -113,7 +113,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "doctoreto-hernia-laparoscopy-1405-03-26",
       quote:
-        "Dr. Pordast was very kind, patient, and approachable. She truly understands patients and provides full support throughout care.",
+        "Dr. Poordast was very kind, patient, and approachable. She truly understands patients and provides full support throughout care.",
       displayName: "Doctoreto User",
       service: "Hernia Treatment & Laparoscopic Surgery",
       source: "Doctoreto",
@@ -142,7 +142,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "doctoreto-best-doctor-1405-03-04",
       quote:
-        "She was excellent — the best doctor I have visited. Dr. Pordast is wonderful.",
+        "She was excellent — the best doctor I have visited. Dr. Poordast is wonderful.",
       displayName: "Doctoreto User",
       service: "Evaluation & Treatment of Uterine & Ovarian Conditions",
       source: "Doctoreto",
@@ -190,7 +190,7 @@ var TESTIMONIALS_SECTION = {
     {
       id: "doctoreto-kind-doctor-1404-11-01",
       quote:
-        "Dr. Pordast is very kind, approachable, and highly skilled.",
+        "Dr. Poordast is very kind, approachable, and highly skilled.",
       displayName: "Doctoreto User",
       service: "Endometriosis & Uterine Fibroid Treatment",
       source: "Doctoreto",

@@ -37,7 +37,7 @@
     '<div class="doctor-intro__visual">' +
     '<figure class="doctor-intro__video-frame">' +
     '<video class="doctor-intro__video" id="doctor-intro-video" playsinline preload="metadata" poster="' +
-    (data.videoPoster || "/assets/images/videocover.PNG") +
+    (data.videoPoster || "/assets/images/videocover.jpg") +
     '">' +
     '<source src="' +
     videoSrc +

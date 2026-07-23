@@ -2,7 +2,7 @@
  * Services hub page content.
  *
  * All medical content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var SERVICES_PAGE = {
   slug: "services",
@@ -66,7 +66,7 @@ var SERVICES_PAGE = {
   finalCta: {
     title: "لتقييم حالتك، احجزي موعداً",
     description:
-      "للاطلاع على المواعيد المتاحة وتسجيل الحجز، يُرجى زيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، يُرجى استخدام Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "services-hub-final-cta",

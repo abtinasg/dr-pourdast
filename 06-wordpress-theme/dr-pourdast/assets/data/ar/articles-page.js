@@ -2,7 +2,7 @@
  * Articles hub page content.
  *
  * All medical article content must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var ARTICLES_PAGE = {
   slug: "articles",
@@ -73,7 +73,7 @@ var ARTICLES_PAGE = {
   finalCta: {
     title: "لتقييم حالتك، احجزي موعداً",
     description:
-      "للاطلاع على المواعيد المتاحة وتسجيل الحجز، يُرجى زيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، يُرجى استخدام Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "articles-final-cta",

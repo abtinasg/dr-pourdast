@@ -2,7 +2,7 @@
  * Gynecologic consultation service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var GYNECOLOGIC_CONSULTATION_PAGE = {
   slug: "gynecologic-consultation",
@@ -245,7 +245,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
         id: "appointment",
         question: "كيف أحجز موعداً؟",
         answer:
-          "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+          "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
       },
     ],
   },
@@ -260,7 +260,7 @@ var GYNECOLOGIC_CONSULTATION_PAGE = {
   finalCta: {
     title: "احجزي موعد تقييم لاستشارة أمراض النساء",
     description:
-      "لعرض الأوقات المتاحة وحجز الموعد، قم بزيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، استخدمي Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "gynecologic-consultation-final-cta",

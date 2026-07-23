@@ -8,15 +8,17 @@ var FINAL_CTA_SECTION = {
   eyebrow: "Book an Appointment",
   title: "Schedule a consultation to discuss your condition",
   description:
-    "To view available times and book an appointment, visit Dr. Tahereh Pordast's official profile on Doctoreto or Axon.",
-  supportNote: "Online booking is available through Doctoreto and Axon.",
+    "Visits with Dr. Tahereh Poordast are booked on Axon, which also offers ultrasound appointments. Doctoreto usually has earlier slots handled by her colleagues in consultation with her.",
+  supportNote:
+    "Primary booking for a visit with the doctor is on Axon. Doctoreto appointments are usually earlier and handled by her colleagues.",
   trustDetails: [
-    "Book through Doctoreto or Axon",
-    "Visit details are shown after booking",
+    "Doctor visits and ultrasound on Axon",
+    "Earlier slots on Doctoreto with colleagues",
+    "If surgery is needed, Dr. Poordast performs it herself",
   ],
   ctas: {
     primary: {
-      text: "View available appointments",
+      text: "Book on Axon",
       source: "final-cta",
     },
     contact: {

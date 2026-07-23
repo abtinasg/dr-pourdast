@@ -2,7 +2,7 @@
  * Gynecologic laparoscopy service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var LAPAROSCOPY_PAGE = {
   slug: "gynecologic-laparoscopy",
@@ -251,13 +251,13 @@ var LAPAROSCOPY_PAGE = {
         id: "appointment",
         question: "كيف أحجز موعداً؟",
         answer:
-          "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+          "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
       },
     ],
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    */
   research: {
     eyebrow: "النشاط العلمي",
@@ -275,7 +275,7 @@ var LAPAROSCOPY_PAGE = {
   finalCta: {
     title: "احجزي موعد تقييم لمراجعة الحاجة إلى منظار البطن",
     description:
-      "لعرض الأوقات المتاحة وحجز الموعد، قم بزيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، استخدمي Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "laparoscopy-final-cta",

@@ -168,7 +168,7 @@ var ENDOMETRIOSIS_PAGE = {
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    * Section hidden when items array is empty.
    *
    * @type {{ eyebrow: string, title: string, items: Array<{title: string, category: string, year: string, href?: string, external?: boolean, verified: boolean}> }}
@@ -231,7 +231,7 @@ var ENDOMETRIOSIS_PAGE = {
       id: "appointment",
       question: "كيف أحجز موعداً؟",
       answer:
-        "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+        "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
     },
   ],
   relatedServices: {
@@ -245,7 +245,7 @@ var ENDOMETRIOSIS_PAGE = {
   finalCta: {
     title: "احجزي موعداً لتقييم دقيق للأعراض",
     description:
-      "اختاري الوقت المناسب من الصفحة الرسمية للطبيبة على منصة Doctoreto.",
+      "احجزي زيارة الدكتورة عبر Axon. لمواعيد أسرع، استخدمي Doctoreto (بواسطة الزميلات).",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "endometriosis-final-cta",

@@ -849,7 +849,7 @@ function renderEditorialPoints(section) {
  */
 function renderServiceDoctorSection(section) {
   var titleId = "service-doctor-title";
-  var imageSrc = section.imageSrc || "/assets/images/hero2.PNG";
+  var imageSrc = section.imageSrc || "/assets/images/hero2.jpg";
   var imageAlt =
     section.imageAlt || "تصویر دکتر طاهره پوردست، متخصص زنان و زایمان";
   var isLandscape = section.imageFit === "center";
@@ -1259,7 +1259,7 @@ function renderServiceAppointmentCta(section) {
     '<p class="service-final-cta__note">' +
     uiString(
       "bookingNote",
-      "نوبت‌دهی اینترنتی از طریق سامانه‌های دکترتو و اکسون انجام می‌شود."
+      "ویزیت خانم دکتر در اکسون ثبت می‌شود. نوبت‌های دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد."
     ) +
     "</p>" +
     "</div></div></div></div></section>"

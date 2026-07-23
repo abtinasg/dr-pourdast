@@ -2,7 +2,7 @@
  * Ovarian cyst service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var OVARIAN_CYST_PAGE = {
   slug: "ovarian-cyst",
@@ -294,7 +294,7 @@ var OVARIAN_CYST_PAGE = {
         id: "appointment",
         question: "چگونه نوبت دریافت کنم؟",
         answer:
-          "نوبت‌دهی اینترنتی از طریق صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو انجام می‌شود.",
+          "ویزیت مستقیم توسط خانم دکتر در سامانه اکسون ثبت می‌شود. نوبت‌دهی در دکترتو معمولاً زودتر و توسط همکاران ایشان انجام می‌گیرد و با خانم دکتر مشورت می‌شود.",
       },
     ],
   },
@@ -309,7 +309,7 @@ var OVARIAN_CYST_PAGE = {
   finalCta: {
     title: "برای بررسی کیست تخمدان، نوبت ارزیابی دریافت کنید",
     description:
-      "برای مشاهده زمان‌های آزاد و ثبت نوبت، وارد صفحه رسمی دکتر طاهره پوردست در سامانه دکترتو شوید.",
+      "برای ویزیت توسط خانم دکتر، از سامانه اکسون نوبت بگیرید. نوبت‌های دکترتو توسط همکاران ایشان انجام می‌شود و معمولاً زودتر در دسترس است.",
     cta: {
       text: "رزرو نوبت",
       source: "ovarian-cyst-final-cta",

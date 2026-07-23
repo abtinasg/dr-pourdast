@@ -13,31 +13,31 @@
 var DOCTOR_INTRODUCTION = {
   id: "about",
   eyebrow: "About the Physician",
-  title: "About Dr. Tahereh Pordast",
+  title: "About Dr. Tahereh Poordast",
   biography: [
-    "Dr. Tahereh Pordast is an obstetrician-gynecologist with an advanced fellowship in gynecologic laparoscopy. Her main focus is the diagnosis and treatment of endometriosis, uterine and ovarian conditions, and minimally invasive gynecologic surgery.",
-    "She is a professor at Shiraz University of Medical Sciences and combines clinical practice with teaching and research in gynecology. Her approach centers on careful patient assessment and choosing the least invasive treatment.",
+    "Dr. Tahereh Poordast is an obstetrician-gynecologist with an advanced fellowship in gynecologic laparoscopy and hysteroscopy. Her main focus is the diagnosis and treatment of endometriosis, uterine and ovarian conditions, and minimally invasive gynecologic surgery.",
+    "She is a faculty member and Associate Professor of Gynecology at Shiraz University of Medical Sciences and combines clinical practice with teaching and research in gynecology. Her approach centers on careful patient assessment and choosing the least invasive treatment.",
   ],
-  imageAlt: "Photo of Dr. Tahereh Pordast, obstetrician-gynecologist",
+  imageAlt: "Photo of Dr. Tahereh Poordast, obstetrician-gynecologist",
   videoSrc: "/assets/videos/doctor-intro.mp4",
-  videoPoster: "/assets/images/videocover.PNG",
-  videoLabel: "Introduction video of Dr. Tahereh Pordast",
+  videoPoster: "/assets/images/videocover.jpg",
+  videoLabel: "Introduction video of Dr. Tahereh Poordast",
   videoPlayLabel: "Watch video",
   credentials: [
     {
-      title: "Fellowship in Gynecologic Laparoscopy",
+      title: "Advanced Fellowship in Laparoscopy & Hysteroscopy",
       icon: MEDICAL_ICONS.fellowship,
     },
     {
-      title: "Professor at Shiraz University of Medical Sciences",
+      title: "Associate Professor of Gynecology, Shiraz University of Medical Sciences",
       icon: MEDICAL_ICONS.university,
     },
     {
-      title: "Specialist diagnosis and treatment of endometriosis",
+      title: "Faculty Member, Shiraz University of Medical Sciences",
       icon: MEDICAL_ICONS.endometriosisFocus,
     },
     {
-      title: "Medical License No. 90566",
+      title: "Specialist diagnosis and treatment of endometriosis",
       icon: MEDICAL_ICONS.medicalLicense,
     },
   ],

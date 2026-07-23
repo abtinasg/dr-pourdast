@@ -24,13 +24,13 @@ function getAppointmentProviders() {
   if (SITE_CONFIG.appointmentUrl) {
     return [
       {
-        id: "doctoreto",
+        id: "axon",
         url: SITE_CONFIG.appointmentUrl,
         linkText:
-          typeof UI_STRINGS !== "undefined" && UI_STRINGS.doctoretoDefault
-            ? UI_STRINGS.doctoretoDefault
-            : "رزرو نوبت",
-        eventName: "doctoreto_appointment_click",
+          typeof UI_STRINGS !== "undefined" && UI_STRINGS.axonAppointment
+            ? UI_STRINGS.axonAppointment
+            : "رزرو نوبت در اکسون",
+        eventName: "axon_appointment_click",
       },
     ];
   }
@@ -55,7 +55,7 @@ function getAppointmentProvider(providerId) {
  * @param {Object} options
  * @param {string} options.text - Link label
  * @param {string} options.source - Analytics source identifier
- * @param {"doctoreto"|"axon"} [options.provider]
+ * @param {"doctoreto"|"axon"} [options.provider] - Defaults to Axon (primary booking)
  * @param {"primary"|"secondary"} [options.variant]
  * @param {string} [options.size] - "sm" for small button
  * @param {boolean} [options.showIcon]
@@ -63,7 +63,7 @@ function getAppointmentProvider(providerId) {
  * @returns {string}
  */
 function renderAppointmentLink(options) {
-  var provider = getAppointmentProvider(options.provider || "doctoreto");
+  var provider = getAppointmentProvider(options.provider || "axon");
   if (!provider) return "";
 
   var variant = options.variant || "primary";
@@ -162,7 +162,7 @@ function renderAppointmentLinksGroup(options) {
  * @param {HTMLElement} el
  */
 function applyAppointmentLink(el) {
-  var providerId = el.getAttribute("data-appointment-provider") || "doctoreto";
+  var providerId = el.getAttribute("data-appointment-provider") || "axon";
   var provider = getAppointmentProvider(providerId);
   if (!provider) return;
 
@@ -219,10 +219,11 @@ function renderClinicContactLink(source) {
 }
 
 /**
- * Standard CTA pair: Doctoreto (primary) + clinic contact (secondary).
+ * Standard CTA pair: Axon (primary) + clinic contact (secondary).
  * @param {Object} options
  * @param {string} options.source
- * @param {string} [options.doctoretoText]
+ * @param {string} [options.doctoretoText] - Deprecated alias for appointmentText
+ * @param {string} [options.appointmentText]
  * @param {string} [options.size]
  * @param {boolean} [options.showIcon]
  * @param {string} [options.className]
@@ -234,10 +235,11 @@ function renderPrimaryCtaGroup(options) {
   var html =
     renderAppointmentLink({
       text:
+        options.appointmentText ||
         options.doctoretoText ||
-        uiString("doctoretoAppointment", "رزرو نوبت"),
+        uiString("axonAppointment", "رزرو نوبت در اکسون"),
       source: source,
-      provider: "doctoreto",
+      provider: "axon",
       variant: "primary",
       size: options.size,
       showIcon: options.showIcon,
@@ -252,12 +254,13 @@ function renderPrimaryCtaGroup(options) {
 }
 
 /**
- * Axon booking as a subtle text link below primary CTAs.
+ * Doctoreto booking as a subtle text link below primary (Axon) CTAs.
+ * Kept as renderAxonAltLink for backward-compatible call sites.
  * @param {string} source
  * @returns {string}
  */
 function renderAxonAltLink(source) {
-  var provider = getAppointmentProvider("axon");
+  var provider = getAppointmentProvider("doctoreto");
   if (!provider) return "";
 
   return (
@@ -268,8 +271,8 @@ function renderAxonAltLink(source) {
     provider.eventName +
     '" data-source="' +
     source +
-    '-axon">' +
-    uiString("axonAppointment", "دریافت نوبت از اکسون") +
+    '-doctoreto">' +
+    uiString("doctoretoAppointment", "نوبت‌دهی در دکترتو") +
     '<span class="sr-only">' +
     APPOINTMENT_SR_LABEL +
     "</span></a></p>"

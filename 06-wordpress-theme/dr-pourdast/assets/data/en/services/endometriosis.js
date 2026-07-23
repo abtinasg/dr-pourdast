@@ -12,9 +12,9 @@ var ENDOMETRIOSIS_PAGE = {
   slug: "endometriosis",
   route: "/en/services/endometriosis",
   seo: {
-    title: "Endometriosis Treatment in Shiraz | Dr. Tahereh Pordast",
+    title: "Endometriosis Treatment in Shiraz | Dr. Tahereh Poordast",
     description:
-      "Learn about endometriosis symptoms, diagnosis, and treatment options, with a focus on specialist evaluation and minimally invasive gynecologic surgery by Dr. Tahereh Pordast in Shiraz.",
+      "Learn about endometriosis symptoms, diagnosis, and treatment options, with a focus on specialist evaluation and minimally invasive gynecologic surgery by Dr. Tahereh Poordast in Shiraz.",
     canonical: "https://drpourdast.ir/en/services/endometriosis",
     ogImage: "/assets/images/og-endometriosis.jpg",
     locale: "en_US",
@@ -52,7 +52,7 @@ var ENDOMETRIOSIS_PAGE = {
     { label: "FAQ", href: "#faq" },
   ],
   medicalReview: {
-    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Pourdast.",
+    text: "This content has been prepared or reviewed under the scientific supervision of Dr. Tahereh Poordast.",
     dateLabel: "Last reviewed: July 2026",
   },
   whatIs: {
@@ -158,9 +158,9 @@ var ENDOMETRIOSIS_PAGE = {
     imageSrc: "/assets/images/endometriosis.png",
     imageAlt: "Specialized endometriosis evaluation in clinic",
     imageFit: "center",
-    title: "Endometriosis Evaluation by Dr. Tahereh Pordast",
+    title: "Endometriosis Evaluation by Dr. Tahereh Poordast",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy, specializing in the evaluation and treatment of gynecologic conditions and minimally invasive surgery.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist with advanced fellowship training in gynecologic laparoscopy, specializing in the evaluation and treatment of gynecologic conditions and minimally invasive surgery.",
       "During your visit, symptoms, medical records, imaging studies, and treatment history are reviewed so that an individualized treatment pathway can be selected.",
     ],
     aboutLink: "/en/about",
@@ -168,7 +168,7 @@ var ENDOMETRIOSIS_PAGE = {
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahere Pourdast before publication.
+   * by Dr. Tahereh Poordast before publication.
    * Section hidden when items array is empty.
    *
    * @type {{ eyebrow: string, title: string, items: Array<{title: string, category: string, year: string, href?: string, external?: boolean, verified: boolean}> }}
@@ -231,7 +231,7 @@ var ENDOMETRIOSIS_PAGE = {
       id: "appointment",
       question: "How do I book an appointment?",
       answer:
-        "Online appointment booking is available through Dr. Tahereh Pordast's official profile on Doctoreto.",
+        "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots handled by her colleagues in consultation with her.",
     },
   ],
   relatedServices: {
@@ -245,7 +245,7 @@ var ENDOMETRIOSIS_PAGE = {
   finalCta: {
     title: "Book a visit for an accurate evaluation of your symptoms",
     description:
-      "Choose a suitable time from the doctor’s official Doctoreto profile.",
+      "Choose a suitable time on Axon for a visit with the doctor, or on Doctoreto for an earlier slot with her colleagues.",
     cta: {
       text: "View open appointments",
       source: "endometriosis-final-cta",

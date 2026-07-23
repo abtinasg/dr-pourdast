@@ -2,27 +2,29 @@
  * Central site configuration — single source of truth.
  * All appointment links must read from this file.
  *
+ * Primary booking is Axon (visit with Dr. Tahereh Poordast).
+ * Doctoreto is secondary (earlier slots with clinic colleagues).
+ *
  * Clinic contact information must be confirmed before publication.
  */
 var SITE_CONFIG = {
   appointmentProviders: [
     {
-      id: "doctoreto",
-      url: "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
-      linkText: "رزرو نوبت در دکترتو",
-      eventName: "doctoreto_appointment_click",
-    },
-    {
       id: "axon",
       url: "https://axon.me/hcps/90566-tahereh-pordast/",
-      linkText: "دریافت نوبت از اکسون",
+      linkText: "رزرو نوبت در اکسون",
       eventName: "axon_appointment_click",
+    },
+    {
+      id: "doctoreto",
+      url: "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
+      linkText: "نوبت‌دهی در دکترتو",
+      eventName: "doctoreto_appointment_click",
     },
   ],
 
   /** @deprecated Use appointmentProviders — kept for backward compatibility */
-  appointmentUrl:
-    "https://doctoreto.com/doctor/dr-tahere-pur-dast/ZplbBE",
+  appointmentUrl: "https://axon.me/hcps/90566-tahereh-pordast/",
 
   /** Set to confirmed clinic number (e.g. "07112345678") when available */
   clinicPhone: "09307916968",

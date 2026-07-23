@@ -2,15 +2,15 @@
  * Centralized doctor profile data for the About page.
  *
  * All professional, academic, and medical information must be reviewed
- * and approved by Dr. Tahereh Pordast before publication.
+ * and approved by Dr. Tahereh Poordast before publication.
  */
 var DOCTOR_PROFILE = {
   slug: "about",
   route: "/en/about",
   seo: {
-    title: "About Dr. Tahereh Pordast | Gynecologist & Laparoscopy Specialist in Shiraz",
+    title: "About Dr. Tahereh Poordast | Gynecologist & Laparoscopy Specialist in Shiraz",
     description:
-      "Learn about the professional background, clinical specialties, academic activities, and treatment approach of Dr. Tahereh Pordast, an obstetrician-gynecologist and advanced gynecologic laparoscopy fellow in Shiraz.",
+      "Learn about the professional background, clinical specialties, academic activities, and treatment approach of Dr. Tahereh Poordast, an obstetrician-gynecologist and advanced gynecologic laparoscopy fellow in Shiraz.",
     canonical: "https://drpourdast.ir/en/about",
     ogImage: "/assets/images/og-about.jpg",
     locale: "en_US",
@@ -21,12 +21,13 @@ var DOCTOR_PROFILE = {
   ],
   hero: {
     eyebrow: "About the Physician",
-    name: "Dr. Tahereh Pordast",
-    subtitle: "Obstetrician-Gynecologist & Advanced Gynecologic Laparoscopy Fellow",
+    name: "Dr. Tahereh Poordast",
+    subtitle:
+      "Obstetrician-Gynecologist, Associate Professor of Gynecology, and Advanced Fellow in Laparoscopy & Hysteroscopy",
     introduction:
-      "Dr. Tahereh Pordast's clinical practice focuses on the evaluation and treatment of gynecologic conditions, endometriosis, uterine and ovarian disorders, and minimally invasive gynecologic surgery.",
-    imageAlt: "Photo of Dr. Tahereh Pordast, obstetrician-gynecologist",
-    imageSrc: "/assets/images/hero.jpg",
+      "Dr. Tahereh Poordast's clinical practice focuses on the evaluation and treatment of gynecologic conditions, endometriosis, uterine and ovarian disorders, and minimally invasive gynecologic surgery.",
+    imageAlt: "Photo of Dr. Tahereh Poordast, obstetrician-gynecologist",
+    imageSrc: "/assets/images/about-hero.jpg",
     appointmentSource: "about-hero",
     servicesLink: {
       text: "View specialty services",
@@ -37,7 +38,7 @@ var DOCTOR_PROFILE = {
     eyebrow: "Professional Overview",
     title: "Expertise, academic experience, and treatment approach",
     paragraphs: [
-      "Dr. Tahereh Pordast is an obstetrician-gynecologist with an advanced fellowship in gynecologic laparoscopy. Her clinical focus includes the evaluation and treatment of endometriosis, uterine and ovarian conditions, and minimally invasive gynecologic surgery.",
+      "Dr. Tahereh Poordast is an obstetrician-gynecologist, Associate Professor of Gynecology, and faculty member at Shiraz University of Medical Sciences, with an advanced fellowship in gynecologic laparoscopy and hysteroscopy. Her clinical focus includes the evaluation and treatment of endometriosis, uterine and ovarian conditions, and minimally invasive gynecologic surgery.",
       "During the evaluation process, the patient's symptoms, medical records, imaging studies, prior treatments, and individual circumstances are reviewed to select a treatment pathway appropriate to each patient's condition.",
     ],
   },
@@ -45,9 +46,15 @@ var DOCTOR_PROFILE = {
     title: "Professional background",
     items: [
       { label: "Obstetrician & Gynecologist", verified: true },
-      { label: "Advanced Gynecologic Laparoscopy Fellowship", verified: true },
-      { label: "Professor at Shiraz University of Medical Sciences", verified: true },
-      { label: "Medical License No. 90566", verified: true },
+      {
+        label: "Advanced Fellowship in Gynecologic Laparoscopy & Hysteroscopy",
+        verified: true,
+      },
+      { label: "Associate Professor of Gynecology", verified: true },
+      {
+        label: "Faculty Member, Shiraz University of Medical Sciences",
+        verified: true,
+      },
       { label: "Shiraz", verified: true },
     ],
   },
@@ -56,10 +63,11 @@ var DOCTOR_PROFILE = {
     title: "Primary treatment specialties",
     items: [
       { label: "Endometriosis", href: "/en/services/endometriosis" },
+      { label: "Uterine Fibroid Treatment", href: "/en/services/uterine-fibroid" },
+      { label: "Infection Screening Exam", href: "/en/services/gynecologic-consultation" },
       { label: "Gynecologic Laparoscopy", href: "/en/services/gynecologic-laparoscopy" },
       { label: "Hysteroscopy", href: "/en/services/hysteroscopy" },
       { label: "Ovarian Cyst", href: "/en/services/ovarian-cyst" },
-      { label: "Uterine Fibroid", href: "/en/services/uterine-fibroid" },
       { label: "Pelvic Adhesion", href: "/en/services/pelvic-adhesion" },
     ],
   },
@@ -77,7 +85,7 @@ var DOCTOR_PROFILE = {
   },
   /**
    * All academic and research information must be provided or approved
-   * by Dr. Tahereh Pordast before publication.
+   * by Dr. Tahereh Poordast before publication.
    */
   research: {
     eyebrow: "Academic activities",
@@ -92,9 +100,9 @@ var DOCTOR_PROFILE = {
   finalCta: {
     title: "Book a consultation appointment",
     description:
-      "Available appointment times and booking information for Dr. Tahereh Pordast can be viewed on her official profile on Doctoreto.",
+      "Visits with Dr. Tahereh Poordast are booked on Axon. Doctoreto usually offers earlier slots with her clinic colleagues.",
     cta: {
-      text: "View available appointments",
+      text: "Book on Axon",
       source: "about-final-cta",
     },
   },

@@ -2,7 +2,7 @@
  * Hysteroscopy service page content.
  *
  * All medical content on this page must be reviewed and approved
- * by Dr. Tahere Pourdast before publication.
+ * by Dr. Tahereh Poordast before publication.
  */
 var HYSTEROSCOPY_PAGE = {
   slug: "hysteroscopy",
@@ -208,8 +208,8 @@ var HYSTEROSCOPY_PAGE = {
       "ينبغي مناقشة الفوائد والقيود والمخاطر المحتملة مع الطبيبة قبل الإجراء.",
   },
   doctor: {
-    imageSrc: "/assets/images/hero2.PNG",
-    imageAlt: "Dr. Tahereh Pourdast",
+    imageSrc: "/assets/images/hero2.jpg",
+    imageAlt: "Dr. Tahereh Poordast",
     eyebrow: "الطبيبة المعالجة",
     title: "تقييم مشكلات الرحم لدى د. طاهرة پوردست",
     paragraphs: [
@@ -278,7 +278,7 @@ var HYSTEROSCOPY_PAGE = {
         id: "appointment",
         question: "كيف أحجز موعداً؟",
         answer:
-          "يتم الحجز الإلكتروني عبر الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+          "تُحجز زيارة الدكتورة مباشرة عبر Axon. مواعيد Doctoreto عادةً أسرع وتُجرى بواسطة زميلاتها مع التشاور معها.",
       },
     ],
   },
@@ -293,7 +293,7 @@ var HYSTEROSCOPY_PAGE = {
   finalCta: {
     title: "احجزي موعد تقييم لمراجعة الحاجة إلى منظار الرحم",
     description:
-      "لعرض الأوقات المتاحة وحجز الموعد، قم بزيارة الصفحة الرسمية لد. طاهرة پوردست على منصة Doctoreto.",
+      "لحجز زيارة الدكتورة، استخدمي Axon. مواعيد Doctoreto عادةً أسرع وبواسطة زميلاتها.",
     cta: {
       text: "عرض المواعيد المتاحة",
       source: "hysteroscopy-final-cta",
